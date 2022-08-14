@@ -1,0 +1,94 @@
+{
+
+
+  // Render Outline Elements with Icons.
+  "outline.icons": true,
+
+  // Use badges for Errors & Warnings.
+  "outline.problems.badges": true,
+
+  // Use colors for Errors & Warnings.
+  "outline.problems.colors": true,
+
+  // Show Errors & Warnings on Outline Elements.
+  "outline.problems.enabled": true,
+
+  // When enabled outline shows `array`-symbols.
+  "outline.showArrays": true,
+
+  // When enabled outline shows `boolean`-symbols.
+  "outline.showBooleans": true,
+
+  // When enabled outline shows `class`-symbols.
+  "outline.showClasses": true,
+
+  // When enabled outline shows `constant`-symbols.
+  "outline.showConstants": true,
+
+  // When enabled outline shows `constructor`-symbols.
+  "outline.showConstructors": true,
+
+  // When enabled outline shows `enumMember`-symbols.
+  "outline.showEnumMembers": true,
+
+  // When enabled outline shows `enum`-symbols.
+  "outline.showEnums": true,
+
+  // When enabled outline shows `event`-symbols.
+  "outline.showEvents": true,
+
+  // When enabled outline shows `field`-symbols.
+  "outline.showFields": true,
+
+  // When enabled outline shows `file`-symbols.
+  "outline.showFiles": true,
+
+  // When enabled outline shows `function`-symbols.
+  "outline.showFunctions": true,
+
+  // When enabled outline shows `interface`-symbols.
+  "outline.showInterfaces": true,
+
+  // When enabled outline shows `key`-symbols.
+  "outline.showKeys": true,
+
+  // When enabled outline shows `method`-symbols.
+  "outline.showMethods": true,
+
+  // When enabled outline shows `module`-symbols.
+  "outline.showModules": true,
+
+  // When enabled outline shows `namespace`-symbols.
+  "outline.showNamespaces": true,
+
+  // When enabled outline shows `null`-symbols.
+  "outline.showNull": true,
+
+  // When enabled outline shows `number`-symbols.
+  "outline.showNumbers": true,
+
+  // When enabled outline shows `object`-symbols.
+  "outline.showObjects": true,
+
+  // When enabled outline shows `operator`-symbols.
+  "outline.showOperators": true,
+
+  // When enabled outline shows `package`-symbols.
+  "outline.showPackages": true,
+
+  // When enabled outline shows `property`-symbols.
+  "outline.showProperties": true,
+
+  // When enabled outline shows `string`-symbols.
+  "outline.showStrings": true,
+
+  // When enabled outline shows `struct`-symbols.
+  "outline.showStructs": true,
+
+  // When enabled outline shows `typeParameter`-symbols.
+  "outline.showTypeParameters": true,
+
+  // When enabled outline shows `variable`-symbols.
+  "outline.showVariables": true,
+
+}

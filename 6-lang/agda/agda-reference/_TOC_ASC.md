@@ -1,0 +1,235 @@
+# Language Reference
+
+https://agda.readthedocs.io/en/latest/language/index.html
+
+- Abstract definitions
+  - Synopsis
+  - Examples
+  - Scope of abstraction
+  - Abstract definitions with `where` blocks
+- Built-ins
+  - Using the built-in types
+  - The unit type
+  - The Σ-type
+  - Lists
+  - Maybe
+  - Booleans
+  - Natural numbers
+  - Machine words
+  - Integers
+  - Floats
+  - Characters
+  - Strings
+  - Equality
+  - Sorts
+  - Universe levels
+  - Sized types
+  - Coinduction
+  - IO
+  - Literal overloading
+  - Reflection
+  - Rewriting
+  - Static values
+  - Strictness
+- Coinduction
+  - Coinductive Records
+  - Old Coinduction
+- Copatterns
+  - Copatterns in function definitions
+  - Mixing patterns and co-patterns
+- Core language
+  - Grammar
+  - Syntax overview
+  - Lexer
+  - Parser
+  - Concrete Syntax
+  - Nice Concrete Syntax
+  - Abstract Syntax
+  - Internal Syntax
+  - Treeless Syntax
+- Coverage Checking
+  - Single match on a non-indexed datatype
+  - Matching on multiple arguments
+  - Copattern matching
+  - Matching on indexed datatypes
+  - General case
+- Cubical
+  - The interval and path types
+  - Transport
+  - Partial elements
+  - Homogeneous composition
+  - Glue types
+  - Higher inductive types
+  - Cubical identity types and computational HoTT/UF
+  - Cubical Agda with erased glue
+  - References
+  - Appendix: Cubical Agda primitives
+- Cubical compatible
+  - Restrictions on pattern matching
+  - Restrictions on termination checking
+  - Restrictions on universe levels
+- Cumulativity
+  - Basics
+  - Example usage: N-ary functions
+  - Limitations
+  - Constraint solving
+- Data Types
+  - Simple datatypes
+  - Parametrized datatypes
+  - Indexed datatypes
+  - Strict positivity
+- Flat Modality
+  - Pattern Matching on `@♭`
+- Foreign Function Interface
+  - Compiler Pragmas
+  - Haskell FFI
+  - JavaScript FFI
+- Function Definitions
+  - Introduction
+  - General form
+  - Special patterns
+  - Case trees
+- Function Types
+  - Notational conventions
+- Generalization of Declared Variables
+  - Overview
+  - Nested generalization
+  - Placement of generalized bindings
+  - Instance and irrelevant variables
+  - Importing and exporting variables
+  - Interaction
+  - Modalities
+- Guarded Cubical
+  - References
+- Implicit Arguments
+  - Tactic arguments
+  - Metavariables
+  - Unification
+- Instance Arguments
+  - Usage
+  - Instance resolution
+- Irrelevance
+  - Motivating example
+  - Irrelevant function types
+  - Irrelevant declarations
+  - Irrelevant record fields
+  - Dependent irrelevant function types
+  - Irrelevant instance arguments
+- Lambda Abstraction
+  - Pattern matching lambda
+- Local Definitions: let and where
+  - let-expressions
+  - where-blocks
+  - Proving properties
+  - More Examples (for Beginners)
+- Lexical Structure
+  - Tokens
+  - Layout
+  - Literate Agda
+- Literal Overloading
+  - Natural numbers
+  - Negative numbers
+  - Strings
+  - Restrictions
+- Lossy Unification
+  - Heuristic
+  - Example
+  - Drawbacks
+- Mixfix Operators
+  - Precedence
+  - Associativity
+  - Ambiguity and Scope
+  - Operators in telescopes
+- Module System
+  - Module application
+  - Anonymous modules
+  - Basics
+  - Private definitions
+  - Name modifiers
+  - Re-exporting names
+  - Parameterised modules
+  - Splitting a program over multiple files
+  - Datatype modules and record modules
+- Mutual Recursion
+  - Interleaved mutual blocks
+  - Forward declaration
+  - Old-style `mutual` blocks
+- Pattern Synonyms
+  - Overloading
+  - Refolding
+- Positivity Checking
+  - The `NO_POSITIVITY_CHECK` pragma
+  - `POLARITY` pragmas
+- Postulates
+  - Postulated built-ins
+- Pragmas
+  - Index of pragmas
+- Prop
+  - Usage
+  - The predicative hierarchy of `Prop`
+  - The propositional squash type
+  - Limitations
+- Record Types
+  - Example: the Pair type constructor
+  - Declaring, constructing and decomposing records
+  - Record modules
+  - Eta-expansion
+  - Recursive records
+  - Instance fields
+- Reflection
+  - Builtin types
+  - Metaprogramming
+- [Rewriting](./rewriting.md)
+  - Rewrite rules by example
+    - Overlapping pattern matching
+    - More examples
+  - General shape of rewrite rules
+  - Confluence checking
+  - Advanced usage
+- Run-time Irrelevance
+  - Syntax
+  - Rules
+  - References
+- Safe Agda
+- Sized Types
+  - Example for coinduction: finite languages
+  - References
+- Sort System
+  - Introduction to universes
+  - Agda's sort system
+  - Sort metavariables and unknown sorts
+- Syntactic Sugar
+  - Do-notation
+  - Idiom brackets
+- Syntax Declarations
+- Telescopes
+  - Irrefutable Patterns in Binding Positions
+- Termination Checking
+  - Primitive recursion
+  - Structural recursion
+  - With-functions
+  - Pragmas and Options
+  - References
+- Universe Levels
+  - Level arithmetic
+  - Intrinsic level properties
+  - `forall` notation
+  - Expressions of sort `Setω`
+  - Pragmas and options
+- With-Abstraction
+  - Use
+    - Generalisation
+    - Nested with-abstractions
+    - Simultaneous abstraction
+    - Making with-abstractions hidden and/or irrelevant
+    - Using underscores and variables in pattern repetition
+    - Irrefutable With
+    - Rewrite
+    - With-abstraction equality
+    - Alternatives to with-abstraction
+    - Termination checking
+    - Performance considerations
+  - Technical details
+    - Examples
+    - Ill-typed with-abstractions
+- Without K

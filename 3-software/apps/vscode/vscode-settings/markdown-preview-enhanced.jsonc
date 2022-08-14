@@ -1,0 +1,171 @@
+{
+  // Qiniu AccessKey
+  "markdown-preview-enhanced.AccessKey": "",
+
+  // Automatically show preview of markdown being edited.
+  "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": false,
+
+  // In Markdown, a single newline character doesn't cause a line break in the generated HTML. In GitHub Flavored Markdown, that is not true. Enable this config option to insert line breaks in rendered HTML for single newlines in Markdown source.
+  "markdown-preview-enhanced.breakOnSingleNewLine": true,
+
+  // Qiniu Bucket
+  "markdown-preview-enhanced.Bucket": "",
+
+  // Chrome executable path, which is used for Puppeteer export. Leaving it empty means the path will be found automatically.
+  "markdown-preview-enhanced.chromePath": "",
+
+  // Code block theme. If `auto.css` is chosen, then the code block theme that best matches the current preview theme will be picked.
+  "markdown-preview-enhanced.codeBlockTheme": "auto.css",
+
+  // The configuration directory path. Leave it empty to use '~/.mume' as the config path. Please reload vscode to take effect.
+  "markdown-preview-enhanced.configPath": "",
+
+  // Qiniu Domain
+  "markdown-preview-enhanced.Domain": "http://",
+
+  // Enable CriticMarkup syntax. Only works with markdown-it parser. Please check http://criticmarkup.com/users-guide.php for more information.
+  "markdown-preview-enhanced.enableCriticMarkupSyntax": false,
+
+  // Enable emoji & font-awesome plugin. This only works for markdown-it parser, but not pandoc parser.
+  "markdown-preview-enhanced.enableEmojiSyntax": true,
+
+  // Enable extended table syntax to support merging table cells.
+  "markdown-preview-enhanced.enableExtendedTableSyntax": false,
+
+  //  Enables transform audio video link to to html5 embed audio video tags.
+  "markdown-preview-enhanced.enableHTML5Embed": false,
+
+  // Enable or disable conversion of URL-like text to links in the markdown preview.
+  "markdown-preview-enhanced.enableLinkify": true,
+
+  // Enables executing code chunks and importing javascript files.
+  // ⚠️ Please use this feature with caution because it may put your security at risk! Your machine can get hacked if someone makes you open a markdown with malicious code while script execution is enabled.
+  "markdown-preview-enhanced.enableScriptExecution": false,
+
+  // Enable smartypants and other sweet transforms.
+  "markdown-preview-enhanced.enableTypographer": false,
+
+  // Enable Wiki Link syntax support. More information can be found at https://help.github.com/articles/adding-links-to-wikis/
+  "markdown-preview-enhanced.enableWikiLinkSyntax": true,
+
+  // Front matter rendering option
+  "markdown-preview-enhanced.frontMatterRenderingOption": "none",
+
+  // Hide the default VSCode markdown preview extension buttons. Restarting the editor is required to make this config take effect.
+  "markdown-preview-enhanced.hideDefaultVSCodeMarkdownPreviewButtons": true,
+
+  // HTML attributes to pass to audio tags.
+  "markdown-preview-enhanced.HTML5EmbedAudioAttributes": "controls preload=\"metadata\" width=\"320\"",
+
+  // When true embed media with http:// schema in URLs. When false ignore and don't embed them.
+  "markdown-preview-enhanced.HTML5EmbedIsAllowedHttp": false,
+
+  //  Enables video/audio embed with ![]() syntax (default).
+  "markdown-preview-enhanced.HTML5EmbedUseImageSyntax": true,
+
+  // Enables video/audio embed with []() syntax.
+  "markdown-preview-enhanced.HTML5EmbedUseLinkSyntax": false,
+
+  // HTML attributes to pass to video tags.
+  "markdown-preview-enhanced.HTML5EmbedVideoAttributes": "controls preload=\"metadata\" width=\"320\" height=\"240\"",
+
+  // When using Image Helper to copy images, by default images will be copied to root image folder path '/assets'
+  "markdown-preview-enhanced.imageFolderPath": "/assets",
+
+  // ImageMagick command line path. Should be either `magick` or `convert`. Leaving it empty means the path will be found automatically.
+  "markdown-preview-enhanced.imageMagickPath": "",
+
+  // You can choose different image uploader to upload image
+  "markdown-preview-enhanced.imageUploader": "imgur",
+
+  // Default latex engine for Pandoc export and latex code chunk.
+  "markdown-preview-enhanced.latexEngine": "pdflatex",
+
+  // Re-render the preview as the contents of the source changes, without requiring the source buffer to be saved. If disabled, the preview is re-rendered only when the buffer is saved to disk.
+  "markdown-preview-enhanced.liveUpdate": true,
+
+  // Use customized Math expression block delimiters.
+  "markdown-preview-enhanced.mathBlockDelimiters": [
+    [
+      "$$",
+      "$$"
+    ],
+    [
+      "\\[",
+      "\\]"
+    ]
+  ],
+
+  // Use customized Math expression inline delimiters.
+  "markdown-preview-enhanced.mathInlineDelimiters": [
+    [
+      "$",
+      "$"
+    ],
+    [
+      "\\(",
+      "\\)"
+    ]
+  ],
+
+  // Choose the Math expression rendering method option for GFM markdown export (Save as Markdown).
+  "markdown-preview-enhanced.mathRenderingOnlineService": "https://latex.codecogs.com/gif.latex",
+
+  // Choose the Math expression rendering method here. You can also disable math rendering if you want by choosing 'None'.
+  "markdown-preview-enhanced.mathRenderingOption": "KaTeX",
+
+  // Mermaid theme, you can choose one from ["mermaid.css", "mermaid.dark.css", "mermaid.forest.css"]
+  "markdown-preview-enhanced.mermaidTheme": "default",
+
+  // Args passed to pandoc command e.g. ["--smart", "--filter=/bin/exe"] Please use long argument names.
+  "markdown-preview-enhanced.pandocArguments": [],
+
+  // The pandoc markdown flavor you want
+  "markdown-preview-enhanced.pandocMarkdownFlavor": "markdown-raw_tex+tex_math_single_backslash",
+
+  // Pandoc executable path
+  "markdown-preview-enhanced.pandocPath": "pandoc",
+
+  // Render using PlantUML server instead of binary. Leave it empty to use the builtin plantuml.jar binary (`java` is required in system path). Eg: "http://localhost:8080/svg/"
+  "markdown-preview-enhanced.plantumlServer": "",
+
+  // Preview Theme
+  "markdown-preview-enhanced.previewTheme": "github-light.css",
+
+  // Whether to print background for file export or not. If set to `false`, then `github-light` preview theme will be used. You can also set `print_background` in front-matter for individual files.
+  "markdown-preview-enhanced.printBackground": false,
+
+  // Accepted protocols for links.
+  "markdown-preview-enhanced.protocolsWhiteList": "http://, https://, atom://, file://, mailto:, tel:",
+
+  // Args passed to puppeteer.launch({args: $puppeteerArgs})
+  "markdown-preview-enhanced.puppeteerArgs": [],
+
+  // Puppeteer waits for a certain timeout in milliseconds before the document export.
+  "markdown-preview-enhanced.puppeteerWaitForTimeout": 0,
+
+  // RevealJS Presentation Theme
+  "markdown-preview-enhanced.revealjsTheme": "white.css",
+
+  // Automatic scroll sync. This is now partially supported.
+  "markdown-preview-enhanced.scrollSync": true,
+
+  // Qiniu SecretKey
+  "markdown-preview-enhanced.SecretKey": "",
+
+  // Open Only One Preview.
+  "markdown-preview-enhanced.singlePreview": true,
+
+  // If checked, we use GitHub style piped wiki links, i.e. [[linkText|wikiLink]]. Otherwise, we use [[wikiLink|linkText]] as the original Wikipedia style.
+  "markdown-preview-enhanced.useGitHubStylePipedLink": true,
+
+  // Enable this option will render markdown by pandoc instead of markdown-it.
+  "markdown-preview-enhanced.usePandocParser": false,
+
+  // If set to true, then locally installed puppeteer-core will be required. Otherwise, the puppeteer globally installed by `npm install -g puppeteer` will be required.
+  "markdown-preview-enhanced.usePuppeteerCore": true,
+
+  // By default, the extension for wikilink is `.md`. For example: [[test]] will direct to file path `test.md`.
+  "markdown-preview-enhanced.wikiLinkFileExtension": ".md",
+
+}

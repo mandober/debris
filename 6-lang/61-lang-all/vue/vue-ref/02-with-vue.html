@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Vue trial</title>
+    <!--
+    Incl dev vue for rapid tinkering.
+    It even works with file:// protocol
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <!-- Vue root element, referred in conf obj as `el` property.
+    Cannot be body or html, stick with div
+    -->
+    <div id="app">
+      <!-- v-model attr is used to bind form inputs, reactivelly -->
+      <input type="text" id="input" v-model="message">
+      <!-- the p tag will reflect the bound input's value as it changes.
+           the mustache-like syntax is handled by vue -->
+      <p>Input value: {{ message }}</p>
+      <!--
+      Directives apply special reactive behavior to the rendered DOM.
+      `v-bind` keeps this attr up-to-date with the `msg` property on 
+      the Vue instance. In browser console, you can address this
+      to see that the bound HTML node's attr gets updated:
+            app.msg = 'some new message'
+            $vm0.msg = 'some new message'
+      It is app.msg and not app.data.msg cuz vue auto-proxies them so
+      they are available off of the vue instance.
+      -->
+      <span v-bind:title="msg">
+        Hover to see my dynamically bound title!
+      </span>
+    </div>
+
+
+    <script>
+    // new vue instance expects
+    new Vue(
+      // vue config object
+      {
+        // 'el' property defines the HTML element used to inject Vue.
+        // Vue has no jurisdiction outside this node.
+        // which may be given as a string or HTML node
+        el : "#app",
+        
+        // 'data' property is used to set initial values of properties
+        data: {
+          message: 'initial value',
+          msg: 'page loaded on ' + new Date().toLocaleString()
+        },
+      }
+    );
+    </script>
+
+
+</body>
+</html>

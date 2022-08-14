@@ -1,0 +1,307 @@
+{
+
+
+  // List of paths to libraries and the like that need to be imported by auto complete engine. E.g. when using Google App SDK, the paths are not in system path, hence need to be added into this list.
+  "python.autoComplete.extraPaths": [],
+
+  // Path to the conda executable to use for activation (version 4.4+).
+  "python.condaPath": "",
+
+  // Path to default Python to use when extension loads up for the first time, no longer used once an interpreter is selected for the workspace. See https://aka.ms/AAfekmf to understand when this is used.
+  "python.defaultInterpreterPath": "python",
+
+  // Enable source map support for meaningful stack traces in error logs.
+  "python.diagnostics.sourceMapsEnabled": false,
+
+  // Whether to check if Python is installed (also warn when using the macOS-installed Python).
+  "python.disableInstallationCheck": false,
+
+  // Absolute path to a file containing environment variable definitions.
+  "python.envFile": "${workspaceFolder}/.env",
+
+  // Enables A/B tests experiments in the Python extension. If enabled, you may get included in proposed enhancements and/or features.
+  "python.experiments.enabled": true,
+
+  // List of experiment to opt into. If empty, user is assigned the default experiment groups. See https://github.com/microsoft/vscode-python/wiki/Experiments for more details.
+  "python.experiments.optInto": [],
+
+  // List of experiment to opt out of. If empty, user is assigned the default experiment groups. See https://github.com/microsoft/vscode-python/wiki/Experiments for more details.
+  "python.experiments.optOutFrom": [],
+
+  // Arguments passed in. Each argument is a separate item in the array.
+  "python.formatting.autopep8Args": [],
+
+  // Path to autopep8, you can use a custom version of autopep8 by modifying this setting to include the full path.
+  "python.formatting.autopep8Path": "autopep8",
+
+  // Arguments passed in. Each argument is a separate item in the array.
+  "python.formatting.blackArgs": [],
+
+  // Path to Black, you can use a custom version of Black by modifying this setting to include the full path.
+  "python.formatting.blackPath": "black",
+
+  // Provider for formatting. Possible options include 'autopep8', 'black', and 'yapf'.
+  "python.formatting.provider": "autopep8",
+
+  // Arguments passed in. Each argument is a separate item in the array.
+  "python.formatting.yapfArgs": [],
+
+  // Path to yapf, you can use a custom version of yapf by modifying this setting to include the full path.
+  "python.formatting.yapfPath": "yapf",
+
+  // Whether to install Python modules globally when not using an environment.
+  "python.globalModuleInstallation": false,
+
+  // Defines type of the language server.
+  //  - Default: Automatically select a language server: Pylance if installed and available, otherwise fallback to Jedi.
+  //  - Jedi: Use Jedi behind the Language Server Protocol (LSP) as a language server.
+  //  - Pylance: Use Pylance as a language server.
+  //  - None: Disable language server capabilities.
+  "python.languageServer": "Default",
+
+  // Arguments passed in. Each argument is a separate item in the array.
+  "python.linting.banditArgs": [],
+
+  // Whether to lint Python files using bandit.
+  "python.linting.banditEnabled": false,
+
+  // Path to bandit, you can use a custom version of bandit by modifying this setting to include the full path.
+  "python.linting.banditPath": "bandit",
+
+  // Optional working directory for linters.
+  "python.linting.cwd": null,
+
+  // Whether to lint Python files.
+  "python.linting.enabled": true,
+
+  // Arguments passed in. Each argument is a separate item in the array.
+  "python.linting.flake8Args": [],
+
+  // Severity of Flake8 message type 'E'.
+  "python.linting.flake8CategorySeverity.E": "Error",
+
+  // Severity of Flake8 message type 'F'.
+  "python.linting.flake8CategorySeverity.F": "Error",
+
+  // Severity of Flake8 message type 'W'.
+  "python.linting.flake8CategorySeverity.W": "Warning",
+
+  // Whether to lint Python files using flake8
+  "python.linting.flake8Enabled": false,
+
+  // Path to flake8, you can use a custom version of flake8 by modifying this setting to include the full path.
+  "python.linting.flake8Path": "flake8",
+
+  // Patterns used to exclude files or folders from being linted.
+  "python.linting.ignorePatterns": [
+    "**/site-packages/**/*.py",
+    ".vscode/*.py"
+  ],
+
+  // Whether to lint Python files when saved.
+  "python.linting.lintOnSave": true,
+
+  // Controls the maximum number of problems produced by the server.
+  "python.linting.maxNumberOfProblems": 100,
+
+  // Arguments passed in. Each argument is a separate item in the array.
+  "python.linting.mypyArgs": [
+    "--follow-imports=silent",
+    "--ignore-missing-imports",
+    "--show-column-numbers",
+    "--no-pretty"
+  ],
+
+  // Severity of Mypy message type 'Error'.
+  "python.linting.mypyCategorySeverity.error": "Error",
+
+  // Severity of Mypy message type 'Note'.
+  "python.linting.mypyCategorySeverity.note": "Information",
+
+  // Whether to lint Python files using mypy.
+  "python.linting.mypyEnabled": false,
+
+  // Path to mypy, you can use a custom version of mypy by modifying this setting to include the full path.
+  "python.linting.mypyPath": "mypy",
+
+  // Arguments passed in. Each argument is a separate item in the array.
+  "python.linting.prospectorArgs": [],
+
+  // Whether to lint Python files using prospector.
+  "python.linting.prospectorEnabled": false,
+
+  // Path to Prospector, you can use a custom version of prospector by modifying this setting to include the full path.
+  "python.linting.prospectorPath": "prospector",
+
+  // Arguments passed in. Each argument is a separate item in the array.
+  "python.linting.pycodestyleArgs": [],
+
+  // Severity of pycodestyle message type 'E'.
+  "python.linting.pycodestyleCategorySeverity.E": "Error",
+
+  // Severity of pycodestyle message type 'W'.
+  "python.linting.pycodestyleCategorySeverity.W": "Warning",
+
+  // Whether to lint Python files using pycodestyle
+  "python.linting.pycodestyleEnabled": false,
+
+  // Path to pycodestyle, you can use a custom version of pycodestyle by modifying this setting to include the full path.
+  "python.linting.pycodestylePath": "pycodestyle",
+
+  // Arguments passed in. Each argument is a separate item in the array.
+  "python.linting.pydocstyleArgs": [],
+
+  // Whether to lint Python files using pydocstyle
+  "python.linting.pydocstyleEnabled": false,
+
+  // Path to pydocstyle, you can use a custom version of pydocstyle by modifying this setting to include the full path.
+  "python.linting.pydocstylePath": "pydocstyle",
+
+  // Arguments passed in. Each argument is a separate item in the array.
+  "python.linting.pylamaArgs": [],
+
+  // Whether to lint Python files using pylama.
+  "python.linting.pylamaEnabled": false,
+
+  // Path to pylama, you can use a custom version of pylama by modifying this setting to include the full path.
+  "python.linting.pylamaPath": "pylama",
+
+  // Arguments passed in. Each argument is a separate item in the array.
+  "python.linting.pylintArgs": [],
+
+  // Severity of Pylint message type 'Convention/C'.
+  "python.linting.pylintCategorySeverity.convention": "Information",
+
+  // Severity of Pylint message type 'Error/E'.
+  "python.linting.pylintCategorySeverity.error": "Error",
+
+  // Severity of Pylint message type 'Fatal/F'.
+  "python.linting.pylintCategorySeverity.fatal": "Error",
+
+  // Severity of Pylint message type 'Refactor/R'.
+  "python.linting.pylintCategorySeverity.refactor": "Hint",
+
+  // Severity of Pylint message type 'Warning/W'.
+  "python.linting.pylintCategorySeverity.warning": "Warning",
+
+  // Whether to lint Python files using pylint.
+  "python.linting.pylintEnabled": false,
+
+  // Path to Pylint, you can use a custom version of pylint by modifying this setting to include the full path.
+  "python.linting.pylintPath": "pylint",
+
+  // The logging level the extension logs at, defaults to 'error'
+  "python.logging.level": "error",
+
+  // Path to the pipenv executable to use for activation.
+  "python.pipenvPath": "pipenv",
+
+  // Path to the poetry executable.
+  "python.poetryPath": "poetry",
+
+  // Arguments passed in. Each argument is a separate item in the array.
+  "python.sortImports.args": [],
+
+  // Path to isort script, default using inner version
+  "python.sortImports.path": "",
+
+  // Set this setting to your preferred TensorBoard log directory to skip log directory prompt when starting TensorBoard.
+  "python.tensorBoard.logDirectory": "",
+
+  // Activate Python Environment in the current Terminal on load of the Extension.
+  "python.terminal.activateEnvInCurrentTerminal": false,
+
+  // Activate Python Environment in Terminal created using the Extension.
+  "python.terminal.activateEnvironment": true,
+
+  // When executing a file in the terminal, whether to use execute in the file's directory, instead of the current open folder.
+  "python.terminal.executeInFileDir": false,
+
+  // Python launch arguments to use when executing a file in the terminal.
+  "python.terminal.launchArgs": [],
+
+  // Enable auto run test discovery when saving a test file.
+  "python.testing.autoTestDiscoverOnSaveEnabled": true,
+
+  // Optional working directory for tests.
+  "python.testing.cwd": null,
+
+  // Port number used for debugging of tests.
+  "python.testing.debugPort": 3000,
+
+  // Prompt to configure a test framework if potential tests directories are discovered.
+  "python.testing.promptToConfigure": true,
+
+  // Arguments passed in. Each argument is a separate item in the array.
+  "python.testing.pytestArgs": [],
+
+  // Enable testing using pytest.
+  "python.testing.pytestEnabled": false,
+
+  // Path to pytest (pytest), you can use a custom version of pytest by modifying this setting to include the full path.
+  "python.testing.pytestPath": "pytest",
+
+  // Arguments passed in. Each argument is a separate item in the array.
+  "python.testing.unittestArgs": [
+    "-v",
+    "-s",
+    ".",
+    "-p",
+    "*test*.py"
+  ],
+
+  // Enable testing using unittest.
+  "python.testing.unittestEnabled": false,
+
+  // Folders in your home directory to look into for virtual environments (supports pyenv, direnv and virtualenvwrapper by default).
+  "python.venvFolders": [],
+
+  // Path to folder with a list of Virtual Environments (e.g. ~/.pyenv, ~/Envs, ~/.virtualenvs).
+  "python.venvPath": "",
+
+  // Pylance insiders download channel.
+  //  - off: Do not check for insiders updates.
+  //  - daily: Automatically check for and install insiders updates daily.
+  "pylance.insidersChannel": "off",
+
+  // Offer auto-import completions.
+  "python.analysis.autoImportCompletions": true,
+
+  // Automatically add common search paths like 'src'.
+  "python.analysis.autoSearchPaths": true,
+
+  // Add parentheses to function completions.
+  "python.analysis.completeFunctionParens": false,
+
+  // Analysis mode for diagnostics.
+  //  - openFilesOnly: Analyzes and reports errors on only open files.
+  //  - workspace: Analyzes and reports errors on all files in the workspace.
+  "python.analysis.diagnosticMode": "openFilesOnly",
+
+  // Allows a user to override the severity levels for individual diagnostics.
+  "python.analysis.diagnosticSeverityOverrides": {},
+
+  // Additional import search resolution paths
+  "python.analysis.extraPaths": [],
+
+  // Index installed third party libraries and user files for language features such as auto-import, add import, workspace symbols and etc.
+  "python.analysis.indexing": null,
+
+  // Specifies the level of logging for the Output panel
+  "python.analysis.logLevel": "Information",
+
+  // Path to directory containing custom type stub files.
+  "python.analysis.stubPath": "typings",
+
+  // Defines the default rule set for type checking.
+  //  - off: Surfaces diagnostics for invalid syntax, unresolved imports, undefined variables.
+  //  - basic: All "off" rules + basic type checking rules.
+  //  - strict: All "off" rules + all type checking rules.
+  "python.analysis.typeCheckingMode": "off",
+
+  // Paths to look for typeshed modules.
+  "python.analysis.typeshedPaths": [],
+
+  // Use library implementations to extract type information when type stub is not present.
+  "python.analysis.useLibraryCodeForTypes": true,
+}

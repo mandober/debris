@@ -1,0 +1,26 @@
+{
+
+  // The setting `json.colorDecorators.enable` has been deprecated in favor of `editor.colorDecorators`.
+  // Enables or disables color decorators
+  "json.colorDecorators.enable": true,
+
+  // Enable/disable default JSON formatter
+  "json.format.enable": true,
+
+  // The maximum number of outline symbols and folding regions computed (limited for performance reasons).
+  "json.maxItemsComputed": 5000,
+
+  // When enabled, JSON schemas can be fetched from http and https locations.
+  "json.schemaDownload.enable": true,
+
+  // Associate schemas to JSON files in the current project.
+  "json.schemas": [],
+
+  // Traces the communication between VS Code and the JSON language server.
+  "json.trace.server": "off",
+
+  // Enable/disable JSON validation.
+  "json.validate.enable": true,
+
+
+}

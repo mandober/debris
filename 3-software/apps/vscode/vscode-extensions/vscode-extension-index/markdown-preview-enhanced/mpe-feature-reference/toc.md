@@ -1,0 +1,4 @@
+- [Keybindings](#keybindings)
+- [Table of Contents](#table-of-contents)
+- [Configuration](#configuration)
+- [TOC and Sidebar TOC Configuration](#toc-and-sidebar-toc-configuration)

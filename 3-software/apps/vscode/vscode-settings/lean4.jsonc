@@ -1,0 +1,93 @@
+{
+  // Sort the tests and suites by label or location. If this is not set (or set to null), they will be shown in the order that they were received from the adapter
+  //  - byLabel: sort by label
+  //  - byLocation: sort by location (filename and line), if multiple tests or suites appear at the same location, they are sorted by label
+  //  - byLabelWithSuitesFirst: sort by label, but always put the suites on top
+  //  - byLocationWithSuitesFirst: sort by location, but always put the suites on top
+  //  - null: don't sort, the tests and suites will be shown in the order that they were received from the adapter
+  "testExplorer.sort": null,
+
+  // Disable the Test Explorer UI and use VSCode's native Testing UI instead
+  "testExplorer.useNativeTesting": false,
+
+
+  // Time (in milliseconds) which must pass since latest edit until elaboration begins. Lower values may make editing feel faster at the cost of higher CPU usage.
+  "lean4.elaborationDelay": 200,
+
+  // Enable Lake server when possible.
+  "lean4.enableLake": true,
+
+  // Infoview: show all errors on the current line, instead of just the ones on the right of the cursor.
+  "lean4.infoViewAllErrorsOnLine": true,
+
+  // Infoview: open infoview when Lean extension is activated for the first time.
+  "lean4.infoViewAutoOpen": true,
+
+  // Infoview: auto open shows goal and messages for the current line (instead of all messages for the whole file)
+  "lean4.infoViewAutoOpenShowGoal": true,
+
+  // Index of the filter applied to the tactic state (in the array infoViewTacticStateFilters). An index of -1 means no filter is applied.
+  "lean4.infoViewFilterIndex": -1,
+
+  // Add an additional CSS snippet to the infoview.
+  "lean4.infoViewStyle": "",
+
+  // An array of objects containing regular expression strings that can be used to filter (positively or negatively) the tactic state in the infoview. Set to an empty array `[]` to hide the filter select dropdown.
+  //  
+  //  Each object must contain the following keys: 'regex': string, 'match': boolean, 'flags': string.
+  //  'regex' is a properly-escaped regex string,
+  //  'match' = true (false) means blocks in the tactic state matching 'regex' will be included (excluded) in the infoview, 
+  //  'flags' are additional flags passed to the JavaScript `RegExp` constructor.
+  //  The 'name' key is optional and may contain a string that is displayed in the dropdown instead of the full regex details.
+  "lean4.infoViewTacticStateFilters": [
+    {
+      "regex": "^_",
+      "match": false,
+      "flags": ""
+    },
+    {
+      "name": "goals only",
+      "regex": "^(⊢|\\d+ goals|case|$)",
+      "match": true,
+      "flags": ""
+    }
+  ],
+
+  // Add additional input Unicode translations. Example: `{"foo": "☺"}` will correct `\foo` to `☺`.
+  "lean4.input.customTranslations": {},
+
+  // Enable eager replacement of abbreviations that uniquely identify a symbol.
+  "lean4.input.eagerReplacementEnabled": true,
+
+  // Enable Lean input mode.
+  "lean4.input.enabled": true,
+
+  // Enable Lean Unicode input in other file types.
+  "lean4.input.languages": [
+    "lean4",
+    "lean"
+  ],
+
+  // Leader key to trigger input mode.
+  "lean4.input.leader": "\\",
+
+  // Arguments to pass to the Lean 4 server.
+  "lean4.serverArgs": [],
+
+  // Environment variables to add to the Lean 4 server environment
+  "lean4.serverEnv": {},
+
+  // Paths to add to the Lean 4 server environment PATH variable.
+  "lean4.serverEnvPaths": [],
+
+  // Enable Lean 4 server logging.
+  "lean4.serverLogging.enabled": false,
+
+  // Path to the directory where Lean 4 server log files are stored.
+  "lean4.serverLogging.path": ".",
+
+  // Path to your Lean toolchain. Leave this blank to get the default location from your PATH environment or from the default elan install location.
+  "lean4.toolchainPath": "",
+
+
+}

@@ -1,0 +1,48 @@
+# Uncode characters ∷ Symbols
+
+- [unicode-ampersand](ampersand.md)
+- [unicode-brackets](brackets.md)
+- [unicode-numbers](numbers.md)
+- [unicode-whitespaces](whitespaces.md)
+
+
+LATIN
+  LETTER
+    CAPITAL
+    SMALL
+
+LETTER
+  A … Z  a … z
+GREEK
+   A … Ω  α … ω
+DIGIT
+  0 … 9
+
+SMALL
+CAPITAL
+MATHEMATICAL
+DOUBLE-STRUCK
+
+MONOSPACE
+FRAKTUR
+SCRIPT
+SANS-SERIF
+BOLD
+ITALIC
+
+
+𝖅 MATHEMATICAL BOLD FRAKTUR CAPITAL Z
+𝖟 MATHEMATICAL BOLD FRAKTUR SMALL Z
+
+
+
+MATHEMATICAL MONOSPACE
+- A-Z
+  - 𝙰 MATHEMATICAL MONOSPACE CAPITAL A
+  - 𝚉 MATHEMATICAL MONOSPACE CAPITAL Z
+- a-z
+  - 𝚊 MATHEMATICAL MONOSPACE SMALL A
+  - 𝚣 MATHEMATICAL MONOSPACE SMALL Z
+- 0-9
+  - 𝟶 MATHEMATICAL MONOSPACE DIGIT ZERO
+  - 𝟿 MATHEMATICAL MONOSPACE DIGIT NINE

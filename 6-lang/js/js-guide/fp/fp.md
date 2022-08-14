@@ -1,0 +1,1 @@
+# Functional Programming in JSAspects of FP in JS- HOF (signatures, functional params, recursive calls)- Recursion (stack concerns, tail calls, trampoline)- Composition of functions (currying, flip)- Folding (arrays)- Fundamental functions  - foldr, foldl  - compose  - curry  - flip- Fundamental structure  - Array (as a List)

@@ -1,0 +1,33 @@
+# Unicode :: Symbols :: Latin-1
+
+Name                                      | Hex     | Glyph
+------------------------------------------|---------|------
+INVERTED EXCLAMATION MARK                 | 0x000a1 | ¡
+BROKEN BAR                                | 0x000a6 | ¦
+SECTION SIGN                              | 0x000a7 | §
+DIAERESIS                                 | 0x000a8 | ¨
+COPYRIGHT SIGN                            | 0x000a9 | ©
+FEMININE ORDINAL INDICATOR                | 0x000aa | ª
+LEFT-POINTING DOUBLE ANGLE QUOTATION MARK | 0x000ab | «
+NOT SIGN                                  | 0x000ac | ¬
+REGISTERED SIGN                           | 0x000ae | ®
+MACRON                                    | 0x000af | ¯
+DEGREE SIGN                               | 0x000b0 | °
+PLUS-MINUS SIGN                           | 0x000b1 | ±
+SUPERSCRIPT TWO                           | 0x000b2 | ²
+SUPERSCRIPT THREE                         | 0x000b3 | ³
+ACUTE ACCENT                              | 0x000b4 | ´
+MICRO SIGN                                | 0x000b5 | µ
+PILCROW SIGN                              | 0x000b6 | ¶
+MIDDLE DOT                                | 0x000b7 | ·
+CEDILLA                                   | 0x000b8 | ¸
+SUPERSCRIPT ONE                           | 0x000b9 | ¹
+MASCULINE ORDINAL INDICATOR               | 0x000ba | º
+RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK| 0x000bb | »
+VULGAR FRACTION ONE QUARTER               | 0x000bc | ¼
+VULGAR FRACTION ONE HALF                  | 0x000bd | ½
+VULGAR FRACTION THREE QUARTERS            | 0x000be | ¾
+INVERTED QUESTION MARK                    | 0x000bf | ¿
+LATIN CAPITAL LETTER OPEN O               | 0x00186 | Ɔ
+LATIN CAPITAL LETTER REVERSED E           | 0x0018e | Ǝ
+LATIN CAPITAL LETTER TURNED M             | 0x0019c | Ɯ

@@ -1,0 +1,22 @@
+{
+  // Should Markdown Links automatically start when a markdown file is opened.
+  "markdown-links.autoStart": false,
+
+  // Regular extension used to find file IDs. First match of this regex in file contents, excluding [[links]], will be used as the file ID. This file ID can be used for wiki-style links.
+  "markdown-links.fileIdRegexp": "\\d{14}",
+
+  // Choose type of graph appearance.
+  "markdown-links.graphType": "default",
+
+  // - active - in the currently focused column.
+  // - beside - other than the current.
+  // - one (default), two, three, four, five, six, seven, eight, nine - respective editor columns.
+  "markdown-links.openColumn": "one",
+
+  // - active - in the currently focused column.
+  // - beside - (default) other than the current.
+  // - one, two, three, four, five, six, seven, eight, nine - respective editor columns.
+  "markdown-links.showColumn": "beside",
+
+
+}

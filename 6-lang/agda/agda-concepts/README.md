@@ -1,0 +1,61 @@
+# Agda ∷ Concepts
+
+- Type theory
+  - BHK
+  - CHI
+  - judgement
+  - type
+  - predicate
+    - property
+    - relation
+  - extensionality vs intesionality
+    - sets are extensional, types are intensional
+    - intesional TT
+    - extesional TT
+    - function extensionality
+- Data types in Agda
+  - inductive data types
+  - coinductive data types
+  - indexed data types
+  - parameterized data types
+  - type family
+    - parameterized type family
+    - indexed type family
+  - total functional programming
+    - termination
+    - termination checker
+    - codata
+    - data vs codata
+    - generativity
+    - final coalgebra
+    - greatest fixed point of a functor
+  - sort types
+    - type hierarchy (no Type-In-Type)
+    - universe type
+    - universe levels
+    - small types
+    - universe polymorphism
+    - cumulativity
+    - universe polymorphism vs. cumulativity
+- dependent data types
+  - dependent pair, Sigma
+  - dependent function, Pi
+- Predicates in Agda
+  - predicate as a Boolean function
+  - predicate as a function
+  - predicate as a inductive data type, inductive predicates
+- Equality
+  - notions of equality in type theory
+  - notions of equality in Agda
+  - definitional = judgemental = computational, right?
+  - identity data type
+  - equality data type
+  - equality as a proposition
+  - equality as a type
+- Induction and Recursion
+  - induction
+  - recursion
+  - iteration
+  - recursor
+  - induction-recursion
+  - induction-induction

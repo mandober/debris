@@ -1,0 +1,29 @@
+{
+  // swi: SWI-Prolog; ecl: ECLiPSe(eclipseclp).
+  "prolog.dialect": "swi",
+
+  // Points to the Prolog executable.
+  "prolog.executablePath": "/usr/bin/swipl",
+
+  // Enable formatting source codes
+  "prolog.format.enabled": true,
+
+  // Prefer spaces over tabs
+  "prolog.format.insertSpaces": true,
+
+  // The size of a tab in spaces
+  "prolog.format.tabSize": 4,
+
+  // The milliseconds to delay when using onType trigger.
+  "prolog.linter.delay": 500,
+
+  // Enable errors and warnings in OUTPUT channel.
+  "prolog.linter.enableMsgInOutput": false,
+
+  // How to trigger the linter.
+  "prolog.linter.run": "onType",
+
+  // Arguments of Prolog executable run in terminal.
+  "prolog.terminal.runtimeArgs": [],
+
+}

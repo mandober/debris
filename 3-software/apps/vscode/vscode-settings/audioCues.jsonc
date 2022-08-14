@@ -1,0 +1,54 @@
+{
+  // Deprecated. Use the specific setting for each audio cue instead (`audioCues.*`).
+  // 
+  "audioCues.enabled": null,
+
+  // Plays a sound when the active line has a breakpoint.
+  //  - auto: Enable audio cue when a screen reader is attached.
+  //  - on: Enable audio cue.
+  //  - off: Disable audio cue.
+  "audioCues.lineHasBreakpoint": "auto",
+
+  // Plays a sound when the active line has an error.
+  //  - auto: Enable audio cue when a screen reader is attached.
+  //  - on: Enable audio cue.
+  //  - off: Disable audio cue.
+  "audioCues.lineHasError": "auto",
+
+  // Plays a sound when the active line has a folded area that can be unfolded.
+  //  - auto: Enable audio cue when a screen reader is attached.
+  //  - on: Enable audio cue.
+  //  - off: Disable audio cue.
+  "audioCues.lineHasFoldedArea": "auto",
+
+  // Plays a sound when the active line has an inline suggestion.
+  //  - auto: Enable audio cue when a screen reader is attached.
+  //  - on: Enable audio cue.
+  //  - off: Disable audio cue.
+  "audioCues.lineHasInlineSuggestion": "auto",
+
+  // Plays a sound when the active line has a warning.
+  //  - auto: Enable audio cue when a screen reader is attached.
+  //  - on: Enable audio cue.
+  //  - off: Disable audio cue.
+  "audioCues.lineHasWarning": "off",
+
+  // Plays a sound when trying to read a line with inlay hints that has no inlay hints.
+  //  - auto: Enable audio cue when a screen reader is attached.
+  //  - on: Enable audio cue.
+  //  - off: Disable audio cue.
+  "audioCues.noInlayHints": "auto",
+
+  // Plays a sound when the debugger stopped on a breakpoint.
+  //  - auto: Enable audio cue when a screen reader is attached.
+  //  - on: Enable audio cue.
+  //  - off: Disable audio cue.
+  "audioCues.onDebugBreak": "auto",
+
+  // The volume of the audio cues in percent (0-100).
+  "audioCues.volume": 70,
+
+
+
+
+}

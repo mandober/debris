@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Vue 03</title>
+
+  <!-- include dev vue for rapid tinkering. -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+
+  <div id="app">
+
+    <!-- example 3: list -->
+
+    <ul>
+      <!-- names array is listed using v-for loop -->
+
+      <li v-for="name in names" v-text="name"></li>
+      <!--
+      which could've been realized also as:
+          <li v-for="name in names">{{ name }}</li>
+      but v-text is prettier then mustche syntax
+      -->
+
+    </ul>
+
+
+    <!-- input text is linked to newName prop -->
+    <input type="text" id="txt_input" v-model="newName" v-on:onBlur="addName">
+
+    <!--
+    button to add the new item to the list.
+    click on the button calls the custom method (inside the `methods`
+    property of the Options object) named "addName".abnf
+    `@click` is a shorthand for `v-on:click` and similar
+    -->
+    <button @click="addName">Add new name</button>
+
+    <!-- inline statement -->
+    <button v-on:click="doThat('hello', $event)">Inline</button>
+
+  </div>
+
+
+  <script>
+  let vm = new Vue({
+    el : "#app",
+
+    data: {
+      // text input is v-model'ed to this prop, initialized to empty str
+      newName: '',
+
+      names: [
+        'άλφα    βήτα   γάμμα    δέλτα',
+        'έψιλον  ζήτα   ήτα      θήτα',
+        'ιώτα    κάππα  λάμδα    μυ',
+        'νυ      ξι     όμικρον  πι',
+        'ρώ      σίγμα  ταυ      ύψιλον',
+        'φι      χι     ψι       ωμέγα',
+        'α β γ δ ϵ ζ η θ',
+        'ι κ λ μ ν ξ o π',
+        'ρ σ τ υ ϕ χ ψ ω',
+      ]
+    },
+
+    methods: {
+
+      // click on button calls this method. Vue proxies the `data` props
+      // so we don't call it as `this.data.names` but just as `this.names`
+      // `this.newName` comes from the input text's value cuz it was
+      // v-model'ed to this identifier; that is, input text box is linked
+      // to the var (in data obj) with the same name that was placed in
+      // v-model binding i.e. "newName". The directive `v-model` is used
+      // almost exclusively to bind the value of a text input control.
+      addName() {
+        this.names.push(this.newName);
+        // reset text field after adding new item
+        this.newName = '';
+        // and set focus to it
+        document.querySelector('#txt_input').focus();
+      },
+
+      doThat(a, e) {
+        console.log(a);
+        console.log(e);
+      }
+
+    }
+
+  });
+
+  // vanilla js: set on-load focus to text field
+  document.querySelector('#txt_input').focus();
+
+  </script>
+
+</body>
+</html>

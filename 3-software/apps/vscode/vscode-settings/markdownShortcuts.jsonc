@@ -1,0 +1,38 @@
+{
+
+
+  // Bold marker
+  "markdownShortcuts.bold.marker": "**",
+
+  // Bullets marker
+  "markdownShortcuts.bullets.marker": "*",
+
+  // Show bold icon in title bar
+  "markdownShortcuts.icons.bold": true,
+
+  // Show bullets icon in title bar
+  "markdownShortcuts.icons.bullets": true,
+
+  // Show citations icon in title bar
+  "markdownShortcuts.icons.citations": false,
+
+  // Show image icon in title bar
+  "markdownShortcuts.icons.image": false,
+
+  // Show italic icon in title bar
+  "markdownShortcuts.icons.italic": true,
+
+  // Show link icon in title bar
+  "markdownShortcuts.icons.link": false,
+
+  // Show strikethrough icon in title bar
+  "markdownShortcuts.icons.strikethrough": true,
+
+  // Italics marker
+  "markdownShortcuts.italics.marker": "_",
+
+  // Array of languages for which shortcuts will be available
+  "markdownShortcuts.languages": [
+    "markdown"
+  ],
+}

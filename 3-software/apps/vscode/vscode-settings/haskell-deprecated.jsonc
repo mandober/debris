@@ -1,0 +1,147 @@
+{
+
+    // ------------------------------------------------------------------------
+    // ghcSimple
+    // ------------------------------------------------------------------------
+    // "ghcSimple.startupCommands.all": [],
+    // "ghcSimple.startupCommands.bare": [],
+
+    // ------------------------------------------------------------------------
+    // visortelle.haskell-spotlight: Search on Hackage, Hoogle
+    // ------------------------------------------------------------------------
+
+    // ------------------------------------------------------------------------
+    // Meowcolm024.has-go: A simple extension to run haskell file
+    // ------------------------------------------------------------------------
+  /*
+    // Select the Haskell tool will be used.
+    // ('stack run' and run file will be affected)
+    // Cabal | Stack (default)
+    "has-go.haskellTool": "Cabal",
+
+    // Show the Run File Button
+    "has-go.runFileButton": false,
+
+    // Show the Cabal (or Stack) Run Button
+    "has-go.stackRunButton": true,
+
+    // Override the files that GHCi loads.
+    // You can also load multiple files.
+    // Default is ${current}
+    "has-go.overrideGHCiArgs": "${current}",
+
+    // Arguments passed to stack run (or to cabal run)
+    // "has-go.stackArgs": "",
+
+    // Arguments passed to GHC
+    // "has-go.ghcArgs": "",
+
+    // Reload file to current Terminal (make sure in GHCi)
+    "has-go.reuseTerminal": true,
+
+  */
+
+
+
+
+
+    // Determine what to do when a new version of the language server is available.
+    //  - keep-up-to-date (default):  Download the latest version
+    //  - prompt:                     Prompt before upgrading
+    //  - never-check:                Don't check for newer versions
+    // "haskell.updateBehavior": "prompt",
+
+
+    // ------------------------------------------------------------------------
+    // "haskell.plugin.ghcide-type-lenses.config.mode": "always",
+    // "haskell.plugin.tactics.config.auto_gas": 4,
+
+    // ------------------------------------------------------------------------
+    // "haskell.hlint.hints": ["Default", "Dollar", "Generalise"],
+    // "haskell.hlint.ignore": ["Redundant do"],
+    // "haskell.hlint.logLevel": "info",
+    // "haskell.hlint.run": "never",
+
+
+
+
+    /*
+
+      // An optional path where downloaded binaries will be stored.
+      // Check the default value here:
+      // https://github.com/haskell/vscode-haskell#downloaded-binaries
+      // Linux: $HOME/.config/Code/User/globalStorage/haskell.haskell
+      // default: ""
+      "haskell.releasesDownloadStoragePath": "",
+
+      // An optional URL to override where to check for haskell-language-server releases
+      // default: ""
+      "haskell.releasesURL": "",
+
+      // Define environment variables for the language server.
+      // default: {}
+      "haskell.serverEnvironment": {},
+
+      // Manually set a language server executable.
+      // Can be something on the $PATH or the full path to the executable itself.
+      // Works with `~,` `${HOME}` and `${workspaceFolder}`.
+      // Deprecated scope:
+      //   This option will be set to `machine` scope in a future release,
+      //   so it can be changed only globally, not per workspace.
+      // default: ""
+      "haskell.serverExecutablePath": "",
+
+      // Pass additional arguments to the language server.
+      // default: ""
+      "haskell.serverExtraArgs": "",
+
+      // Sets the log level in the client side.
+      // default: info
+      "haskell.trace.client": "info",
+
+      // Traces the communication between VS Code and the language server.
+      // default: off
+      "haskell.trace.server": "off",
+
+    */
+
+
+    /*
+        * justusadam.language-haskell
+          Syntax support for the Haskell programming language.
+
+        * haskell.haskell
+          Haskell language support powered by the Haskell Language Server
+
+        * JoseDanielD.haskell-pointfree
+          Gives pointfree and pointful equivalent of selected haskell code.
+
+        * hoovercj.haskell-linter
+          An extension to use hlint in vscode
+
+        * visortelle.haskell-spotlight
+          Search on Hackage, Hoogle, and more soon.
+
+        * jcanero.hoogle-vscode
+          Haskell Hoogle search in Visual Studio Code
+
+        * Meowcolm024.has-go
+          A simple extension to run haskell file
+
+
+
+        Haskell Language Server
+        =======================
+        ext-id: haskell.haskell
+
+        vscode-haskell
+        https://github.com/haskell/vscode-haskell
+
+        haskell-language-server
+        https://github.com/haskell/haskell-language-server
+
+        haskell-language-server ∷ latest ∷ docs
+        https://haskell-language-server.readthedocs.io/en/latest/
+    */
+
+}

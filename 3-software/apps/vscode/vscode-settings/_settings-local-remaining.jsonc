@@ -1,0 +1,38 @@
+// settings-local.jsonc
+{
+  // Global debug launch configuration.
+  // Should be used as an alternative to 'launch.json' 
+  // that is shared across workspaces.
+  "launch": {
+    "configurations": [],
+    "compounds": []
+  },
+
+  // Enable/disable the ability of smart scrolling in the output view.
+  // Smart scrolling allows you to lock scrolling automatically when you
+  // click in the output view and unlocks when you click in the last line.
+  "output.smartScroll.enabled": true,
+
+  // Controls whether code cells in 
+  // the interactive window are collapsed by default.
+  "interactiveWindow.collapseCellInputCode": "fromEditor",
+
+  // Controls whether 'Peek References' or 'Find References'
+  // is invoked when selecting code lens references
+  //  - peek: Show references in peek editor.
+  //  - view: Show references in separate view.
+  "references.preferredLocation": "peek",
+
+  // Enable/disable the floating indicator that
+  // shows when focused in the simple browser.
+  "simpleBrowser.focusLockIndicator.enabled": true,
+
+  // After running a cell, add a 'Goto' code lens on the cell.
+  // Note, disabling all code lenses disables this code lens as well.
+  "jupyter.addGotoCodeLenses": true,
+
+  // Resource configuration:
+  // Configure files using glob patterns to have an empty last line always
+  "explorerExclude.backup": {},
+
+}

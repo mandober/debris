@@ -1,0 +1,31 @@
+{
+// ====================================================================
+// Idris
+// ====================================================================
+
+  // full path to the idris executable
+  "idris.executablePath": "idris",
+
+  // Controls the hover behavior:
+  //  "info"        displays Idris docs
+  //  "type"        display Idris type
+  //  "fallback"    try info then type
+  //  "none"        will disable hover tooltips
+  "idris.hoverMode": "fallback",
+
+  // Controls the auto-completion behavior:
+  //   "allWords"         include all words from the opened docs
+  //   "replCompletion"   get suggestions from Idris REPL process
+  "idris.suggestMode": "allWords",
+
+  // Show warning for partial functions
+  "idris.warnPartial": false,
+
+  // Show output channel when type-checking is finished
+  "idris.showOutputWhenTypechecking": false,
+
+  // Restart Idris process every N times to avoid memory leaking (wtf?!)
+  "idris.numbersOfContinuousTypechecking": 10,
+
+// end Idris =============================================================
+}

@@ -1,0 +1,82 @@
+# evergreen lang and apps
+
+* Langs
+  - Haskell
+    - GHC 9.2.2
+    - ghcup
+    - cabal
+    - stack
+    - HSL haskell-language-server
+    - haskell-vscode
+  - Clean
+  - Curry
+  - Agda 2.4.2.2
+    - agda-stdlib 1.7
+    - agda-mode-vscode
+    - agda-language-server
+  - Idris
+    (to compile: ChezScheme)
+  - Lean
+    - elan
+  - Coq
+  - Isabelle
+  - NuPRL
+  - Rust
+    - cargo
+    - rust-vscode
+  - OCaml
+    - opam
+  - ML
+    - SML/NJ
+    - Mlton
+    - PolyML
+  - Scheme/Lisp
+    - Racket
+    - ChezScheme
+    - CommonLisp CL
+  - Node
+    - npm
+    - fnm (fast node manager)
+    - yarn
+  - Deno
+  - PHP
+    - composer
+  - Python
+  - Perl
+  - Lua
+    - LuaRocks
+    - MoonScript (transpiles to Lua)
+  - Ruby
+    - gem
+    - rvm
+    - bundler
+  - C
+    - C 99
+  - C++
+    - C++ 2017
+  - Java
+  - JavaVM
+    - Scala
+    - Kotlin
+    - Frege (Haskell on JVM)
+* Tooling
+  - Z3
+  - vscode
+  - build-essentials
+  - msys2, cygwin
+  - everything search
+* Apps
+  - git
+  - emacs
+    - elisp
+    - proof general
+    - haskell-mode
+    - agda2-mode
+    - idris-mode
+  - vim
+    - vimscript
+  - docker
+  - bash
+  - zsh
+  - fish
+

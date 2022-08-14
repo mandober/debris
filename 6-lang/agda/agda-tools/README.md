@@ -1,0 +1,53 @@
+# Agda Tools
+
+https://agda.readthedocs.io/en/latest/tools/index.html
+
+Agda Tools
+- Automatic Proof Search (Auto)
+  - Usage
+  - Limitations
+  - User feedback
+- Command-line options
+  - Command-line options
+  - Command-line and pragma options
+  - Examples
+  - Consistency checking of options used
+- Compilers
+  - Backends
+  - Optimizations
+- Emacs Mode
+  - Menus
+  - Configuration
+  - Keybindings
+  - Unicode input
+  - Background highlighting
+- [Literate Programming](./literate-programming.md)
+  - Literate TeX
+  - Literate reStructuredText
+  - Literate Markdown
+  - Literate Org
+- Generating HTML
+  - Options
+- Generating LaTeX
+  - Known pitfalls and issues
+  - Options
+  - Quicker generation without typechecking
+  - Features
+  - Examples
+- Interface files
+  - Storage
+  - Compilation
+- Library Management
+  - Example: Using the standard library
+  - Library files
+  - The .agda-lib files associated to a given Agda file
+  - Installing libraries
+  - Using a library
+  - Default libraries
+  - Version numbers
+  - Upgrading
+- Performance debugging
+  - Measuring typechecking performance
+  - Measuring run-time performance
+- Search Definitions in Scope
+  - Usage

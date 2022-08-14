@@ -1,0 +1,35 @@
+{
+
+
+  // Toggle bold on some scopes
+  "oneDarkPro.bold": false,
+
+  // Code highlight color, read more [docs](https://binaryify.github.io/OneDark-Pro/#/?id=highlight-color-custom)
+  "oneDarkPro.color": {
+    "chalky": "",
+    "coral": "",
+    "dark": "",
+    "error": "",
+    "fountainBlue": "",
+    "green": "",
+    "invalid": "",
+    "lightDark": "",
+    "lightWhite": "",
+    "malibu": "",
+    "purple": "",
+    "whiskey": "",
+    "deepRed": ""
+  },
+
+  // Switch to different editor theme
+  "oneDarkPro.editorTheme": "One Dark Pro",
+
+  // Toggle italics on some scopes
+  "oneDarkPro.italic": true,
+
+  // Toggle Markdown style
+  "oneDarkPro.markdownStyle": true,
+
+  // Toggle vivid colors
+  "oneDarkPro.vivid": false,
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Vue trial</title>
+</head>
+<body>
+    <!--
+    With vanilla JS binding HTML nodes in JS is a lot of work:
+    to bind an input field's value to a var in JS, so that any change
+    of that input gets instantly reflected in JS, requires going into 
+    the DOM to fetch the current input's value. And to always get the
+    current value also requires setting an event listener to the input's 
+    onChange behaviour. And that only gets us a one-way binding, with the
+    input always being "the source of truth"; one directopn: node -> JS
+    To set up two-way binding such that changes in either the input or the
+    JS variable reflect on each other, demands further work. The Vue makes
+    this simple, providing an easy to set-up two-way bindings.
+    -->
+    
+    <!-- input with id 'input'; it must come before the js -->
+    <input type="text" id="input">
+    
+     <!-- js come after the input -->
+    <script>
+      let message = "vanilla js";
+      // get node with id 'input' and set its value to `message` JS variable
+      document.querySelector("#input").value = message;
+    </script>
+
+</body>
+</html>

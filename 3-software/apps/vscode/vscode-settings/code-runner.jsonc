@@ -1,0 +1,160 @@
+{
+  // Whether to clear previous output before each run.
+  "code-runner.clearPreviousOutput": false,
+
+  // Set the custom command to run.
+  "code-runner.customCommand": "echo Hello",
+
+  // Set the working directory.
+  "code-runner.cwd": "",
+
+  // Set the default language to run.
+  "code-runner.defaultLanguage": "",
+
+  // Whether to enable AppInsights to track user telemetry data.
+  "code-runner.enableAppInsights": true,
+
+  // Set the executor of each language.
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "php": "php",
+    "python": "python -u",
+    "perl": "perl",
+    "perl6": "perl6",
+    "ruby": "ruby",
+    "go": "go run",
+    "lua": "lua",
+    "groovy": "groovy",
+    "powershell": "powershell -ExecutionPolicy ByPass -File",
+    "bat": "cmd /c",
+    "shellscript": "bash",
+    "fsharp": "fsi",
+    "csharp": "scriptcs",
+    "vbscript": "cscript //Nologo",
+    "typescript": "ts-node",
+    "coffeescript": "coffee",
+    "scala": "scala",
+    "swift": "swift",
+    "julia": "julia",
+    "crystal": "crystal",
+    "ocaml": "ocaml",
+    "r": "Rscript",
+    "applescript": "osascript",
+    "clojure": "lein exec",
+    "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    "racket": "racket",
+    "scheme": "csi -script",
+    "ahk": "autohotkey",
+    "autoit": "autoit3",
+    "dart": "dart",
+    "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+    "haskell": "runhaskell",
+    "nim": "nim compile --verbosity:0 --hints:off --run",
+    "lisp": "sbcl --script",
+    "kit": "kitc --run",
+    "v": "v run",
+    "sass": "sass --style expanded",
+    "scss": "scss --style expanded",
+    "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+    "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+  },
+
+  // Set the executor of each file extension.
+  "code-runner.executorMapByFileExtension": {
+    ".vb": "cd $dir && vbc /nologo $fileName && $dir$fileNameWithoutExt",
+    ".vbs": "cscript //Nologo",
+    ".scala": "scala",
+    ".jl": "julia",
+    ".cr": "crystal",
+    ".ml": "ocaml",
+    ".exs": "elixir",
+    ".hx": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    ".rkt": "racket",
+    ".scm": "csi -script",
+    ".ahk": "autohotkey",
+    ".au3": "autoit3",
+    ".kt": "cd $dir && kotlinc $fileName -include-runtime -d $fileNameWithoutExt.jar && java -jar $fileNameWithoutExt.jar",
+    ".kts": "kotlinc -script",
+    ".dart": "dart",
+    ".pas": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    ".pp": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    ".d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+    ".hs": "runhaskell",
+    ".nim": "nim compile --verbosity:0 --hints:off --run",
+    ".csproj": "dotnet run --project",
+    ".fsproj": "dotnet run --project",
+    ".lisp": "sbcl --script",
+    ".kit": "kitc --run",
+    ".v": "v run",
+    ".vsh": "v run",
+    ".sass": "sass --style expanded",
+    ".cu": "cd $dir && nvcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    ".ring": "ring"
+  },
+
+  // Set the executor by glob.
+  "code-runner.executorMapByGlob": {
+    "pom.xml": "cd $dir && mvn clean package"
+  },
+
+  // Whether to use the directory of the file to be executed as the working directory.
+  "code-runner.fileDirectoryAsCwd": false,
+
+  // Whether to ignore selection to always run entire file.
+  "code-runner.ignoreSelection": false,
+
+  // Set the mapping of languageId to file extension.
+  "code-runner.languageIdToFileExtensionMap": {
+    "bat": ".bat",
+    "powershell": ".ps1",
+    "typescript": ".ts"
+  },
+
+  // Whether to preserve focus on code editor after code run is triggered.
+  "code-runner.preserveFocus": true,
+
+  // Whether to respect Shebang to run code.
+  "code-runner.respectShebang": true,
+
+  // Whether to run code in Integrated Terminal.
+  "code-runner.runInTerminal": false,
+
+  // Whether to save all files before running.
+  "code-runner.saveAllFilesBeforeRun": false,
+
+  // Whether to save the current file before running.
+  "code-runner.saveFileBeforeRun": false,
+
+  // Whether to show extra execution message like [Running] ... and [Done] ...
+  "code-runner.showExecutionMessage": true,
+
+  // Whether to show 'Run Code' command in editor context menu.
+  "code-runner.showRunCommandInEditorContextMenu": true,
+
+  // Whether to show 'Run Code' command in explorer context menu.
+  "code-runner.showRunCommandInExplorerContextMenu": true,
+
+  // Whether to show 'Run Code' icon in editor title menu.
+  "code-runner.showRunIconInEditorTitleMenu": true,
+
+  // Whether to show 'Stop code run' icon in the editor title menu when code is running.
+  "code-runner.showStopIconInEditorTitleMenu": true,
+
+  // Temporary file name used in running selected code snippet. When it is set as empty, the file name will be random.
+  "code-runner.temporaryFileName": "tempCodeRunnerFile",
+
+  // For Windows system, replaces the Windows style drive letter in the command with a Unix style root when using a custom shell as the terminal, like Bash or Cgywin. Example: Setting this to '/mnt/' will replace 'C:\path' with '/mnt/c/path'
+  "code-runner.terminalRoot": "",
+
+
+
+}

@@ -1,0 +1,22 @@
+{
+
+  // Enable or Disable linting using default rules
+  "unicodesubsitutions.enableDefaultRules": true,
+
+  // Specify file types to lint.
+  "unicodesubsitutions.enabledLanguageIds": [
+    "*"
+  ],
+
+  // Enable or Disable formatting
+  "unicodesubsitutions.enableFormatting": true,
+
+  // Linting rules for correcting invalid unicode
+  "unicodesubsitutions.rules": [
+    {
+      "invalid": "\\u058A",
+      "valid": "\\u002D",
+      "message": "Armenian hyphen should be a hyphen."
+    }
+  ],
+}

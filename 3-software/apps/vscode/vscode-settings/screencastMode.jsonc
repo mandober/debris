@@ -1,0 +1,29 @@
+{
+  // Controls the font size (in pixels) of the screencast mode keyboard.
+  "screencastMode.fontSize": 56,
+
+  // Controls how long (in milliseconds) the keyboard overlay is shown in screencast mode.
+  "screencastMode.keyboardOverlayTimeout": 800,
+
+  // Controls what is displayed in the keyboard overlay when showing shortcuts.
+  //  - keys: Keys.
+  //  - command: Command title.
+  //  - commandWithGroup: Command title prefixed by its group.
+  //  - commandAndKeys: Command title and keys.
+  //  - commandWithGroupAndKeys: Command title and keys, with the command prefixed by its group.
+  "screencastMode.keyboardShortcutsFormat": "commandAndKeys",
+
+  // Controls the color in hex (#RGB, #RGBA, #RRGGBB or #RRGGBBAA) of the mouse indicator in screencast mode.
+  "screencastMode.mouseIndicatorColor": "#FF0000",
+
+  // Controls the size (in pixels) of the mouse indicator in screencast mode.
+  "screencastMode.mouseIndicatorSize": 20,
+
+  // Only show keyboard shortcuts in screencast mode.
+  "screencastMode.onlyKeyboardShortcuts": false,
+
+  // Controls the vertical offset of the screencast mode overlay from the bottom as a percentage of the workbench height.
+  "screencastMode.verticalOffset": 20,
+
+
+}

@@ -1,0 +1,27 @@
+# Unicode :: Symbol Tables :: Primes
+
+〝AA′AʹAʺA″A‴A‵A‶A‷A⁗A〞A〟A
+
+Point   | Attr     | Name                                              | Glyph
+-------:|----------|---------------------------------------------------|------
+0x301d  | Sd       | REVERSED DOUBLE PRIME QUOTATION MARK              |〝
+0x2032  |          | PRIME                                             | ′
+0x2b9   |          | MODIFIER LETTER PRIME                             | ʹ
+0x2ba   |          | MODIFIER LETTER DOUBLE PRIME                      | ʺ
+0x2033  |          | DOUBLE PRIME                                      | ″
+0x2034  |          | TRIPLE PRIME                                      | ‴
+0x2035  |          | REVERSED PRIME                                    | ‵
+0x2036  |          | REVERSED DOUBLE PRIME                             | ‶
+0x2037  |          | REVERSED TRIPLE PRIME                             | ‷
+0x2057  |          | QUADRUPLE PRIME                                   | ⁗
+0x301e  |          | DOUBLE PRIME QUOTATION MARK                       | 〞
+0x301f  |          | LOW DOUBLE PRIME QUOTATION MARK                   | 〟
+0x22    |          | QUOTATION MARK                                    | "
+0x27    |          | APOSTROPHE                                        | '
+0x60    |          | GRAVE ACCENT                                      | `
+0xb4    |          | ACUTE ACCENT                                      | ´
+
+
+
+p ´ p ″ p ⁗ p ‴ p ‷ p ‶ p ‛ p ‵ p ` p ʹ p ′ p
+'

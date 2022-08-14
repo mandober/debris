@@ -1,0 +1,15 @@
+{
+  // This setting is deprecated in favor of `comments.openView`.
+  // Controls when the comments panel should open.
+  "comments.openPanel": "openOnSessionStartWithComments",
+
+  // Controls when the comments view should open.
+  //  - never: The comments view will never be opened.
+  //  - file: The comments view will open when a file with comments is active.
+  //  - firstFile: If the comments view has not been opened yet during this session it will open the first time during a session that a file with comments is active.
+  "comments.openView": "firstFile",
+
+  // Determines if relative time will be used in comment timestamps (ex. '1 day ago').
+  "comments.useRelativeTime": true,
+
+}

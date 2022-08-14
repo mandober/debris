@@ -1,0 +1,40 @@
+{
+// agda =======================================================================
+
+  // Backend target
+  "agdaMode.backend": "GHC",
+
+  // Connect to Agda Language Server (experimental).
+  "agdaMode.connection.agdaLanguageServer": false,
+
+  // Port number for Agda Language Server (for the ease of development)
+  "agdaMode.connection.agdaLanguageServerPort": 4096,
+
+  // Path to the executable of Agda, automatically inferred when possible. Overwrite to override.
+  "agdaMode.connection.agdaPath": "",
+
+  // Name of the executable of Agda. For searching the path. Overwrite to override.
+  "agdaMode.connection.agdaVersion": "",
+
+  // Command-line options for Agda or Agda Language Server, delimited by space, like you would in terminal, e.g. "--without-K --safe"
+  "agdaMode.connection.commandLineOptions": "",
+
+  // Highlight stuff with theme colors
+  "agdaMode.highlighting.getHighlightWithThemeColors": true,
+
+  // How agda-mode receives highlighting information from Agda. Via either standard input/output or temporary files (which may require frequent disk access).
+  "agdaMode.highlighting.IPC": "Standard input/output",
+
+  // Key for activating Unicode input method
+  "agdaMode.inputMethod.activationKey": "\\",
+
+  // Enable Unicode input method
+  "agdaMode.inputMethod.enable": true,
+
+  // Paths to include (such as agda-stdlib), seperate with comma. Useless after Agda 2.5.0.
+  "agdaMode.libraryPath": "",
+
+  // Where to mount the panel
+  "agdaMode.view.panelMountPosition": "bottom",
+
+}

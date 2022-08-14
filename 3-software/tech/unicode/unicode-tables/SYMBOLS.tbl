@@ -1,0 +1,290 @@
+# Unicode ∷ Table of symbols
+
+
+Ordinal | Attr     | Name                                              | Glyph
+-------:|----------|---------------------------------------------------|------
+0xa1    | Pu       | INVERTED EXCLAMATION MARK                         | ¡
+0xa6    | Pu       | BROKEN BAR                                        | ¦
+0xa7    | Pu       | SECTION SIGN                                      | §
+0xa8    | Pu       | DIAERESIS                                         | ¨
+0xa9    | Pu       | COPYRIGHT SIGN                                    | ©
+0xaa    | Pu       | FEMININE ORDINAL INDICATOR                        | ª
+0xab    | Pu       | LEFT-POINTING DOUBLE ANGLE QUOTATION MARK         | «
+0xac    | Pu       | NOT SIGN                                          | ¬
+0xae    | Pu       | REGISTERED SIGN                                   | ®
+0xaf    | Pu       | MACRON                                            | ¯
+0xb0    | Pu       | DEGREE SIGN                                       | °
+0xb1    | Pu       | PLUS-MINUS SIGN                                   | ±
+0xb9    | Nr       | SUPERSCRIPT ONE                                   | ¹
+0xb2    | Nr       | SUPERSCRIPT TWO                                   | ²
+0xb3    | Nr       | SUPERSCRIPT THREE                                 | ³
+0xbc    | Nr       | VULGAR FRACTION ONE QUARTER                       | ¼
+0xbd    | Nr       | VULGAR FRACTION ONE HALF                          | ½
+0xbe    | Nr       | VULGAR FRACTION THREE QUARTERS                    | ¾
+0xb4    | Pu       | ACUTE ACCENT                                      | ´
+0xb5    | Pu       | MICRO SIGN                                        | µ
+0xb6    | Pu       | PILCROW SIGN                                      | ¶
+0xb7    | Pu       | MIDDLE DOT                                        | ·
+0xb8    | Pu       | CEDILLA                                           | ¸
+0xba    | Pu       | MASCULINE ORDINAL INDICATOR                       | º
+0xbb    | Pu       | RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK        | »
+0xbf    | Pu       | INVERTED QUESTION MARK                            | ¿
+0x28c   | Sf Tf Pa | LATIN SMALL LETTER TURNED V                       | ʌ
+
+
+
+
+Name                                            |0x00000| Glyph | Attr
+------------------------------------------------|-------|-------|-----------
+LATIN CAPITAL LETTER THORN                      | 000de | Þ     | Lc
+LATIN CAPITAL LETTER OPEN O                     | 00186 | Ɔ     | Lc  Tf
+LATIN CAPITAL LETTER REVERSED E                 | 0018e | Ǝ     | Lc  Tf
+LATIN CAPITAL LETTER TURNED M                   | 0019c | Ɯ     | Lc  Tf
+LATIN SMALL   LETTER ETH                        | 000f0 | ð     | Ls
+LATIN SMALL   LETTER THORN                      | 000fe | þ     | Ls
+LATIN SMALL   LETTER TURNED A                   | 00250 | ɐ     | Ip  Tf
+LATIN SMALL   LETTER ALPHA                      | 00251 | ɑ     | Ip
+LATIN SMALL   LETTER TURNED ALPHA               | 00252 | ɒ     | Ip  Tf
+LATIN SMALL   LETTER OPEN O                     | 00254 | ɔ     | Ip  Tf
+LATIN SMALL   LETTER REVERSED E                 | 00258 | ɘ     | Ip  Tf
+LATIN SMALL   LETTER SCHWA                      | 00259 | ə     | Ip  Tf
+LATIN SMALL   LETTER OPEN E                     | 0025b | ɛ     | Ip  Tf
+LATIN SMALL   LETTER REVERSED OPEN E            | 0025c | ɜ     | Ip
+LATIN SMALL   LETTER CLOSED REVERSED OPEN E     | 0025e | ɞ     | Ip
+LATIN SMALL   LETTER DOTLESS J WITH STROKE      | 0025f | ɟ     | Ip
+LATIN SMALL   LETTER SCRIPT G                   | 00261 | ɡ     | Ip
+LATIN SMALL   LETTER GAMMA                      | 00263 | ɣ     | Ip
+LATIN SMALL   LETTER RAMS HORN                  | 00264 | ɤ     | Ip
+LATIN SMALL   LETTER TURNED H                   | 00265 | ɥ     | Ip  Tf
+LATIN SMALL   LETTER I WITH STROKE              | 00268 | ɨ     | Ip
+LATIN SMALL   LETTER L WITH BELT                | 0026c | ɬ     | Ip
+LATIN SMALL   LETTER LEZH                       | 0026e | ɮ     | Ip
+LATIN SMALL   LETTER TURNED M                   | 0026f | ɯ     | Ip  Tf
+LATIN SMALL   LETTER TURNED M WITH LONG LEG     | 00270 | ɰ     | Ip
+LATIN SMALL   LETTER BARRED O                   | 00275 | ɵ     | Ip
+LATIN SMALL   LETTER CLOSED OMEGA               | 00277 | ɷ     | Ip
+LATIN SMALL   LETTER PHI                        | 00278 | ɸ     | Ip  Sf
+LATIN SMALL   LETTER TURNED R                   | 00279 | ɹ     | Ip  Tf
+LATIN SMALL   LETTER TURNED T                   | 00287 | ʇ     | Ip  Tf
+LATIN SMALL   LETTER TURNED V                   | 0028c | ʌ     | Ip  Sf  Tf
+LATIN LETTER SMALL CAPITAL G                    | 00262 | ɢ     | Ip  Sf
+LATIN LETTER SMALL CAPITAL I                    | 0026a | ɪ     | Ip  Sf
+LATIN LETTER SMALL CAPITAL N                    | 00274 | ɴ     | Ip  Sf
+LATIN LETTER SMALL CAPITAL OE                   | 00276 | ɶ     | Ip
+LATIN LETTER SMALL CAPITAL INVERTED R           | 00281 | ʁ     | Ip  Tf
+
+
+Name                                            |0x00000| Glyph | Attr
+------------------------------------------------|-------|-------|-----------
+COPTIC CAPITAL LETTER SAMPI                     | 0x2cc0| Ⳁ     | gr
+COPTIC SMALL LETTER SAMPI                       | 0x2cc1| ⳁ     | gr
+GREEK BETA SYMBOL                               |0x3d0  | ϐ     | gr
+GREEK CAPITAL LETTER ALPHA                      | 00391 | Α     | Gr
+GREEK CAPITAL LETTER ARCHAIC SAMPI              | 0x372 | Ͳ     | gr
+GREEK CAPITAL LETTER BETA                       |0x392  | Β     | gr
+GREEK CAPITAL LETTER CHI                        | 003a7 | Χ     | Gr
+GREEK CAPITAL LETTER DELTA                      |0x394  | Δ     | gr
+GREEK CAPITAL LETTER EPSILON                    |0x395  | Ε     | gr
+GREEK CAPITAL LETTER ETA                        |0x397  | Η     | gr
+GREEK CAPITAL LETTER GAMMA                      |0x393  | Γ     | gr
+GREEK CAPITAL LETTER IOTA                       |0x399  | Ι     | gr
+GREEK CAPITAL LETTER KAPPA                      |0x39a  | Κ     | gr
+GREEK CAPITAL LETTER LAMDA                      |0x39b  | Λ     | gr
+GREEK CAPITAL LETTER MU                         |0x39c  | Μ     | gr
+GREEK CAPITAL LETTER NU                         |0x39d  | Ν     | gr
+GREEK CAPITAL LETTER OMEGA                      |0x3a9  | Ω     | gr
+GREEK CAPITAL LETTER OMICRON                    |0x39f  | Ο     | gr
+GREEK CAPITAL LETTER PHI                        |0x3a6  | Φ     | gr
+GREEK CAPITAL LETTER PI                         |0x3a0  | Π     | gr
+GREEK CAPITAL LETTER PSI                        |0x3a8  | Ψ     | gr
+GREEK CAPITAL LETTER RHO                        |0x3a1  | Ρ     | gr
+GREEK CAPITAL LETTER SIGMA                      |0x3a3  | Σ     | gr
+GREEK CAPITAL LETTER TAU                        |0x3a4  | Τ     | gr
+GREEK CAPITAL LETTER THETA                      |0x398  | Θ     | gr
+GREEK CAPITAL LETTER UPSILON                    |0x3a5  | Υ     | gr
+GREEK CAPITAL LETTER XI                         |0x39e  | Ξ     | gr
+GREEK CAPITAL LETTER ZETA                       |0x396  | Ζ     | gr
+GREEK KAPPA SYMBOL                              |0x3f0  | ϰ     | gr
+GREEK LETTER ARCHAIC KOPPA                      | 0x3d8 | Ϙ     | gr
+GREEK LETTER DIGAMMA                            | 0x3dc | Ϝ     | gr
+GREEK LETTER KOPPA                              | 0x3de | Ϟ     | gr
+GREEK LETTER SAMPI                              | 0x3e0 | Ϡ     | gr
+GREEK LUNATE EPSILON SYMBOL                     |0x3f5  | ϵ     | gr
+GREEK PHI SYMBOL                                |0x3d5  | ϕ     | gr
+GREEK PI SYMBOL                                 |0x3d6  | ϖ     | gr
+GREEK RHO SYMBOL                                |0x3f1  | ϱ     | gr
+GREEK SMALL LETTER ALPHA                        | 003b1 | α     | Gr
+GREEK SMALL LETTER ALPHA WITH TONOS             |0x3ac  | ά     | gr
+GREEK SMALL LETTER ARCHAIC KOPPA                | 0x3d9 | ϙ     | gr
+GREEK SMALL LETTER ARCHAIC SAMPI                | 0x373 | ͳ     | gr
+GREEK SMALL LETTER BETA                         | 003b2 | β     | Gr
+GREEK SMALL LETTER CHI                          | 003c7 | χ     | Gr
+GREEK SMALL LETTER DELTA                        |0x3b4  | δ     | gr
+GREEK SMALL LETTER DIGAMMA                      | 0x3dd | ϝ     | gr
+GREEK SMALL LETTER EPSILON                      | 003b5 | ε     | Gr
+GREEK SMALL LETTER EPSILON WITH TONO            | 003ad | έ     | Gr
+GREEK SMALL LETTER EPSILON WITH TONOS           |0x3ad  | έ     | gr
+GREEK SMALL LETTER ETA                          |0x3b7  | η     | gr
+GREEK SMALL LETTER ETA WITH TONO                | 003ae | ή     | Gr
+GREEK SMALL LETTER ETA WITH TONOS               |0x3ae  | ή     | gr
+GREEK SMALL LETTER FINAL SIGM                   | 003c2 | ς     | Gr
+GREEK SMALL LETTER FINAL SIGMA                  |0x3c2  | ς     | gr
+GREEK SMALL LETTER GAMMA                        |0x3b3  | γ     | gr
+GREEK SMALL LETTER IOTA                         |0x3b9  | ι     | gr
+GREEK SMALL LETTER IOTA WITH TONO               | 003af | ί     | Gr
+GREEK SMALL LETTER KAPPA                        |0x3ba  | κ     | gr
+GREEK SMALL LETTER KOPPA                        | 0x3df | ϟ     | gr
+GREEK SMALL LETTER LAMDA                        |0x3bb  | λ     | gr
+GREEK SMALL LETTER MU                           |0x3bc  | μ     | gr
+GREEK SMALL LETTER NU                           | 003bd | ν     | Gr
+GREEK SMALL LETTER OMEGA                        | 003c9 | ω     | Gr
+GREEK SMALL LETTER OMEGA WITH TONOS             |0x3ce  | ώ     | gr
+GREEK SMALL LETTER OMICRON                      |0x3bf  | ο     | gr
+GREEK SMALL LETTER OMICRON WITH TONO            | 003cc | ό     | Gr
+GREEK SMALL LETTER OMICRON WITH TONOS           |0x3cc  | ό     | gr
+GREEK SMALL LETTER PHI                          |0x3c6  | φ     | gr
+GREEK SMALL LETTER PI                           |0x3c0  | π     | gr
+GREEK SMALL LETTER PSI                          | 003c8 | ψ     | Gr
+GREEK SMALL LETTER RHO                          | 003c1 | ρ     | Gr
+GREEK SMALL LETTER SAMPI                        | 0x3e1 | ϡ     | gr
+GREEK SMALL LETTER SIGMA                        |0x3c3  | σ     | gr
+GREEK SMALL LETTER STIGMA                       |0x3db  | ϛ     | gr
+GREEK SMALL LETTER TAU                          |0x3c4  | τ     | gr
+GREEK SMALL LETTER THETA                        |0x3b8  | θ     | gr
+GREEK SMALL LETTER UPSILON                      |0x3c5  | υ     | gr
+GREEK SMALL LETTER UPSILON WITH TONO            | 003cd | ύ     | Gr
+GREEK SMALL LETTER UPSILON WITH TONOS           |0x3cd  | ύ     | gr
+GREEK SMALL LETTER XI                           |0x3be  | ξ     | gr
+GREEK SMALL LETTER ZETA                         |0x3b6  | ζ     | gr
+GREEK THETA SYMBOL                              |0x3d1  | ϑ     | gr
+GREEK UPSILON WITH HOOK SYMBOL                  |0x3d2  | ϒ     | gr
+MATHEMATICAL BOLD CAPITAL DELTA                 |0x1d6ab| 𝚫     | gr
+MATHEMATICAL BOLD CAPITAL DIGAMMA               |0x1d7ca| 𝟊     | gr
+MATHEMATICAL BOLD CAPITAL GAMMA                 |0x1d6aa| 𝚪     | gr
+MATHEMATICAL BOLD CAPITAL OMEGA                 |0x1d6c0| 𝛀     | gr
+MATHEMATICAL BOLD CAPITAL PHI                   |0x1d6bd| 𝚽     | gr
+MATHEMATICAL BOLD CAPITAL PI                    |0x1d6b7| 𝚷     | gr
+MATHEMATICAL BOLD CAPITAL PSI                   |0x1d6bf| 𝚿     | gr
+MATHEMATICAL BOLD CAPITAL SIGMA                 |0x1d6ba| 𝚺     | gr
+MATHEMATICAL BOLD CAPITAL THETA                 |0x1d6af| 𝚯     | gr
+MATHEMATICAL BOLD PI SYMBOL                     |0x1d6e1| 𝛡     | gr
+MATHEMATICAL BOLD SMALL ALPHA                   |0x1d6c2| 𝛂     | gr
+MATHEMATICAL BOLD SMALL BETA                    |0x1d6c3| 𝛃     | gr
+MATHEMATICAL BOLD SMALL DELTA                   |0x1d6c5| 𝛅     | gr
+MATHEMATICAL BOLD SMALL DIGAMMA                 |0x1d7cb| 𝟋     | gr
+MATHEMATICAL BOLD SMALL ETA                     |0x1d6c8| 𝛈     | gr
+MATHEMATICAL BOLD SMALL GAMMA                   |0x1d6c4| 𝛄     | gr
+MATHEMATICAL BOLD SMALL LAMDA                   |0x1d6cc| 𝛌     | gr
+MATHEMATICAL BOLD SMALL MU                      |0x1d6cd| 𝛍     | gr
+MATHEMATICAL BOLD SMALL OMEGA                   |0x1d6da| 𝛚     | gr
+MATHEMATICAL BOLD SMALL PI                      |0x1d6d1| 𝛑     | gr
+MATHEMATICAL BOLD SMALL PSI                     |0x1d6d9| 𝛙     | gr
+MATHEMATICAL BOLD SMALL RHO                     |0x1d6d2| 𝛒     | gr
+MATHEMATICAL BOLD SMALL SIGMA                   |0x1d6d4| 𝛔     | gr
+MATHEMATICAL ITALIC SMALL EPSILON               |0x1d700| 𝜀     | gr
+MODIFIER LETTER SHELF                           | 002fd | `˽`   | Pu Lm
+MODIFIER LETTER SMALL BETA                      | 01d5d | ᵝ     | Lm
+MODIFIER LETTER SMALL DELTA                     | 01d5f | ᵟ     | Lm
+MODIFIER LETTER SMALL GREEK GAMMA               | 01d5e | ᵞ     | Lm
+MODIFIER LETTER SMALL GREEK PHI                 | 01d60 | ᵠ     | Lm
+MODIFIER LETTER SMALL IOTA                      | 01da5 | ᶥ     | Lm
+MODIFIER LETTER SMALL OPEN E                    | 01d4b | ᵋ     | Lm
+MODIFIER LETTER SMALL THETA                     | 01dbf | ᶿ     | Lm
+MODIFIER LETTER SMALL V WITH HOOK               | 01db9 | ᶹ     | Lm
+PARTIAL DIFFERENTIAL                            |0x2202 | ∂     | gr
+
+
+Name                                            |0x00000| Glyph | Attr
+------------------------------------------------|-------|-------|-----------
+SINGLE LEFT-POINTING ANGLE QUOTATION MARK       | 02039 | ‹     | Lm
+SINGLE RIGHT-POINTING ANGLE QUOTATION MARK      | 0203a | ›     | Lm
+PARTIAL DIFFERENTIAL                            | 02202 | ∂     | Sy
+INCREMENT                                       | 02206 | ∆     | Sy
+MATHEMATICAL BOLD NABLA                         | 1d6c1 | 𝛁     | Sy
+RIGHT ANGLE SUBSTITUTION MARKER                 | 02e00 | ⸀     | Ls Sf Sy
+LEFTWARDS WHITE ARROW WITHIN TRIANGLE ARROWHEAD | 1f894 | 🢔     | Sy
+ELEMENT OF                                      | 02208 | ∈     | Sy  St
+NOT AN ELEMENT OF                               | 02209 | ∉     | Sy  St
+CONTAINS AS MEMBER                              | 0220b | ∋     | Sy  St
+DOES NOT CONTAIN AS MEMBER                      | 0220c | ∌     | Sy  St
+SUBSET   OF  OR EQUAL TO                        | 02286 | ⊆     | Sy  St
+NEITHER A SUBSET   OF NOR EQUAL TO              | 02288 | ⊈     | Sy  St
+SUPERSET OF  OR EQUAL TO                        | 02287 | ⊇     | Sy  St
+NEITHER A SUPERSET OF NOR EQUAL TO              | 02289 | ⊉     | Sy  St
+SQUARE ROOT                                     | 0221a | √     | Sy  Ao
+CUBE   ROOT                                     | 0221b | ∛     | Sy  Ao
+FOURTH ROOT                                     | 0221c | ∜     | Sy  Ao
+SYMBOL FOR BACKSPACE                            | 02408 | ␈     | Sy
+SYMBOL FOR SPACE                                | 02420 | ␠     | Sy
+NO-BREAK SPACE                                  | 000a0 | ` `   | Pu
+MEDIUM MATHEMATICAL SPACE                       | 0205f | ` `   | Pu
+EN SPACE                                        | 02002 | ` `   | Pu
+EM SPACE                                        | 02003 | ` `    Pu
+THREE-PER-EM SPACE                              | 02004 | ` `   | Pu
+FOUR-PER-EM SPACE                               | 02005 | ` `   | Pu
+SIX-PER-EM SPACE                                | 02006 | ` `   | Pu
+FIGURE SPACE                                    | 02007 | ` `   | Pu
+PUNCTUATION SPACE                               | 02008 | ` `   | Pu
+THIN SPACE                                      | 02009 | ` `    | Pu
+HAIR SPACE                                      | 0200a | ` `    | Pu
+ZERO WIDTH SPACE                                | 0200b | `​`    | Pu
+NARROW NO-BREAK SPACE                           | 0202f | ` `    | Pu
+
+Name                                            |0x00000| Glyph | Attr
+------------------------------------------------|-------|-------|-----------
+SMALL COMMA                                     | 0fe50 | ﹐      | Pu Sf
+SMALL IDEOGRAPHIC COMMA                         | 0fe51 | ﹑      | 
+SMALL FULL STOP                                 | 0fe52 | ﹒      | 
+SMALL SEMICOLON                                 | 0fe54 | ﹔      | 
+SMALL COLON                                     | 0fe55 | ﹕      | 
+SMALL QUESTION MARK                             | 0fe56 | ﹖      | 
+SMALL EXCLAMATION MARK                          | 0fe57 | ﹗      | 
+SMALL EM DASH                                   | 0fe58 | ﹘     | 
+SMALL LEFT PARENTHESIS                          | 0fe59 | ﹙      | 
+SMALL RIGHT PARENTHESIS                         | 0fe5a | ﹚      | 
+SMALL LEFT CURLY BRACKET                        | 0fe5b | ﹛      | 
+SMALL RIGHT CURLY BRACKET                       | 0fe5c | ﹜      | 
+SMALL LEFT TORTOISE SHELL BRACKET               | 0fe5d | ﹝      | 
+SMALL RIGHT TORTOISE SHELL BRACKET              | 0fe5e | ﹞      | 
+SMALL NUMBER SIGN                               | 0fe5f | ﹟      | 
+SMALL AMPERSAND                                 | 0fe60 | ﹠      | 
+SMALL ASTERISK                                  | 0fe61 | ﹡      | 
+SMALL PLUS SIGN                                 | 0fe62 | ﹢      | 
+SMALL HYPHEN-MINUS                              | 0fe63 | ﹣      | 
+SMALL LESS-THAN SIGN                            | 0fe64 | ﹤      | 
+SMALL GREATER-THAN SIGN                         | 0fe65 | ﹥      | 
+SMALL EQUALS SIGN                               | 0fe66 | ﹦      | 
+SMALL REVERSE SOLIDUS                           | 0fe68 | ﹨      | 
+SMALL DOLLAR SIGN                               | 0fe69 | ﹩      | 
+SMALL PERCENT SIGN                              | 0fe6a | ﹪      | 
+SMALL COMMERCIAL AT                             | 0fe6b | ﹫      | 
+SMALL REVERSE SOLIDUS                           | 0fe68 | ﹨      | 
+
+Name                                            |0x00000| Glyph | Attr
+------------------------------------------------|-------|-------|-----------
+NORTH EAST POINTING VINE LEAF                   |0x1f65a| 🙚     |
+NORTH WEST POINTING VINE LEAF                   |0x1f658| 🙘     |
+SOUTH WEST POINTING VINE LEAF                   |0x1f659| 🙙     |
+SOUTH EAST POINTING VINE LEAF                   |0x1f65b| 🙛     |
+HEAVY NORTH EAST POINTING VINE LEAF             |0x1f65e| 🙞     |
+HEAVY NORTH WEST POINTING VINE LEAF             |0x1f65c| 🙜     |
+HEAVY SOUTH WEST POINTING VINE LEAF             |0x1f65d| 🙝     |
+HEAVY SOUTH EAST POINTING VINE LEAF             |0x1f65f| 🙟     |
+NORTH EAST POINTING LEAF                        |0x1f652| 🙒     |
+TURNED NORTH EAST POINTING LEAF                 |0x1f656| 🙖     |
+NORTH WEST POINTING LEAF                        |0x1f650| 🙐     |
+SOUTH WEST POINTING LEAF                        |0x1f651| 🙑     |
+SOUTH EAST POINTING LEAF                        |0x1f653| 🙓     |
+TURNED NORTH WEST POINTING LEAF                 |0x1f654| 🙔     |
+TURNED SOUTH WEST POINTING LEAF                 |0x1f655| 🙕     |
+TURNED SOUTH EAST POINTING LEAF                 |0x1f657| 🙗     |
+HEAVY NORTH EAST POINTING BUD                   |0x1f666| 🙦     |
+HEAVY NORTH WEST POINTING BUD                   |0x1f664| 🙤     |
+HEAVY SOUTH EAST POINTING BUD                   |0x1f667| 🙧     |
+NORTH EAST POINTING BUD                         |0x1f662| 🙢     |
+NORTH WEST POINTING BUD                         |0x1f660| 🙠     |
+SOUTH WEST POINTING BUD                         |0x1f661| 🙡     |
+SOUTH EAST POINTING BUD                         |0x1f663| 🙣     |
+
+
+⧾ ⧿ ⧺ ⧻ ⦂ ⦀ 

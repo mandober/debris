@@ -1,0 +1,72 @@
+# Unicode :: Symbols :: Asterisk
+
+Name                                            | Hex     | Glyph
+------------------------------------------------|---------|------
+ASTERISK                                        | 0x0002a | *
+ARABIC FIVE POINTED STAR                        | 0x0066d | ٭
+REFERENCE MARK                                  | 0x0203b | ※
+ASTERISM                                        | 0x02042 | ⁂
+LOW ASTERISK                                    | 0x0204e | ⁎
+TWO ASTERISKS ALIGNED VERTICALLY                | 0x02051 | ⁑
+FLOWER PUNCTUATION MARK                         | 0x02055 | ⁕
+COMBINING ASTERISK ABOVE                        | 0x020f0 | a⃰
+ASTERISK OPERATOR                               | 0x02217 | ∗
+CIRCLED ASTERISK OPERATOR                       | 0x0229b | ⊛
+STAR OPERATOR                                   | 0x022c6 | ⋆
+APL FUNCTIONAL SYMBOL CIRCLE STAR               | 0x0235f | ⍟
+BLACK STAR                                      | 0x02605 | ★
+FOUR TEARDROP-SPOKED ASTERISK                   | 0x02722 | ✢
+FOUR BALLOON-SPOKED ASTERISK                    | 0x02723 | ✣
+HEAVY FOUR BALLOON-SPOKED ASTERISK              | 0x02724 | ✤
+FOUR CLUB-SPOKED ASTERISK                       | 0x02725 | ✥
+CIRCLED WHITE STAR                              | 0x0272a | ✪
+HEAVY ASTERISK                                  | 0x02731 | ✱
+OPEN CENTRE ASTERISK                            | 0x02732 | ✲
+EIGHT SPOKED ASTERISK                           | 0x02733 | ✳
+SIXTEEN POINTED ASTERISK                        | 0x0273a | ✺
+TEARDROP-SPOKED ASTERISK                        | 0x0273b | ✻
+OPEN CENTRE TEARDROP-SPOKED ASTERISK            | 0x0273c | ✼
+HEAVY TEARDROP-SPOKED ASTERISK                  | 0x0273d | ✽
+CIRCLED OPEN CENTRE EIGHT POINTED STAR          | 0x02742 | ❂
+HEAVY TEARDROP-SPOKED PINWHEEL ASTERISK         | 0x02743 | ❃
+BALLOON-SPOKED ASTERISK                         | 0x02749 | ❉
+EIGHT TEARDROP-SPOKED PROPELLER ASTERISK        | 0x0274a | ❊
+HEAVY EIGHT TEARDROP-SPOKED PROPELLER ASTERISK  | 0x0274b | ❋
+SQUARED ASTERISK                                | 0x029c6 | ⧆
+N-ARY CIRCLED DOT OPERATOR                      | 0x02a00 | ⨀
+N-ARY CIRCLED PLUS OPERATOR                     | 0x02a01 | ⨁
+N-ARY CIRCLED TIMES OPERATOR                    | 0x02a02 | ⨂
+EQUALS WITH ASTERISK                            | 0x02a6e | ⩮
+SLAVONIC ASTERISK                               | 0x0a673 | ꙳
+SMALL ASTERISK                                  | 0x0fe61 | ﹡
+FULLWIDTH ASTERISK                              | 0x0ff0a | ＊
+MUSICAL SYMBOL PEDAL UP MARK                    | 0x1d1af | 𝆯
+LIGHT FIVE SPOKED ASTERISK                      | 0x1f7af | 🞯
+MEDIUM FIVE SPOKED ASTERISK                     | 0x1f7b0 | 🞰
+BOLD FIVE SPOKED ASTERISK                       | 0x1f7b1 | 🞱
+HEAVY FIVE SPOKED ASTERISK                      | 0x1f7b2 | 🞲
+VERY HEAVY FIVE SPOKED ASTERISK                 | 0x1f7b3 | 🞳
+EXTREMELY HEAVY FIVE SPOKED ASTERISK            | 0x1f7b4 | 🞴
+LIGHT SIX SPOKED ASTERISK                       | 0x1f7b5 | 🞵
+MEDIUM SIX SPOKED ASTERISK                      | 0x1f7b6 | 🞶
+BOLD SIX SPOKED ASTERISK                        | 0x1f7b7 | 🞷
+HEAVY SIX SPOKED ASTERISK                       | 0x1f7b8 | 🞸
+VERY HEAVY SIX SPOKED ASTERISK                  | 0x1f7b9 | 🞹
+EXTREMELY HEAVY SIX SPOKED ASTERISK             | 0x1f7ba | 🞺
+LIGHT EIGHT SPOKED ASTERISK                     | 0x1f7bb | 🞻
+MEDIUM EIGHT SPOKED ASTERISK                    | 0x1f7bc | 🞼
+BOLD EIGHT SPOKED ASTERISK                      | 0x1f7bd | 🞽
+HEAVY EIGHT SPOKED ASTERISK                     | 0x1f7be | 🞾
+VERY HEAVY EIGHT SPOKED ASTERISK                | 0x1f7bf | 🞿
+TAG ASTERISK                                    | 0xe002a | <*>
+
+󠀪
+
+- `✳✺✻✼✽❃❉❊❋٭※⁕⁂⁎⁑⃰∗⊛✢✣✤✥✱✲`
+- `⧆⩮꙳﹡＊𝆯🞯🞰🞱🞲🞳🞴🞵🞶🞷🞸🞹🞺🞻🞼🞽🞾🞿`
+
+
+## Refs
+
+- https://en.wikipedia.org/wiki/Asterisk
+- https://en.wikipedia.org/wiki/Star_(glyph)

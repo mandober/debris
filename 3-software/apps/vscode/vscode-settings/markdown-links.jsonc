@@ -1,0 +1,7 @@
+{
+  // Names of the default files that acts as directory listings.
+  "markdown-dir.defaultFileNames": [
+    "README.md"
+  ],
+
+}

@@ -1,0 +1,40 @@
+{
+
+
+  // Format tables even if lines have less columns than header.
+  "markdown-table-formatter.allowEmptyLines": true,
+
+  // Defines the default justification for tables that have only a "-" or no colon on the formatting line
+  "markdown-table-formatter.defaultTableJustification": "Left",
+
+  // Changes how the delimiter row is presented.
+  "markdown-table-formatter.delimiterRowPadding": "None",
+
+  // Enable or disable Markdown Table Formatter
+  "markdown-table-formatter.enable": true,
+
+  // Enable or disable Markdown Table Formatter Sort Lenses
+  "markdown-table-formatter.enableSort": true,
+
+  // Calculates the column sizes based on all tables on the document.
+  "markdown-table-formatter.globalColumnSizes": "Disabled",
+
+  // Keep first and last pipes "|" in table formatting.
+  "markdown-table-formatter.keepFirstAndLastPipes": true,
+
+  // Do not extend last column to more than your editor's wordWrapColumn setting.
+  "markdown-table-formatter.limitLastColumnWidth": false,
+
+  // File language grammar that will be considered Markdown by this package (comma-separated). 
+  // Run "Markdown Table Formatter: Enable For Current Scope" command to add current editor grammar to this setting.
+  "markdown-table-formatter.markdownGrammarScopes": [
+    "markdown"
+  ],
+
+  // Remove colons from the format line if the justification is the same as default
+  "markdown-table-formatter.removeColonsIfSameAsDefault": false,
+
+  // How many spaces between left and right of each column content
+  "markdown-table-formatter.spacePadding": 1,
+
+}
