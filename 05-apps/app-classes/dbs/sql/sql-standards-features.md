@@ -1,0 +1,433 @@
+# SQL standard feature codes
+
+Supported Features, SQL Conformance
+
+- https://haskell-beam.github.io/beam/about/compatibility/
+- https://www.postgres-xl.org/documentation/features-sql-standard.html
+- https://renenyffenegger.ch/notes/misc/ISO/9075/features/index
+- https://www.postgresql.org/docs/8.0/unsupported-features-sql-standard.html
+- https://docs.oracle.com/cd/E18283_01/server.112/e17118/ap_standard_sql004.htm
+
+
+The relevant SQL standards for thefeatures below
+- SQL-92
+- SQL:1999
+- SQL:2003
+- SQL:2008
+- SQL:2011
+
+Other
+- SQL Plus
+- PL/SQL
+
+
+Because not all the standards are publicly accessible, features from various documents available online are pieced together here.
+
+The table of below summarizes the features defined in each SQL standard.
+
+SQL standard features:
+- Bxxx
+  - B011 Embedded Ada
+  - B012 Embedded C
+  - B013 Embedded COBOL
+  - B014 Embedded FORTRAN
+  - B015 Embedded MUMPS
+  - B016 Embedded Pascal
+  - B017 Embedded PL/I
+  - B021 Direct SQL
+  - B031 Basic dynamic SQL
+  - B032 Extended dynamic SQL
+  - B033 Untyped SQL-invoked function arguments
+  - B034 Dynamic specification of cursor attributes
+  - B035 Non-extended descriptor names
+  - B051 Enhanced execution rights
+  - B111 Module language Ada
+  - B112 Module language C
+  - B113 Module language COBOL
+  - B114 Module language Fortran
+  - B115 Module language MUMPS
+  - B116 Module language Pascal
+  - B117 Module language PL/I
+  - B121 Routine language Ada
+  - B122 Routine language C
+  - B123 Routine language COBOL
+  - B124 Routine language Fortran
+  - B125 Routine language MUMPS
+  - B126 Routine language Pascal
+  - B127 Routine language PL/I
+  - B128 Routine language SQL
+  - B211 Module language Ada: VARCHAR and NUMERIC support
+  - B221 Routine language Ada: VARCHAR and NUMERIC support
+- Exxx
+  - E011 - Numeric data types
+    - E011-01 INTEGER and SMALLINT data types
+    - E011-02 REAL, DOUBLE PRECISION, FLOAT
+    - E011-03 DECIMAL and NUMERIC data types
+    - E011-04 Arithmetic operators
+    - E011-05 Numeric comparison
+    - E011-06 Implicit casting among numeric data types
+  - E021 Character string types
+    - E021-01 CHARACTER data type
+    - E021-02 CHARACTER VARYING data type
+    - E021-03 Character literals
+    - E021-04 CHARACTER_LENGTH function
+    - E021-05 OCTET_LENGTH function
+    - E021-06 SUBSTRING function
+    - E021-07 Character concatenation
+    - E021-08 UPPER and LOWER functions
+    - E021-09 TRIM function
+    - E021-10 Implicit casting among string types
+    - E021-11 POSITION function
+    - E021-12 Character comparison
+  - E031 Identifiers
+    - E031-01 Delimited identifiers
+    - E031-02 Lower case identifiers
+    - E031-03 Trailing underscore
+  - E051 Basic query specification
+    - E051-01 SELECT DISTINCT
+    - E051-02 GROUP BY clause
+    - E051-04 GROUP BY can contain columns not in SELECT
+    - E051-05 Select list items can be renamed
+    - E051-06 HAVING clause
+    - E051-07 Qualified * in select list
+    - E051-08 Correlation names in FROM
+    - E051-09 Rename columns in the FROM clause
+  - E061 Basic predicates and search conditions
+    - E061-01 Comparison predicate
+    - E061-02 BETWEEN predicate
+    - E061-03 IN predicate with list of values
+    - E061-04 LIKE predicate
+    - E061-05 LIKE predicate ESCAPE clause
+    - E061-06 NULL predicate
+    - E061-07 Quantified comparison predicate
+    - E051-08 EXISTS predicate
+    - E061-09 Subqueries in comparison predicate
+    - E061-11 Subqueries in IN predicate
+    - E061-12 Subqueries in quantified comparison predicate
+    - E061-13 Correlated subqueries
+    - E061-14 Search condition
+  - E071 Basic query expressions
+    - E071-01 UNION DISTINCT table operator
+    - E071-02 UNION ALL table operator
+    - E071-03 EXCEPT DISTINCT table operator
+    - E071-05 Columns combined via operators need not have same type
+    - E071-06 Table operators in subqueries
+  - E081 Basic privileges
+    - E091 Set functions
+    - E091-01 AVG
+    - E091-02 COUNT
+    - E091-03 MAX
+    - E091-04 MIN
+    - E091-05 SUM
+    - E091-06 ALL quantifier
+    - E091-07 DISTINCT quantifier
+  - E091 Set functions
+    - E091-01 AVG
+    - E091-02 COUNT
+    - E091-03 MAX
+    - E091-04 MIN
+    - E091-05 SUM
+    - E091-06 ALL quantifier
+    - E091-07 DISTINCT quantifier
+  - E101 Basic data manipulation
+    - E101-01 INSERT statement
+    - E101-03 Searched UPDATE
+    - E101-04 Searched DELETE
+  - E111 Single row SELECT statement
+  - E121 Basic cursor support
+  - E131 Null value support
+  - E141 Basic integrity constraints
+    - E141-01 NOT NULL constraints
+    - E141-02 UNIQUE constraints of NOT NULL columns
+    - E141-03 PRIMARY KEY constraints
+    - E141-04 Basic FOREIGN KEY constraints
+    - E141-06 CHECK constraints
+    - E141-07 Column defaults
+    - E141-08 NOT NULL inferred on PRIMARY KEY
+    - E141-10 Names in a foreign key can be specified in any order
+  - E151 Transaction support
+  - E152 SET TRANSACTION statement
+  - E153 Updatable queries with subqueries
+  - E161 SQL comments with double minus
+  - E171 SQLSTATE support
+  - E182 Host language binding
+- Fxxx
+  - F031 Basic schema manipulation
+    - F031-01 CREATE TABLE for persistent base tables
+    - F031-02 CREATE VIEW statement
+    - F031-03 GRANT statement
+    - F031-04 ALTER TABLE statement: ADD COLUMN clause
+    - F031-13 DROP TABLE statement: RESTRICT clause
+    - F031-16 DROP VIEW statement: RESTRICT clause
+    - F031-19 REVOKE statement: RESTRICT clause
+  - F032 CASCADE drop behavior
+  - F033 ALTER TABLE statement: DROP COLUMN clause
+  - F034 Extended REVOKE statement
+  - F041 Basic joined table
+    - F041-01 Inner join
+    - F041-02 INNER keyword
+    - F041-03 LEFT OUTER JOIN
+    - F041-04 RIGHT OUTER JOIN
+    - F041-05 Outer joins can be nested
+    - F041-07 The inner table in outer join can be used in inner join
+    - F041-08 All comparison operators in JOIN
+  - F051 Basic date and time
+    - F051-01 DATE data type
+    - F051-02 TIME data type
+    - F051-03 TIMESTAMP datatype
+    - F051-04 Comparison predicate on time types
+    - F051-05 Explicit cast between date-time types and string
+    - F051-06 CURRENT_DATE
+    - F051-07 LOCALTIME
+    - F051-08 LOCALTIMESTAMP
+  - F081 UNION and EXCEPT in views
+  - F111 Isolation levels other than SERIALIZABLE
+  - F121 Basic diagnostics mangement
+  - F122 Extended diagnostics management
+  - F123 All diagnostics
+  - F131 Grouped operations
+  - F171 Multiple schemas per user
+  - F191 Referential delete actions
+  - F181 Multiple module support
+  - F200 TRUNCATE TABLE statement
+  - F201 CAST function
+  - F202 TRUNCATE TABLE: identity column restart option
+  - F221 Explicit defaults
+  - F222 INSERT statement: DEFAULT VALUES clause
+  - F251 Domain support
+  - F261 CASE expression	
+    - F261-01 Simple CASE
+    - F261-02 Searched CASE
+    - F261-03 NULLIF
+    - F261-04 COALESCE
+  - F262 Extended CASE expression
+  - F263 Comma-separater predicates in simple CASE expression
+  - F271 Compound character literals
+  - F281 LIKE enhancements
+  - F291 UNIQUE predicate
+  - F301 CORRESPONDING in query expressions
+  - F302 INTERSECT table operator
+    - F302-01 INTERSECT DISTINCT table operator
+    - F302-02 INTERSET ALL table operator
+  - F304 EXCEPT ALL table operator
+  - F311 Schema definition statement
+  - F312 MERGE statement
+  - F313 Enhanced MERGE statement
+  - F314 MERGE statement with DELETE branch
+  - F321 User authorization
+  - F361 Subprogram support
+  - F381 Extended schema manipulation
+  - F382 Alter column data type
+  - F384 Drop identity property clause
+  - F385 Drop column generation expression clause
+  - F386 Set identity column generation clause
+  - F391 Long identifiers
+  - F392 Unicode escapes in identifiers
+  - F393 Unicode escapes in literals
+  - F394 Optional normal form specification
+  - F401 Extended joined table
+  - F402 Named column joins for LOBs, arrays, and multisets
+  - F403 Partitioned join tables
+  - F411 Time zone specification
+  - F421 National character
+  - F431 Read-only scrollable cursors
+  - F441 Extended set function support
+  - F442 Mixed column references in set functions
+  - F451 Character set definition
+  - F461 Named character sets
+  - F491 Constraint management
+  - F492 Optional table constraint enforcement
+  - F521 Assertions
+  - F531 Temporary tables
+  - F481 Expanded NULL predicate
+  - F555 Enhanced seconds precision
+  - F561 Full value expressions
+  - F571 Truth value tests
+  - F591 Derived tables
+  - F611 Indicator data types
+  - F641 Row and table constructors
+  - F651 Catalog name qualifiers
+  - F661 Simple tables
+  - F671 Subqueries in CHECK constraints
+  - F672 Retrospective CHECK constraints
+  - F690 Collation support
+  - F692 Enhanced collation support
+  - F693 SQL-session and client module collations
+  - F695 Translation support
+  - F701 Referential update actions
+  - F711 ALTER domain
+  - F721 Deferrable constraints
+  - F731 INSERT column privileges
+  - F741 Referential MATCH type
+  - F751 View CHECK enhancements
+  - F761 Session management
+  - F762 CURRENT_CATALOG
+  - F763 CURRENT_SCHEMA
+  - F812 Basic flagging
+  - F841 LIKE_REGEX predicate
+  - F842 OCCURENCES_REGEX function
+  - F843 POSITION_REGEX function
+  - F844 SUBSTRING_REGEX function
+  - F845 TRANSLATE_REGEX function
+  - F846 Octet support in regular expression operators
+  - F847 Nonconstant regular expression
+  - F850 Top-level in
+  - F851 in subqueries
+  - F852 Top-level in views
+  - F855 Nested in
+  - F856 Nested in
+  - F857 Top-level in
+  - F858 in subqueries
+  - F859 Top-level in subqueries
+  - *F860 dynamic in
+  - *F861 Top-level in
+  - F862 in subqueries
+  - F863 Nested in
+  - F864 Top-level in views
+  - F865 dynamic in
+  - F866 FETCH FIRST clause: PERCENT option
+  - F867 FETCH FIRST clause: WITH TIES option
+- Rxxx
+  - R010 Row pattern recognition: FROM clause
+  - R020 Row pattern recognition: WINDOW clause
+  - R030 Row pattern recognition: full aggregate support
+- Sxxx
+  - S011 Distinct data types
+  - S023 Basic structured types
+  - S024 Enhanced structured types
+  - S025 Final structured types
+  - S026 Self-referencing structured types
+  - S027 Create method by specific method name
+  - S028 Permutable UDT options list
+  - S041 Basic reference types
+  - S043 Enhanced reference types
+  - S051 Create table of type
+  - S071 SQL paths in function and type name resolution
+  - S081 Subtables
+  - S091 Basic array support
+  - S092 Arrays of user-defined types
+  - S094 Arrays of reference types
+  - S095 Array constructors by query
+  - S096 Optional array bounds
+  - S097 Array element assignment
+  - S098 ARRAY_AGG
+  - S111 ONLY in query expressions
+  - S151 Type predicate
+  - S161 Subtype treatment
+  - S162 Subtype treatment for references
+  - S201 SQL-invoked routines on arrays
+  - S202 SQL-invoked routines on multisets
+  - S211 User-defined cast functions
+  - S231 Structured type locators
+  - S232 Array locators
+  - S233 Multiset locators
+  - S241 Transform functions
+  - S242 Alter transform statement
+  - S251 User-defined orderings
+  - S261 Specific type method
+  - S271 Basic multiset support
+  - S272 Multisets of user-defined types
+  - S274 Multisets reference types
+  - S275 Advanced multiset support
+  - S281 Nested collection types
+  - S291 Unique constraint on entire row
+  - S301 Enhanced UNNEST
+  - S401 Distinct types based on array types
+  - S402 Distinct types based on distinct types
+  - S403 ARRAY_MAX_CARDINALITY
+  - S404 TRIM_ARRAY
+- Txxx
+  - T021 BINARY and VARBINARY data types
+  - T022 Advanced support for BINARY and VARBINARY data types
+  - T023 Compound binary literals
+  - T024 Spaces in binary literals
+  - T031 Boolean data type
+  - T041 Basic LOB data type support
+  - T042 Extended LOB data type support
+  - T043 Multiplier T
+  - T044 Multiplier P
+  - T051 Row types
+  - T061 UCS support
+  - T071 BIGINT data type
+  - T101 Enhanced nullability detection
+  - T111 Updatable joins, unions, and columns
+  - T121 WITH (excluding recursive) in query expression
+  - T122 WITH (excluding recursive) in subquery
+  - T131 Recursive query
+  - T132 Recursive query in subquery
+  - T141 SIMILAR predicate
+  - T151 DISTINCT predicate
+  - T152 DISTINCT predicate with negation
+  - T171 LIKE clause in table definition
+  - T172 AS subquery clause in table definition
+  - T173 Extended LIKE clause in table definition
+  - T174 Identity columns
+  - T175 Generated columns
+  - T176 Sequence generator support
+  - T177 Sequence generator support: simple restart option
+  - T178 Identity columns: simple restart option
+  - T180 System-versioned tables
+  - T181 Application-time period tables
+  - T191 Referential action RESTART
+  - T201 Comparable data types for referential constraints
+  - T211 Basic trigger capability
+  - T212 Enhanced trigger capability
+  - T213 INSTEAD OF triggers
+  - T231 Sensitive cursors
+  - T241 START TRANSACTION statement
+  - T251 SET TRANSACTION option: LOCAL option
+  - T261 Chained transactions
+  - T271 Savepoints
+  - T272 Enhanced savepoint management
+  - T281 SELECT privilege with column granularity
+  - T285 Enhanced derived column names
+  - T301 Functional dependencies
+  - T312 OVERLAY function
+  - T321 Basic SQL-invoked routines
+  - T323 Explicit security for external routines
+  - T324 Explicit security for SQL routines
+  - T325 Qualified SQL parameter references
+  - T326 Table functions
+  - T331 Basic roles
+  - T332 Extended roles
+  - T341 Overleading of SQL-invoked functions and procodures
+  - T351 Bracketed comments
+  - T431 Extended grouping capabalities
+  - T432 Nested and concatenated GROUPING SETs
+  - T433 Multiargument GROUPING function
+  - T434 GROUP BY DISTINCT
+  - T441 ABS and MOD functions
+  - T461 Symmetric BETWEEN predicate
+  - T471 Result sets return value
+  - T472 DESCRIBE CURSOR
+  - T491 LATERAL derived table
+  - T495 Combined data change and retrieval
+  - T501 Enhanced EXISTS predicate
+  - T502 Period predicates
+  - T511 Transaction counts
+  - T521 Nested arguments in CALL statement
+  - T522 Default values for IN parameters of SQL-invoked procs
+  - T551 Optional key words for DEFAULT syntax
+  - T561 Holdable locators
+  - T571 Array-returning SQL-invoked functions
+  - T572 Multiset-returning SQL-invoked functions
+  - T581 Regular expression substring function
+  - T591 UNIQUE constraints of possible NULL columns
+  - T601 Local cursor references
+  - T611 Elementary OLAP operations
+  - T612 Advanced OLAP operations
+  - T613 Sampling
+  - T614 NTILE function
+  - T615 LEAD and LAG function
+  - T616 Null treatment for LEAD and LAG functions
+  - T617 FIRST_VALUE and LAST_VALUE function
+  - T618 NTH_VALUE function
+  - T619 Nested window function
+  - T620 WINDOW clause: GROUPS option
+  - T621 Enhanced numeric functions
+  - T641 Multiple column assignment
+  - T651 SQL-schema statements in SQL routines
+  - T652 SQL-dynamic statements in SQL routines
+  - T653 SQL-schema statements in external routines
+  - T654 SQL-dynamic statements in external routines
+  - T655 Cyclically dependent routines

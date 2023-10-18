@@ -1,0 +1,172 @@
+{
+    "JS: console.log": {
+        "description": "console.log",
+        "prefix": ["con", "log"],
+        "body": [
+            //"console.log('${TM_SELECTED_TEXT}');",
+            "console.log(",
+                "\t'\\n',",
+                "\t$0, '\\n',",
+                //"${TM_CURRENT_LINE/(.*)/$1/}",
+                "\t'\\n',",
+                "\t'\\n',",
+            ")"
+        ]
+    }
+    ,
+    "JS: import Prelude": {
+        "description": "prelude.js import",
+        "prefix": "imp",
+        "body": [
+            "import ${1:prelude} from '../lib/$1.js'",
+            "$0"
+        ]
+    }
+    ,
+    "JS: import node module": {
+        "description": "node module import",
+        "prefix": "import",
+        "body": [
+            "import ${1:fs} from '$1'",
+            "$0"
+        ]
+    }
+    ,
+    "JS: function define export": {
+        "description": "fn def and export",
+        "prefix": ["exp", "cons"],
+        "body": [
+            "const ${1:g} = ${2:f} => ([${3:x}, ...${4:xs}]) => ",
+            "\t$3 === ${5:undefined}",
+            "\t\t? []",
+            "\t\t: [$2($3), ...$2($4)]",
+            ";",
+            "\n\nexport default $1",
+            "$0"
+        ]
+    }
+    ,
+    "JS: separator": {
+        "description": "separator",
+        "prefix": ["se","// ="],
+        "body": [
+            "// ============================================================================",
+            "$0"
+        ]
+    }
+
+}
+
+
+/*
+    "test: vars": {
+        "prefix": "ttt",
+        "description": "import node module",
+        "body": [
+            "TM_CURRENT_LINE: ${12:TM_CURRENT_LINE}",
+            "var: $1",
+            "var: ${1}",
+            "var: ${1/re/format|text/opts}",
+
+            "${1}",
+            "import ${1:text} from ${1:text} and ${1}",
+            "${2|fs,crypto} from (${2:TM_SELECTED_TEXT});",
+            "${2}",
+            "${1:ident ${1:ident ${1:ident}}}",
+            "${TM_SELECTED_TEXT}",
+            "${1}",
+            "",
+            "${3}",
+
+            "${10:CLIPBOARD}",
+            "${11:TM_SELECTED_TEXT}",
+            "${12:TM_CURRENT_LINE}",
+            "${13:TM_CURRENT_WORD}",
+
+            "${14:TM_SELECTED_TEXT/(.*)\\..+$/$1/}",
+            "${15:TM_SELECTED_TEXT/(.*)\\..+$/$1:/capitalize}",
+
+            "$0"
+        ]
+    }
+*/
+
+
+
+/*
+Each snippet is defined under a snippet name and has a prefix, body and description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+$1, $2 for tab stops, $0 for the final cursor position, and
+${1:label}, ${2:another} for placeholders.
+Placeholders with the same ids are connected.
+
+Examples:
+=========
+{
+    "log to console": {
+        "scope": "javascript,typescript",
+        "prefix": ["cl"],
+        "description": "global scope example snippet",
+        "body": [
+            "console.log('$1');",
+            "$0"
+        ]
+    }
+    ,
+    "examples": {
+        "prefix": ["aaa", "bbb"],
+        "description": "example snippet",
+        "body": [
+            "$1",
+            "$0",
+        ]
+    }
+    ,
+    "Haskell: filepath to mod name": {
+        "prefix": "imp",
+        "description": "file to mod",
+        "body": [
+           "${1:${TM_FILEPATH/.*\\\\fpj\\\\(.+)\\\\(.+)\\.js$/${1:/capitalize}.${2:/capitalize}/gm}}",
+            "\n\n$0",
+        ]
+    }
+
+}
+
+
+
+Old snippets:
+=============
+{
+    "For Loop": {
+        "prefix": "for",
+        "body": [
+            "for (let ${1:i} = 0, ${2:len} = ${3:arr}.length; ${1:i} < ${2:len}; ${1:i}++) {",
+            "\tlet ${4:el} = ${3:arr}[${1:i}];",
+            "\t$0",
+            "}"
+        ],
+        "description": "for loop"
+    }
+    ,
+    "Symbol iterator": {
+        "prefix": ["iterator", "sym"],
+        "body": [
+            "[Symbol.iterator](){",
+                "\tlet ${1:keys} = Object.keys(this),",
+                    "\t\t${2:i} = 0;",
+                "\treturn {",
+                    "\t\tnext: function () {",
+                        "\t\t\treturn {",
+                            "\t\t\t\tvalue: ${1:keys}[${2:i}],",
+                            "\t\t\t\tdone: ${2:i}++ >= ${1:keys}.length",
+                    "\t\t};",
+                "\t}",
+            "}",
+            "$0"
+        ],
+        "description": "Symbol.iterator"
+    }
+    ,
+
+}
+*/

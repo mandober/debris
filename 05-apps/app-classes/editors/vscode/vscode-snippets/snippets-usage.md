@@ -1,0 +1,336 @@
+# vscode :: snippets
+
+VSCode snippets appear in IntelliSense `Ctrl+Space` mixed with other suggestions, and in a dedicated snippet picker (*Insert Snippet* in Palette).
+
+To enable tab-completion and inserting of snippets:
+  "editor.tabCompletion": "on"
+
+The snippet syntax follows the **TextMate snippet syntax**, but DOES NOT SUPPORT `interpolated shell code` and the use of `\u` switch.
+
+Escape dollar and tick chars to remove their 'special-ness'.
+
+
+{
+  "insert-block-comment": {
+    "description": "Insert sensitive block comment",
+    "scope": "html",
+    "prefix": ["block", "comment"],
+    "body": [
+      "${BLOCK_COMMENT_START}",
+      "$0",
+      "${BLOCK_COMMENT_END}",
+    ]
+  }
+}
+
+    {
+
+        "#region": {
+            "prefix": "#",
+            "body": [
+            "//#region ",
+            "${TM_SELECTED_TEXT}",
+            "//#endregion "
+            ],
+            "description": "Fold region"
+        }
+    }
+
+
+
+
+
+## BNF GRAMMAR
+
+any         := tabstop
+             | placeholder
+             | choice
+             | variable
+             | text
+
+tabstop     := '$' int
+             | '${' int '}'
+             | '${' int  transform '}'
+
+placeholder := '${' int ':' any '}'
+
+choice      := '${' int '|' text (',' text)* '|}'
+
+variable    := '$' var
+             | '${' var '}'
+             | '${' var ':' any '}'
+             | '${' var transform '}'
+
+transform   := '/' regex '/' (format | text)+ '/' regoptions
+
+format      := '$'  int                                     $1
+             | '${' int                  '}'                ${1}
+             | '${' int ':' textcase     '}'                ${1:/pascalcase}
+             |
+             | '${' int ':?' if ':' else '}'        ${1:?ifPart:elsePart}
+             | '${' int ':+' if          '}'        ${1:+ifPart}
+             | '${' int ':-' else        '}'        ${1:-elsePart}
+             | '${' int ':'  else        '}'        ${1:elsePart}
+
+textcase    := '/upcase'                                    ${1:/upcase}
+             | '/downcase'                                  ${1:/downcase}
+             | '/capitalize'                                ${1:/capitalize}
+             | '/camelcase'                                 ${1:/camelcase}
+             | '/pascalcase'                                ${1:/pascalcase}
+
+text        := .*
+var         := [_a-zA-Z][_a-zA-Z0-9]*
+int         := [0-9]+
+regex       := JavaScript Regular Expression value  (ctor-string)
+
+regoptions (JS regexp options):
+    g   Global (throughout the string) search
+    m   Multi-line search
+    i   Case-insensitive search
+    s   Allows dot to match newline characters
+    d   Generate indices for substring matches
+    u   Unicode: treat pattern as a sequence of unicode code points
+    y   Perform a sticky search that matches starting
+        at the current position in the target string
+
+
+===============================================================================
+Variables
+===============================================================================
+TM_CURRENT_LINE     contents of the current line
+TM_CURRENT_WORD     contents of the word under cursor (or ϵ)
+TM_LINE_INDEX       0-index based line number
+TM_LINE_NUMBER      1-index based line number
+TM_FILENAME         filename of the current doc
+TM_FILENAME_BASE    filename of the current doc without ext
+TM_DIRECTORY        dir of the current doc
+TM_FILEPATH         filepath of the current doc
+RELATIVE_FILEPATH   relative (to ws or dir) filepath of the current doc
+WORKSPACE_NAME      name of the ws or folder
+WORKSPACE_FOLDER    path of the ws or folder
+TM_SELECTED_TEXT    currently selected text (or ϵ)
+CLIPBOARD           contents of your clipboard
+RANDOM              6 random Base-10 digits
+RANDOM_HEX          6 random Base-16 digits
+UUID                UUID v.4
+LINE_COMMENT
+BLOCK_COMMENT_END
+BLOCK_COMMENT_START
+===============================================================================
+
+
+
+format:
+    $1
+    ${1}
+    ${1:/pascalcase}
+    ${1:?ifpart:elsepart}
+    ${1:+ifpart} … ${1:-elsepart}
+    ${1:+ifpart} … ${1:elsepart}
+
+/regex/${1:+ifpart}${1:-elsepart}/regoptions
+
+
+EXAMPLES: WORKING!
+==================
+
+TM_FILENAME_BASE: abc-mod.js => AbcMod
+  "${1:${TM_FILENAME_BASE/^(.)|-(.)/${1:/upcase}${2:/upcase}/gm}}",
+
+TM_FILEPATH: T:\code\js\fpj\src\abc.js => abc.mod
+  "${1:${TM_FILEPATH/.*\\\\fpj\\\\(.+)\\\\(.+)\\.js$/${1}.${2}/gm}}",
+
+TM_FILEPATH: T:\code\js\fpj\src\abc.js => abc.mod
+  "${1:${TM_FILEPATH/.*\\\\fpj\\\\(.+)\\\\(.+)\\.js$/${1:/capitalize}.${2:/capitalize}/gm}}",
+
+TM_FILEPATH: /home/ivan/code/haskell/into-haskell/src/Expo/Lists.hs
+into Expo.List
+  "${1:${TM_FILEPATH/.*?\\\\/src\\\\/(.+)\\\\/(.+).hs$/$1.$2/gm}}",
+
+Prepend
+  "prepended ${TM_SELECTED_TEXT/^.+?$/${0}/g} appended",
+
+${TM_FILEPATH/
+    .*?\\\\/(?:src|std|test)\\\\/(.+)\\\\/(.+).hs$
+    /$1.$2
+    /gm
+
+}
+
+
+
+EXAMPLES: unchecked
+===================
+inserts the capitalized name of the current file without ext:
+"${TM_FILENAME/(.*)\\..+$/$1:/capitalize}"
+
+"${TM_FILENAME/(.*)\\..+$/$1/}"
+
+"${TM_FILENAME/^(.)|(?:-(.))|(\\.js)/${1:/upcase}${2:/upcase}/g}"
+"${TM_FILENAME_BASE/([A-Z][a-z]+)([A-Z][a-z]+$)?/$1-$2/g}",
+"${1:${TM_FILENAME_BASE/^(.)|-(.)/${1:/upcase}${2:/upcase}/gm}}",
+"impl ${TM_FILENAME/(.*)\\..+$/${1}}",
+"${TM_SELECTED_TEXT/(\\w+(?:\\W+\\w+){,7})\\W*(.+)?/${1(?2:…)}/g}",
+
+
+
+
+GLOBAL SNIPPETS
+===============================================================================
+A snippet has: name, prefix (trigger), body, desc (optional).
+
+Snippet elements:
+- tabstop (1..10):              ${1}
+  - last tabstop:               ${0}
+- placeholder (tabstop+text):   ${1:label}
+  - nested placeholder:         ${1:live ${2:text}}
+- choice:                       ${1|sh,bash,zsh,ksh|}
+- variables:                    $CLIPBOARD
+  - var+text                    ${CLIPBOARD:default}
+  - var+regexp:                 ${TM_FILENAME/(.*)\\..+$/$1/}
+
+TABSTOPS
+========
+- cursor stops, navigate with TAB and Shift-TAB
+- format: "$1" or "${2}"
+- "$0" marks the final cursor position
+- tabstops with the same ID are synced (useful with labels)
+
+PLACEHOLDERS
+============
+- PH are tabstops with labels default insert text
+- a label is the text (usually an identifier) that will be inserted in the code
+- on insert, the text is selected for easy discarding
+- examples: "${1:defaultLabel}"
+- nested: "${1:literal ${2:stringy}}"
+- even: "${1:identical ${1:identical}}"
+
+
+CHOICE
+======
+- drop-down menu is presented to select one item
+- "${1|sh,bash,zsh,ksh|}"
+
+
+VARIABLES
+=========
+    - format: "${<var-name>:<default-value>}"
+    - format alt:
+      "$<var-name>"
+      "${<var-name>}"
+      "${<var-name>:<defaultValue>}"
+      <defaultValue> is a variable's default value
+      Expand and insert the value of a variable: "${<var-name>}"
+    + If variable is undefined, <var-name> is inserted as a text literal
+    - If variable is unset: <defaultValue> default value or empty string
+
+
+PREDEFINED VARIABLES
+--------------------
+    TM_SELECTED_TEXT    selected text (or the empty string)
+    TM_CURRENT_LINE     contents of the current line
+    TM_CURRENT_WORD     contents of word under cursor (or empty string)
+    CLIPBOARD           clipboard contents
+    TM_FILENAME_BASE    filename of current document without ext
+    TM_FILENAME         filename of current document
+    TM_FILEPATH         full path of current document
+    TM_DIRECTORY        dir of current document
+    RELATIVE_FILEPATH   rel (to open workspace) filepath of current doc
+    WORKSPACE_NAME      name of the opened workspace or folder
+    TM_LINE_INDEX       line number (0-index)
+    TM_LINE_NUMBER      line number (1-index)
+
+
+Exmaples:
+    TM_FILENAME_BASE:   index
+    TM_FILENAME:        index.js
+    TM_FILEPATH:        T:\code\js\javascript\fpj\src\index.js
+    TM_DIRECTORY:       T:\code\js\javascript\fpj\src
+    RELATIVE_FILEPATH:
+        ${RELATIVE_FILEPATH/[\\/]/./g}
+        Replace each '/' with '.'
+
+    "hs module2": {
+        "prefix": "mod",
+        "description": "hs: Module2",
+        "body": [
+            "module ${RELATIVE_FILEPATH/.*?\\/(?:src|std|test)\\/(.+)\\/(.+)\\/(.+).hs$/$1.$2.$3/g} () where",
+            "-- :lo ${RELATIVE_FILEPATH}",
+            "\n\n$0",
+        ]
+    },
+
+
+
+Date and time
+-------------
+    CURRENT_YEAR                4 digit year:               2020
+    CURRENT_YEAR_SHORT          year's last two digits:     20
+    CURRENT_MONTH               month as two digits:        02
+    CURRENT_MONTH_NAME          month full name:            July
+    CURRENT_MONTH_NAME_SHORT    3-letters month name:       Jul
+    CURRENT_DATE                day:                        21
+    CURRENT_DAY_NAME            day name:                   Monday
+    CURRENT_DAY_NAME_SHORT      day short:                  Mon
+    CURRENT_HOUR                  hour (24h):                 23
+    CURRENT_MINUTE                minute:                     22
+    CURRENT_SECOND                second:                     59
+    CURRENT_SECONDS_UNIX        seconds since Unix epoch
+
+    ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}
+
+
+Comments
+--------
+  For inserting line or block comments, honoring the current language:
+  BLOCK_COMMENT_START
+  BLOCK_COMMENT_END
+  LINE_COMMENT
+
+
+
+
+
+
+OLD SNIPPETS
+===============================================================================
+
+{
+    "log to console": {
+        "scope": "javascript,typescript",
+        "prefix": ["cl"],
+        "body": [
+            "console.log('$1');",
+            "$0"
+        ],
+    "description": "Log output to console"
+    },
+
+
+    "console.log around text": {
+        "scope": "javascript,typescript",
+        "prefix": ["co", "log"],
+        "body": [
+            //"console.log('$TM_CURRENT_LINE');",
+            "$0console.log(",
+                //"\n\t",
+                //"$1"
+                //"${TM_CURRENT_LINE/(.*)/$1/}",
+            ");"
+        ],
+    "description": "Wrap line with a console.log call"
+    },
+
+
+    "For Loop": {
+        "prefix": ["for","for-const"],
+        "body": [
+          "for (const ${2:element} of ${1:array}) {",
+          "\t$0",
+          "}"
+        ],
+        "description": "A for loop."
+    },
+
+}
+*/

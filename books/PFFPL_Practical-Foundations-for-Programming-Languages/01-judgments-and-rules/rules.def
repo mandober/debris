@@ -1,0 +1,128 @@
+# RULES
+
+An inductive definition of a judgment form consists of a collection of rules of inference which have the form
+```hs
+J₁ … Jₖ
+-------
+  J
+```
+in which `J` and `J₁ … Jₖ` are all judgments of the form being defined.
+
+
+```hs
+-- | NATS
+
+--------------                    (2.2a)
+  zero : nat
+
+   a : nat
+--------------                    (2.2b)
+succ(a) : nat
+
+
+-- | TREES
+
+------------                      (2.3a)
+empty : tree
+
+a₁ : tree    a₂ : tree
+-----------------------           (2.3b)
+node(a₁, a₂) : tree
+
+
+-- | EQUALITY
+
+-------------                     (2.4a)
+zero is zero
+
+    a is b
+-------------------               (2.4b)
+succ(a) is succ(b)
+
+
+-- | The principle of rule induction
+J a₁ … J aₖ
+-----------
+   J a
+```
+
+
+When specialized to rules (2.2), the principle of rule induction states that to show `P(a)` whenever `a nat`, it is enough to show:
+1. P(zero)
+2. forall a. P(a) ⇒ P(succ(a))
+
+The sufficiency of these conditions is THE PRINCIPLE OF MATHEMATICAL INDUCTION.
+
+Rule induction for rules (2.3) states that to show `P(a)` whenever `a tree`, it is enough to show:
+1. P(empty)
+2. forall a1 a2. P(a1) ∧ P(a2) ⇒ P(node(a1;a2))
+
+The sufficiency of these conditions is THE PRINCIPLE OF TREE INDUCTION.
+
+Predecessor: 
+>Lemma 2.1. `succ(a) : nat ⇒ a : nat`
+
+Equality, as defined by rules (2.4) is reflexive: 
+>Lemma 2.2. `a : nat ⇒ a = a`
+
+The successor operation is injective: 
+>Lemma 2.3. `succ(a1) = succ(a2) ⇒ a1 = a2`
+
+
+The rules that constitute a simultaneous inductive definition of the judgments `a even` and `a odd`:
+
+```hs
+-------------       (2.8a)
+zero even
+
+b odd
+-------------       (2.8b)
+succ(b) even
+
+a even
+-------------       (2.8c)
+succ(a) odd
+```
+
+The principle of rule induction for these rules states that to show simultaneously that `P(a)` whenever `a even`, and `Q(b)` whenever `b odd`, it is enough to show the following:
+1. P(zero)
+2. Q(b) ⇒ P(succ(b))
+3. P(a) ⇒ Q(succ(a))
+
+
+The definition of addition on naturals as the relation `sum(a;b;c)`, with the intended meaning that `c` is the sum of `a` and `b`:
+
+```hs
+b nat
+---------------------- (2.9a)
+sum(zero;b;b)
+
+
+sum(a;b;c)
+---------------------- (2.9b)
+sum(succ(a);b;succ(c))
+```
+
+>(Theorem 2.4) For every `a nat` and `b nat`, there exists a unique `c nat` such that `sum(a,b,c)`, ie. such that the relation `S(a,b,c)` holds.
+
+The structural properties of derivability ensure that derivability is stronger than admissibility:
+
+>(Theorem 3.2) If `Γ |=ʀ J` then `Γ |-ʀ J`.
+
+*Admissibility judgment* enjoys the same structural properties as derivability and hence is a form of hypothetical judgment:
+- Reflexivity:    `J|=ʀ J`
+- Weakening:      `Γ|=ʀ J ==> Γ,K|=ʀ J`
+- Transitivity: `Γ,K|=ʀ J  ⋀  Γ|=ʀ K ==> Γ|=ʀ J`
+
+>(Theorem 3.3) Admissibility judgment `Γ |=r J` enjoys the structural properties of entailment.
+
+
+A **hypothetical inductive definition** consists of a set of hypothetical rules of the following form:
+
+```hs
+Γ Γ₁ |- J₁ … Γ Γₙ |- Jₙ
+------------------------ (3.9)
+          Γ J
+```
+
+The hypotheses `Γ` are the global hypotheses of the rule, and the hypotheses `Γᵢ` are the local hypotheses of the ith premise of the rule.

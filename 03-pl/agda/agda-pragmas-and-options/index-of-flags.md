@@ -1,0 +1,59 @@
+# Index of options and flags
+
+- --allow-exec
+- --allow-incomplete-matches
+- --allow-unsolved-metas
+- --call-by-name
+- --cohesion (infective)
+- --confluence-check
+- --copatterns
+- --cubical (jointly-infective with --erased-cubical), implies: --cubical-compatible, --without-K
+- --cubical-compatible (mostly-coinfective)
+- --cumulativity (infective)
+- --double-check
+- --erase-record-parameters
+- --erased-cubical (jointly-infective with --cubical)
+- --erased-matches (infective)
+- --erasure (infective)
+- --exact-split
+- --experimental-irrelevance
+- --flat-split (infective)
+- --guarded (infective)
+- --hidden-argument-puns
+- --infer-absurd-clauses
+- --injective-type-constructors
+- --instance-search-depth
+- --inversion-max-depth
+- --irrelevant-projections
+- --keep-covering-clauses
+- --level-universe (coinfective)
+- --local-confluence-check
+- --lossy-unification
+- --no-auto-inline
+- --no-eta-equality
+- --no-fast-reduce
+- --no-forcing
+- --no-guardedness (coinfective)
+- --no-import-sorts
+- --no-load-primitives
+- --no-pattern-matching
+- --no-positivity-check
+- --no-projection-like
+- --no-sized-types (coinfective)
+- --no-termination-check
+- --no-unicode
+- --no-universe-polymorphism (coinfective)
+- --omega-in-omega
+- --overlapping-instances
+- --prop (infective)
+- --qualified-instances
+- --rewriting
+- --rewriting (infective)
+- --safe (coinfective)
+- --save-metas
+- --syntactic-equality
+- --termination-depth
+- --two-level (infective)
+- --type-in-type
+- --warning
+- --without-K (coinfective)

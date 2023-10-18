@@ -1,0 +1,3 @@
+# TypeScript 5.1
+
+https://devblogs.microsoft.com/typescript/announcing-typescript-5-1/

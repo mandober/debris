@@ -1,3 +1,0 @@
-# Philosophy
-
-Philosophy (φ)

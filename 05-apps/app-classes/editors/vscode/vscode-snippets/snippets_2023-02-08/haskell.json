@@ -1,0 +1,305 @@
+{
+  "import-many": {
+      "prefix": "import",
+      "body": [
+          "import Data.Kind",
+          "import Data.Function",
+
+          "import Data.Bool",
+          "import Data.Char",
+          "import Data.Bits",
+          "import Data.Binary",
+          "import Data.List",
+          "import Data.Tuple",
+          "import Data.Maybe",
+          "import Data.Either",
+          "import Data.Text",
+          "import Data.String",
+          "import Data.ByteString",
+          "import Data.Ix",
+          "import Data.Eq",
+          "import Data.Ord",
+
+          "import Data.Monoid",
+          "import Data.Semigroup",
+          "import Data.Groupoid",
+          "import Data.Semigroupoid",
+
+          "import Data.Traversable",
+          "import Data.Foldable",
+          "import Data.Bifoldable",
+          "import Data.Bifunctor",
+          "import Data.Functor",
+          "import Data.Profunctor",
+
+          "import Data.Int",
+          "import Data.Word",
+          "import Data.Complex",
+          "import Data.Ratio",
+          "import Data.Fixed",
+
+          "import Data.Coerce",
+          "import Data.Data",
+          "import Data.Typeable",
+          "import Data.Tagged",
+          "import Data.Default",
+          "import Data.Dynamic",
+          "import Data.Proxy",
+          "import Data.Time",
+
+          "import Data.IORef",
+          "import Data.STRef",
+          "import Data.StateVar",
+
+          "import Data.Singletons",
+          "import Data.Some",
+          "import Data.Dependent.Sum",
+          "import Data.Unique",
+          "import Data.Isomorphism",
+
+          "import Data.DList",
+          "import Data.Graph",
+          "import Data.Hashable",
+          "import Data.HashSet",
+          "import Data.IntMap",
+          "import Data.HashMap.Lazy",
+          "import Data.Tree",
+          "import Data.Sequence",
+          "import Data.Vector",
+
+          "import Data.Set (Set)",
+          "import Data.Set qualified as S",
+
+          "import Data.Map (Map)",
+          "import Data.Map qualified as M",
+
+          "import Data.Array (Array)",
+          "import Data.Array qualified as A",
+
+          "import Control.Applicative",
+          "import Control.Arrow",
+          "import Control.Category",
+          "import Control.Comonad",
+          "import Control.Concurrent",
+          "import Control.Exception",
+          "import Control.Lens",
+
+          "import Control.Monad",
+          "import Control.Monad.IO.Class",
+          "import Control.Monad.Base",
+          "import Control.Monad.Fix",
+          "import Control.Monad.Catch",
+          "import Control.Monad.Fail",
+          "import Control.Monad.ST",
+          "import Control.Monad.STM",
+          "import Control.Monad.Zip",
+
+          "-- import Control.Monad.RWS",
+          "-- import Control.Monad.Cont",
+          "-- import Control.Monad.List",
+          "-- import Control.Monad.State",
+          "-- import Control.Monad.Except",
+          "-- import Control.Monad.Random",
+          "-- import Control.Monad.Reader",
+          "-- import Control.Monad.Writer",
+          "-- import Control.Monad.Identity",
+
+          "import Control.Monad.Trans",
+          "import Control.Monad.Trans.RWS",
+          "import Control.Monad.Trans.Cont",
+          "import Control.Monad.Trans.List",
+          "import Control.Monad.Trans.Maybe",
+          "import Control.Monad.Trans.State",
+          "import Control.Monad.Trans.Except",
+          "import Control.Monad.Trans.Random",
+          "import Control.Monad.Trans.Reader",
+          "import Control.Monad.Trans.Select",
+          "import Control.Monad.Trans.Writer",
+          "import Control.Monad.Trans.Identity",
+
+          "import System.IO",
+          "import System.Random",
+          "import System.Timeout",
+          "import System.Process",
+          "import System.FilePaths",
+          "import System.Directory",
+          "import System.Environment",
+      ]
+  },
+  "moduleSimpleN": {
+    "description": "module simple N",
+    "prefix": "mod",
+    "body": [
+        "-- {-# LANGUAGE OverloadedLists #-}",
+        "-- {-# LANGUAGE OverloadedStrings #-}\n",
+
+        "module ${TM_FILEPATH/.*?\\\\/(?:src|lib|std|test)\\\\/(.+)\\\\/(.+).hs$/$1.$2/gm} () where",
+          "-- :load ${RELATIVE_FILEPATH}\n",
+        "import Data.Kind",
+        "import Data.Function\n",
+        "-- import Data.Char",
+        "-- import Data.Maybe",
+        "-- import Data.List\n",
+
+        "-- import Data.Set (Set)",
+        "-- import Data.Set qualified as S",
+
+        "-- import Data.Map (Map)",
+        "-- import Data.Map qualified as M",
+
+        "-- import Data.Array (Array)",
+        "-- import Data.Array qualified as A",
+
+        "-- ----------------------------------------------------------------------------",
+        "-- ${TM_FILENAME_BASE}",
+        "-- ----------------------------------------------------------------------------",
+        "${BLOCK_COMMENT_START}",
+        "$1",
+        "${BLOCK_COMMENT_END}",
+        "$0",
+      ]
+  },
+  "moduleSimple3": {
+      "description": "module simple 3",
+      "prefix": "mod",
+      "body": [
+          "{-# LANGUAGE OverloadedLists #-}\n",
+          "module ${TM_FILEPATH/.*?\\\\/(?:src|std|test|lib)\\\\/(.+)\\\\/(.+).hs$/$1.$2/gm} () where",
+            "-- :load ${RELATIVE_FILEPATH}",
+          "import Data.Kind",
+          "import Data.Char",
+          "import Data.List",
+          "import Data.Maybe",
+          "import Data.Function\n",
+          "import Data.Map (Map)",
+          "import Data.Map qualified as M\n",
+          "import Data.Set (Set)",
+          "import Data.Set qualified as S\n",
+          "-- ----------------------------------------------------------------------------",
+          "-- ${TM_FILENAME_BASE}",
+          "-- ----------------------------------------------------------------------------",
+          "${BLOCK_COMMENT_START}",
+          "$1",
+          "${BLOCK_COMMENT_END}",
+          "$0",
+      ]
+  },
+  "moduleN": {
+      "description": "module imports N",
+      "prefix": "module",
+      "body": [
+          "-- ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
+          "{-# LANGUAGE OverloadedLists          #-}",
+          "{-# LANGUAGE ConstraintKinds          #-}",
+          "{-# LANGUAGE DataKinds                #-}",
+          "{-# LANGUAGE DeriveDataTypeable       #-}",
+          "{-# LANGUAGE EmptyCase                #-}",
+          "{-# LANGUAGE FlexibleInstances        #-}",
+          "{-# LANGUAGE FunctionalDependencies   #-}",
+          "{-# LANGUAGE GADTs                    #-}",
+          "{-# LANGUAGE LambdaCase               #-}",
+          "{-# LANGUAGE PolyKinds                #-}",
+          "{-# LANGUAGE RankNTypes               #-}",
+          "{-# LANGUAGE ScopedTypeVariables      #-}",
+          "{-# LANGUAGE StandaloneDeriving       #-}",
+          "{-# LANGUAGE StandaloneKindSignatures #-}",
+          "{-# LANGUAGE TypeFamilies             #-}",
+          "{-# LANGUAGE UndecidableInstances     #-}\n",
+
+          "module ${TM_FILEPATH/.*?\\\\/(?:src|lib|std|test)\\\\/(.+)\\\\/(.+).hs$/$1.$2/gm} () where",
+            "-- :load ${RELATIVE_FILEPATH}\n",
+          "import Data.Kind",
+          "import Data.Char",
+          "import Data.List",
+          "import Data.Maybe",
+          "import Data.Function\n",
+          "import Data.Map (Map)",
+          "import Data.Map qualified as M\n",
+          "import Data.Set (Set)",
+          "import Data.Set qualified as S\n",
+
+          "-- ----------------------------------------------------------------------------",
+          "-- ${TM_FILENAME_BASE}",
+          "-- ----------------------------------------------------------------------------",
+          "${BLOCK_COMMENT_START}",
+          "$1",
+          "${BLOCK_COMMENT_END}",
+          "$0",
+      ]
+  },
+  "module3": {
+      "description": "module-3",
+      "prefix": ["lib", "mod", "mod3", "module"],
+      "body": [
+          "-- ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
+          "module ${RELATIVE_FILEPATH/lib\\/(.+?)\\/(.+?)\\.hs$/$1.$2/g} () where",
+            "-- :load ${RELATIVE_FILEPATH}\n",
+          "-- ----------------------------------------------------------------------------",
+          "-- ${TM_FILENAME_BASE}",
+          "-- ----------------------------------------------------------------------------",
+          "$0",
+      ]
+  },
+  "deriving": {
+      "prefix": "deriving",
+      "body": [
+          "deriving (${1:Show}${2:, Read}${3:, Eq}${4:, Ord}${5:, Bounded}${6:, Enum})",
+          "\n$0"
+      ]
+  },
+  "deriving Show" : {
+      "prefix": "deriving",
+      "body": [
+          "deriving Show",
+          "\n$0"
+      ]
+  },
+  "separator main": {
+      "prefix": "separ",
+      "body": [
+          "-- ----------------------------------------------------------------------------"
+      ]
+  },
+  "functor instance": {
+      "description": "Functor instance",
+      "prefix": "instance",
+      "body": [
+          "instance Functor (${f}) where",
+          "\tfmap :: (a -> b) -> ${f} a -> ${f} b",
+          "\tfmap f k = ${0:undefined}"
+      ]
+  },
+  "case expression": {
+      "description": "Case expression",
+      "prefix": "case",
+      "body": [
+          "case ${var} of",
+          "\t${alt:Just a} -> ${body}",
+          "\t${otehrwise:_} -> ${remaining}"
+      ],
+  },
+  "newtype declaration": {
+      "prefix": "newtype",
+      "body": [
+          "newtype ${n} ${t} = ${n} { un${n} :: ${t} $0 }"
+      ]
+  },
+  "foldr definition": {
+      "prefix": "foldr",
+      "body": [
+          "-- | foldr (^) 1 [2,3] -- 8",
+          "foldr :: (a -> b -> b) -> b -> [a] -> b",
+          "foldr f d []     = d",
+          "foldr f d (x:xs) = f x (foldr f d xs)",
+      ]
+  },
+  "foldl definition": {
+      "prefix": "foldl",
+      "body": [
+          "-- | foldl (^) 1 [2,3] -- 1",
+          "foldl :: (b -> a -> b) -> b -> [a] -> b",
+          "foldl f d []     = d",
+          "foldl f d (x:xs) = foldl f (f d x) xs",
+      ]
+  }
+}

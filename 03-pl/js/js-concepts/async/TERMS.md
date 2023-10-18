@@ -1,0 +1,65 @@
+# JS :: Concepts :: Asynchronous programming
+
+- synchronous programming
+- synchronous functions 
+- asynchronous programming
+- asynchronous functions
+- promises
+- Browser, Node.js
+  - multi-threading
+- JS engine
+  - single-threaded
+  - Call stack (1 thread 1 call stack)
+- Web APIs (C++/Rust API in Node)
+  - Timers API
+    - setTimeout()
+    - setInterval()
+  - DOM API
+  - Worker API
+  - fetch
+- Event loop
+  - ⟳ main loop
+  - Callback queue
+    - onClick
+    - onScroll
+    - onMouseover
+  - Task queue (detour from ⟳)
+    - (macro) task
+    - setTimeout()
+    - setInterval()
+  - Render queue
+    - rAF
+    - Render steps (detour from ⟳)
+      - Style calculation (calculating element CSS)
+      - Layout (creating a render tree, calculating element positions)
+      - Paint (creating the actual pixel data)
+    - microtasks
+      - promises
+      - queueMicrotask()
+- dynamic imports
+- callback
+- callback-based asynchrony
+- promises
+- async/await
+- generators
+- coroutines
+- CSP?
+- rendering tasks (browser only, not Node.js)
+- `requestANimationFrame` (rAF) (browser only, not Node.js)
+- blocking vs non-blocking
+- synchrony, synchronous
+- asynchrony, asynchronous
+- single-threaded
+- multi-threaded
+- UI, UX
+- concurrency
+- parallelism
+- screen (monitor) refresh rate, avg. 60Hz
+- repaint rate, 60 frames-per-second
+- 1 browser cycle = 16.6̇  ms vs 1 CPU cycle = 0.3 ns (CPU @3.3 GHz)
+- 1 browser cycle = 16,600,000 ns = 16,600,000 ⨯ 3 = 49,800,000 CPU cycles. 
+  Some of these 50,000,000 CPU cycles are granted to browser so it can complete the tasks required to prepare the next renderiong frame, as well as any additional computation, if the CPU permits.
+- V8 JS engine
+- JS engine sees
+  - call stack
+  - heap

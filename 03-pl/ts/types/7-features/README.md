@@ -1,0 +1,21 @@
+# TS :: Types :: Type system features
+
+- branded types
+- immutable types
+- interface
+- patterns
+- pattern matching
+- type ctors
+- type functions
+- return type
+- type annotation
+- type inference
+- type placeholder
+- type compatibility
+- unit types
+- singleton types
+- assignability
+- opaque types
+- nominal types
+- tagged types
+- tagged union

@@ -1,0 +1,12 @@
+{
+  "insert-block-comment": {
+    "description": "Insert lang-sensitive block comment",
+    "scope": "html",
+    "prefix": ["block", "comment"],
+    "body": [
+      "${BLOCK_COMMENT_START}",
+      "$0",
+      "${BLOCK_COMMENT_END}",
+    ]
+  }
+}

@@ -1,0 +1,220 @@
+/*
+Rust snippets
+Each snippet is defined under a snippet name and has prefix, body and desc.
+The prefix triggers the snippet, the body will be expanded and inserted.
+Tabstops:
+    $1, $2, ...
+    $0 is for final cursor position.
+    Tabstops with the same num are in sync.
+Placeholders:
+    are tabstops with values, ${1:label}
+    Placeholders with the same ids are connected.
+    Nested: ${1:another ${2:placeholder}}
+Choice/Select:
+    ${1|one,two,three|}
+Variables:
+    $name or ${name:default} inserts value of variable
+    When not set, its DEFAULT or EMPTY STRING is inserted.
+    When not defined, the VAR NAME is inserted (var transformed into pholder).
+
+  ? TM_SELECTED_TEXT            selected text or the empty string
+  ? TM_CURRENT_LINE             contents of current line
+  ? TM_CURRENT_WORD             contents of word under cursor or empty string
+    TM_LINE_INDEX               zero-index based line number
+    TM_LINE_NUMBER              one-index based line number
+    TM_FILENAME                 filename of current document
+    TM_FILENAME_BASE            filename of current document without ext
+    TM_DIRECTORY                dir of current document
+    TM_FILEPATH                 full path of current document
+    CLIPBOARD                   clipboard contents
+Date and time:
+    CURRENT_YEAR                year: 2018
+    CURRENT_YEAR_SHORT          year's last two digits: 18
+    CURRENT_MONTH               month as two digits: 02
+    CURRENT_MONTH_NAME          month full name: July
+    CURRENT_MONTH_NAME_SHORT    month 3-letters short name: Sep
+    CURRENT_DATE                day: 21
+    CURRENT_DAY_NAME            day name: Monday
+    CURRENT_DAY_NAME_SHORT      day short: Mon
+    CURRENT_HOUR   	            hour (24h): 23
+    CURRENT_MINUTE 	            minute: 22
+    CURRENT_SECOND 	            second: 59
+
+EXAMPLES:
+    inserts the capitalized name of the current file without ext:
+    ${TM_FILENAME/(.*)\\..+$/$1/}
+    ${TM_FILENAME/(.*)\\..+$/$1:/capitalize}
+
+
+Snippets grammar:
+any         ::= tabstop | placeholder | choice | variable | text
+tabstop     ::= '$' int | '${' int '}'
+placeholder ::= '${' int ':' any '}'
+choice      ::= '${' int '|' text (',' text)* '|}'
+variable    ::=   '$' var
+                | '${' var }'
+                | '${' var ':' any '}'
+                | '${' var '/' regex '/' (format | text)+ '/' options '}'
+format      ::=   '$' int
+                | '${' int '}'
+                | '${' int ':' '/upcase' | '/downcase' | '/capitalize' '}'
+                | '${' int ':+' if '}'
+                | '${' int ':?' if ':' else '}'
+                | '${' int ':-' else '}' | '${' int ':' else '}'
+
+regex       ::= JavaScript Regular Expression value (ctor-string)
+options     ::= JavaScript Regular Expression option (ctor-options)
+var         ::= [_a-zA-Z] [_a-zA-Z0-9]*
+int         ::= [0-9]+
+text        ::= .*
+
+WORKS:
+"prepended ${TM_SELECTED_TEXT/^.+?$/${0}/g} appended",
+
+DOES NOT WORK:
+"${TM_SELECTED_TEXT/(\\w+(?:\\W+\\w+){,7})\\W*(.+)?/${1(?2:…)}/g}",
+
+"impl ${TM_FILENAME/(.*)\\..+$/${1}}",
+
+
+*/
+
+{
+    "wrap_scope": {
+        "prefix": "force new scope",
+        "description": "Wrap selected with (unsafe) block",
+        "body": [
+            "${1:unsafe}{",
+            "\t${TM_SELECTED_TEXT/^.+?$/$0/}$0",
+            "}",
+        ],
+    },
+
+    "impl_filename": {
+        "prefix": "imp",
+        "description": "impl for current filename",
+        "body": [
+            "impl ${TM_FILENAME/(.*)\\..+$/${1}}",
+            "{",
+                "\tfn ${1:new}() {",
+                "\t\t$0",
+                "\t}",
+            "}"
+        ],
+    },
+
+    "debug_clipboard_var": {
+        "prefix": "pri",
+        "description": "debug clipboard var",
+        "body": [
+            "println!(\"${1:${CLIPBOARD:dflt}}: {:$0#?}\", ${1});",
+        ],
+    },
+    "debug_selected_var": {
+        "prefix": "pri",
+        "description": "debug selected var",
+        "body": [
+            "${TM_SELECTED_TEXT}",
+            "println!(\"${1:${TM_SELECTED_TEXT:$CLIPBOARD}}: {:$0#?}\", ${1});",
+        ],
+    },
+    "match": {
+        "prefix": "mat",
+        "description": "match expression",
+        "body": [
+            "match ${1:${CLIPBOARD:dflt}} {",
+                "\tNone => { }",
+                "\tSome(${2:v}) => { $2$0 }",
+            "}"
+        ],
+    },
+    "pub_fn": {
+        "prefix": "fn",
+        "description": "method",
+        "body": [
+            "${1:pub }fn${2:<T>} ${3:new}(&${4:mut }self${5:, v: T}) -> ${6:Self} {",
+            "  $0",
+            "}"
+        ],
+    },
+    "method": {
+        "prefix": "fn",
+        "description": "method",
+        "body": [
+            "fn ${1:new}(${2:self}) -> ${3:Self} {",
+            "\t$0",
+            "}"
+        ],
+    },
+    "impl_inherent": {
+        "prefix": "imp",
+        "description": "impl with choice",
+        "body": [
+            "impl ${1|Node,NodeId,Storage,List|} {",
+                "\t$0",
+            "}"
+        ],
+    },
+    "struct_and_its_impl": {
+        "prefix": "stru",
+        "description": "struct and its impl",
+        "body": [
+            "struct ${1:type} {",
+                "\t$0",
+            "}",
+            "\n",
+            "impl ${1} {",
+                "\tfn ${3:new}() -> Self {",
+                    "\t\tSelf {",
+                        "\t\t\t",
+                    "\t\t}",
+                "\t}",
+            "}"
+        ],
+    },
+    "hint_trait_index": {
+        "prefix": "Index",
+        "description": "Index trait",
+        "body": [
+            "/*",
+            "pub trait Index<Idx: ?Sized> {",
+                "\ttype Output: ?Sized;",
+                "\tfn index(&self, index: Idx) -> &Self::Output;",
+            "}",
+            "pub trait IndexMut<Idx: ?Sized>: Index<Idx> {",
+            "\tfn index_mut(&mut self, index: Idx) -> &mut Self::Output;",
+            "}",
+            "*/",
+        ],
+    },
+    "hint_trait_deref": {
+        "prefix": "Deref",
+        "description": "Deref trait",
+        "body": [
+            "/*",
+            "pub trait Deref {",
+                "\ttype Target: ?Sized;",
+                "\tfn deref(&self) -> &Self::Target;",
+            "}\n",
+            "pub trait DerefMut: Deref {",
+                "\tfn deref_mut(&mut self) -> &mut Self::Target;",
+            "}",
+            "*/",
+        ],
+    },
+    "trait_derive": {
+        "prefix": "deri",
+        "description": "derive common traits",
+        "body": [
+            "#[derive(Debug, PartialOrd, Ord, PartialEq, Eq, Hash, Clone)]",
+        ],
+    },
+
+
+} //end snippets
+
+
+/*
+${CURRENT_YEAR/(.*)/${1:?2018:2001}}
+${TM_FILENAME/(.*)\\..+$/${1:/capitalize}}
+*/

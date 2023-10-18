@@ -1,12 +1,4 @@
 .dump
 .meta
-
-.admin
-.private
 .vscode
-
-
-.articles
-.books
-.project
-.references
+.private

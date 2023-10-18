@@ -1,0 +1,11 @@
+/* function declaration or function statement
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function
+
+- hoisted, before variables
+
+
+*/
+
+https://docstore.mik.ua/orelly/webprog/jscript/ch11_05.htm
+
+The Function( ) Constructor and Function Literals As we saw in Chapter 7, there are two ways to define functions other than the basic function statement. As of JavaScript 1.1, functions can be defined using the Function( ) constructor, and in JavaScript 1.2 and later, they can be defined with function literals. You should be aware of some important differences between these two techniques. First, the Function( ) constructor allows JavaScript code to be dynamically created and compiled at runtime. Function literals, however, are a static part of program structure, just as function statements are. Second, as a corollary of the first difference, the Function( ) constructor parses the function body and creates a new function object each time it is called. If the call to the constructor appears within a loop or within a frequently called function, this process can be inefficient. On the other hand, a function literal or nested function that appears within a loop or function is not recompiled each time it is encountered. Nor is a different function object created each time a function literal is encountered. (Although, as noted earlier, a new closure may be required to capture differences in the lexical scope in which the function is defined.) The third difference between the Function( ) constructor and function literals is that functions created with the Function( ) constructor do not use lexical scoping; instead, they are always compiled as if they were top-level functions, as the following code demonstrates: var y = "global"; function constructFunction( ) { var y = "local"; return new Function("return y"); // Does not capture the local scope! } // This line displays "global", because the function returned by the // Function( ) constructor does not use the local scope. Had a function // literal been used instead, this line would have displayed "local". alert(constructFunction()( )); // Displays "global" docstore.mik.ua/orelly/webprog/jscript/ch11_05.htm

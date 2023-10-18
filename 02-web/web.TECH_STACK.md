@@ -1,0 +1,164 @@
+# Web :: TECH STACK
+
+* Fundamental tech stack
+  - IP
+    - TCP
+    - UDP
+    - DNS
+    - DHCP
+  - HTTP
+    - HTTP 1.1
+    - HTTP 2
+    - HTTP 3
+    - HTTPS
+      - TLS
+    - Websockets
+  - HTML
+  - CSS
+  - JSON
+  - XML
+
+* Server-side tech stack
+  - databases
+    - mysql
+    - postgree
+    - firebase
+    - mongoDB
+  - runtime
+    - Node (V8)
+      - React Server Components
+      - SSR
+      - SSG
+    - Rust
+  - caching
+  - proxy
+  - authentication
+
+
+
+* Tech
+  - Apache web server
+  - Astro
+  - Bootstrap
+  - Bower
+  - Bun
+  - Caddy
+  - Chakra JS engine (was in Edge)
+  - Chakra UI
+  - Chrome browser
+  - Chrome Dev Tools
+  - Clerk
+  - CoffeScript
+  - CouchDB
+  - CSSNext
+  - D3.js
+  - Deno
+  - Edge browser
+  - Elm
+  - ESlint
+    - ESlint 8.34.0 (2023-05)
+  - Express.js
+  - Firebase
+  - Flux
+  - Gatsby
+  - Gatsby.js
+  - Grafbase (graphql)
+  - GraphQL
+  - htmx
+  - JAM stack
+  - Jasmine
+  - Jest
+  - JSX, JаvaScript XML
+  - JаvaScript (JS)
+  - LiveScript
+  - Material UI kit
+  - MERN (Mongo + Express + React + Node)
+  - Mongo, MongoDB
+  - MySQL
+  - MySQL
+  - Neo4j
+  - Nerd fonts
+  - Fira Code
+  - Nest.js
+  - Next.js
+    - Next.js 13 App Router
+    - Next.js 13.4 (2023-05-04)
+    - Next.js 13.3 (2023-04-06)
+    - Next.js 13.1.6 (2023-05)
+    - Next.js 13.0 (2022-10-25)
+    - Next.js 13
+  - NextAuth
+  - NginX
+  - Node 18.14.0 LTS
+  - Node 20.4.0 (2023-07)
+  - Node embedded Chakra runtime (optional runtime)
+  - Node with V8 runtime (default)
+  - Node.js
+  - npm
+    - npm 9.8.1 (2023-07-18)
+    - npm 9.8.0 (2023-07-05)
+    - npm 9.7.2 (2023-06-21)
+    - npm 9.7.1 (2023-06-06)
+    - npm 9.7.0 (2023-05-31)
+    - npm 9.6.7 (2023-05-17)
+    - https://github.com/npm/cli/blob/latest/CHANGELOG.md
+    - npm 9.0.0-pre.0 (2022-09-08)
+  - Nuxt.js
+  - openfont
+  - Parcel
+  - PDF
+  - pnpm
+  - PocketBase
+  - PostgreSQL
+  - Pretty
+  - Prisma https://www.prisma.io/
+  - Pug
+  - Puppeteer
+  - PureScript
+  - Pusher
+  - Qwik
+  - React Native
+  - React Query
+  - React.js
+    - React 18
+    - react     18.2.0 (2023-05)
+    - react-dom 18.2.0 (2023-05)
+    - React 16
+  - ReasonML
+  - Redux
+  - Relay (GraphQL client that scales)
+  - Remix
+    - Remix 1.19.1 (2023-08)
+    - Remix v.2 (wip)
+  - Rhino
+  - Rollup
+  - SaaS AI Platform
+  - SaaS platform
+  - Sass
+  - serverless
+  - shadcn-ui (CSS)
+  - Snowpack
+  - Solid.js
+  - SolidStart
+  - sqlite
+  - Stripe
+  - Supabase
+  - Svelte
+  - SWC (Rust-based platform for the Web)
+  - Tailwind CSS
+  - TSX, TypeScript XML
+  - TurboPack (beta, 2023-07)
+  - TurboRepo
+  - TypeScript (TS)
+    - TypeScript 5.1.3 (2023-07)
+    - TypeScript 4.9.5 (2023-05)
+  - V8 (JS engine in Chrome)
+  - Vercel
+  - Vite
+    - Vite 4.3.9 (2023-07)
+  - Volta
+  - Vue
+  - WebAssembly
+    - WASM
+  - WebPack
+  - yarn

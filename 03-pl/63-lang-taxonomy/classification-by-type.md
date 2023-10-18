@@ -1,0 +1,76 @@
+# Classification of programming languages :: by type
+
+https://en.wikipedia.org/wiki/List_of_programming_languages_by_type
+
+## Contents
+
+- 1 Array languages
+- 2 Assembly languages
+- 3 Authoring languages
+- 4 Concatenative programming languages
+- 5 Constraint programming languages
+- 6 Command-line interface languages
+- 7 Compiled languages
+- 8 Concurrent languages
+- 9 Curly-bracket languages
+- 10 Dataflow languages
+- 11 Data-oriented languages
+- 12 Decision table languages
+- 13 Declarative languages
+- 14 Embeddable languages
+- 14.1 In source code
+- 14.1.1 Server side
+- 14.1.2 Client side
+- 14.2 In object code
+- 15 Educational programming languages
+- 16 Esoteric languages
+- 17 Extension languages
+- 18 Fourth-generation languages
+- 19 Functional languages
+- 19.1 Pure
+- 19.2 Impure
+- 20 Hardware description languages
+- 20.1 HDLs for analog circuit design
+- 20.2 HDLs for digital circuit design
+- 21 Imperative languages
+- 22 Interactive mode languages
+- 23 Interpreted languages
+- 24 Iterative languages
+- 25 Languages by memory management type
+- 25.1 Garbage collected languages
+- 25.2 Languages with manual memory management
+- 25.3 Languages with optional manual memory management
+- 25.4 Languages with deterministic memory management
+- 25.5 Languages with automatic reference counting (ARC)
+- 26 List-based languages - LISPs
+- 27 Little languages
+- 28 Logic-based languages
+- 29 Machine languages
+- 30 Macro languages
+- 30.1 Textual substitution macro languages
+- 30.2 Application macro languages
+- 31 Metaprogramming languages
+- 32 Multiparadigm languages
+- 33 Numerical analysis
+- 34 Non-English-based languages
+- 35 Object-oriented class-based languages
+- 35.1 Multiple dispatch
+- 35.2 Single dispatch
+- 36 Object-oriented prototype-based languages
+- 37 Off-side rule languages
+- 38 Procedural languages
+- 39 Query languages
+- 40 Reflective languages
+- 41 Rule-based languages
+- 42 Scripting languages
+- 43 Stack-based languages
+- 44 Synchronous languages
+- 45 Shading languages
+- 45.1 Real-time rendering
+- 45.2 Offline rendering
+- 46 Syntax-handling languages
+- 47 System languages
+- 48 Transformation languages
+- 49 Visual languages
+- 50 Wirth languages
+- 51 XML-based languages

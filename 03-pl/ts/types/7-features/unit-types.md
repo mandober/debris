@@ -1,0 +1,7 @@
+# Unit type
+
+The type that corresponds to the number 1 should have one element. Such a type is called *the unit type* and it may be denoted by `𝟙`, `One`, `Unit`. The unit type is a *singletone type*, i.e. has one element/value, which may also be called 'unit' and is variously denoted by `*` (star), `unit`, `()`. All singleton types are isomorphic to each other, but the 'unit type' is a canonical name for a singleton type that is used when discussing ADTs (it may be considered its title or a role in the context of ADTs).
+
+In TS, the type `void` may be taken as the unit type. The type `void` often marks the return type of side-effecting functions in TS. It should not be confused with the zero type (in TS, `never`) which marks the return type of diverging functions.
+
+The unit type has one value but this value is insignificant - it exists practically only formally - the type itself is sufficient to convey information. When we see the unit type, we are 100% certain what value it contains - there's no entropy. This is why the value itself is not important and it may not even have a denotation, which is the case in TS. In TS, the unit type is represented by the `void` type. In TS the `void` type is almost always used only as the return type of functions which do not return anything meaninful - but do return nonetheless (as opposed to the diverging 'never' functions). By the way, in JS, `void` is an operator that casts its operand to `undefined`.

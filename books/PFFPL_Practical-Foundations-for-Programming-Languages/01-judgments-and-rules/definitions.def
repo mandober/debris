@@ -1,0 +1,47 @@
+# Definitions
+
+*Language features* are defined by both its statics and dynamics.
+
+*Statics* of a language are the rules governing the use of a language feature in a program.
+
+*Dynamics* of a language are the rules defining how programs using this feature are executed.
+
+*Syntax* of a language specifies how various *sorts* of *language phrases* (expressions, commands, declarations, etc.) may be combined to form programs.
+
+*Concrete (surface) syntax* is concerned with how language phrases are entered and displayed on a computer; the surface syntax is usually thought of as given by strings of characters from some alphabet.
+
+*Abstract (structural) syntax* is concerned with the structure of language phrases, specifically how they are composed from other phrases. At this level, a phrase is a tree, called an *Abstract Syntax Tree (AST)*, whose nodes are operators that combine several phrases to form another phrase.
+
+*Binding structure of syntax* is concerned with the introduction and use of identifiers: how they are declared, and how declared identifiers can be used. At this level, phrases are *Abstract Binding Trees (ABT)*, which enrich AST with the concepts of binding and scope.
+
+**Piece of syntax** is a finite tree augmented with a means of expressing the binding and scope of identifiers within a syntax tree.
+
+*Piece of syntax* is defined in two stages:
+1. AST captures the hierarchical structure of a piece of syntax, avoiding the commitment of a concrete representation.
+2. ABT is enhanced AST with the means of specifying the binding (declaration) and scope (range of significance) of an identifier.
+
+**AST** is an ordered tree whose leaves are *variables*, and whose interior nodes are *operators* whose arguments are its children. ASTs are classified into a variety of sorts corresponding to different forms of syntax. ASTs can be combined by an *operator*, which has an *arity* specifying the *sort* of the operator and the number and sorts of its arguments. ASTs are classified by *sorts* that divide ASTs into *syntactic categories* (exprs, commands, etc.).
+
+**Variables** are place-holders, unknowns whose meaning is given by substitution. A variable stands for an unspecified, or generic, piece of syntax of a specified sort. A variable is an unknown object drawn from some domain. The unknown can become known by *substitution* of a particular object for all *occurrences of a variable* in a formula, thereby *specializing* a general formula to a particular *instance*. Variables in ASTs range over sorts in the sense that only ASTs of the specified sort of the variable can be plugged in for that variable.
+
+AST tree structure provides a very useful principle of reasoning, **structural induction**. To prove a property `P(a)` for all ASTs `E` of a given sort it is enough to consider all ways in which `E` can be generated, and show that the property holds in each case under the assumption that it holds for its constituent ASTs (if any).
+
+**Abstract Binding Tree** (ABT) enriches an AST with the means to introduce new variables and symbols, called *bindings*, with a specified *scope*. ABT's generalize AST's by allowing an operator to bind any finite number (possibly zero) of variables in each argument.
+
+**Scope** of a binding is an ABT within which the *bound identifier* can be used, either as a place-holder (in the case of a variable declaration) or as the index of some operator (in the case of a symbol declaration). The crucial principle is that any use of an identifier should be understood as a reference, or abstract pointer, to its binding. One consequence is that the choice of identifiers is immaterial, so long as we can always associate a unique binding with each use of an identifier. *Renaming of bound variables* is constrained to the extent that it must not alter the reference structure of the expression.
+
+**Judgment** states that one or more ABTs have a property (or stand in some relation) to one another. The property (or relation) itself is called a *judgment form*, and the judgment that an object have that property (or stand in that relation) is said to be an *instance* of that judgment form. A judgment form is also called a *predicate*, and the objects constituting an instance are its subjects.
+
+An inductive definition of a *judgment form* consists of a set of **inference rules**. The judgments above the horizontal line are called the *premises* of the rule, and the judgment below the line is called its *conclusion*. If a rule has no premises, the rule is an **axiom**; otherwise, it is called a *proper rule*. An inference rule can be read as stating that the premises are sufficient for the conclusion.
+
+**Rule schemes** specify an infinite family of rules by a finite number of patterns. A set of rules is considered to define *the strongest judgment form* that is closed under those rules. To be closed under the rules means that the rules are sufficient to show the validity of a judgment. To be the strongest judgment form closed under the rules means that the rules are also necessary. The sufficiency of the rules means that we may show that a premise holds by deriving it by composing rules. The necessity of the rules means that we may reason about it using induction on rules.
+
+To show that an inductively defined judgment holds, it is enough to exhibit a derivation of it. A **derivation of a judgment** is a finite composition of rules, starting with the axioms and ending with that judgment.
+
+To show that an *inductively defined judgment is derivable*, we need only find a derivation for it. There are two main methods for finding derivations, called *forward chaining* and *backward chaining*.
+
+**The principle of rule induction** states that to show that a property a `P` holds whenever a `J` is derivable, it is enough to show that `P` is closed under the rules defining the judgment form `J`.
+
+Inductive definitions are often iterated, meaning that one inductive definition builds on top of another. In an **iterated inductive definition**, the premises of a rule may be instances of either a previously defined judgment form, or the judgment form being defined.
+
+Frequently two or more judgments are defined at once by a simultaneous inductive definition. A **simultaneous inductive definition** consists of a set of rules for deriving instances of several different judgment forms, any of which may appear as the premise of any rule.

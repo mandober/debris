@@ -1,0 +1,61 @@
+# Node :: Modules :: List of builtin modules - by group
+
+Built-in modules
+- File System
+  - fs
+  - path
+  - os
+- Addons
+  - C++ Addons
+  - C/C++ Addons with N-API
+- CLI
+  - Console
+  - Command Line Options
+- Testing
+  - Assertion Testing
+  - Inspector
+  - Debugger
+- Networking
+  - Net
+  - DNS
+  - Domain
+  - HTTP
+  - HTTP/2
+  - HTTPS
+
+
+- Async Hooks
+- Buffer
+- C++ Embedder API
+- Child Processes
+- Cluster
+- Crypto
+- Deprecated APIs
+- ECMAScript Modules
+- Errors
+- Events
+- Globals
+- Internationalization
+- Modules
+- Performance Hooks
+- Policies
+- Process
+- Punycode
+- Query Strings
+- Readline
+- REPL
+- Report
+- Stream
+- String Decoder
+- Timers
+- TLS/SSL
+- Trace Events
+- TTY
+- UDP/Datagram
+- URL
+- Utilities
+- V8
+- VM
+- WASI
+- Worker Threads
+- Zlib

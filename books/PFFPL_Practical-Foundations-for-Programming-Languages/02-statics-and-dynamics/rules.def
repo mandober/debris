@@ -1,0 +1,158 @@
+# 2. Statics and Dynamics :: Statics :: RULES
+
+This syntax chart summarizes the abstract and concrete syntax of lang E:
+
+```hs
+Typ   τ := num                num                   numbers
+         | str                str                   strings
+
+Exp   e := x                  x                     variable
+         | num[n]             n                     numeral
+         | str[s]             "s"                   literal
+         | plus(e1; e2)       e1 + e2               addition
+         | times(e1; e2)      e1 * e2               multiplication
+         | cat(e1; e2)        e1 ^ e2               concatenation
+         | len(e)             |e|                   length
+         | let(e1; x.e2)      let x = e1 in e2      definition
+```
+
+This chart defines two sorts:
+- `Typ`, meta var `τ` ranges over types
+- `Exp`, meta var `e` ranges over expressions
+
+The chart defines a set of operators and their arities. 
+For example, it specifies that the operator let has arity `(Exp, Exp.Exp)Exp`, which specifies that it has two args of sort `Exp`, and binds a variable of sort `Exp` in the second arg.
+
+
+Legend
+- `x̅` is a finite set of vars
+- `Γ` is a typing context consisting of hypotheses of the form `x : τ`
+- vars use the letters `x` and `y` to stand for them
+- `x ∉ dom(Γ)` says there's no assumption in `Γ` of the form `x : τ` for any type `τ`, in which case we say that the var `x` is fresh for `Γ`
+
+
+The rules defining the statics of E:
+
+```hs
+-------------------------- (4.1a)
+Γ, x : τ |- x : τ
+
+-------------------------- (4.1b)
+Γ |- 𝑠𝑡𝑟[s] : 𝑠𝑡𝑟
+
+-------------------------- (4.1c)
+Γ |- 𝑛𝑢𝑚[n] : 𝑛𝑢𝑚
+
+
+Γ |- e1 : 𝑛𝑢𝑚     Γ |- e2 : 𝑛𝑢𝑚
+--------------------------------- (4.1d)
+Γ |- 𝑝𝑙𝑢𝑠(e1; e2) : 𝑛𝑢𝑚
+
+Γ |- e1 : 𝑛𝑢𝑚     Γ |- e2 : 𝑛𝑢𝑚
+--------------------------------- (4.1e)
+Γ |- 𝑡𝑖𝑚𝑒𝑠(e1; e2) : 𝑛𝑢𝑚
+
+Γ |- e1 :𝑠𝑡𝑟     Γ |- e2 :𝑠𝑡𝑟
+--------------------------------- (4.1f)
+Γ |- 𝑐𝑎𝑡(e1; e2) :𝑠𝑡𝑟
+
+Γ |- e :𝑠𝑡𝑟
+--------------------------------- (4.1g)
+Γ |- 𝑙𝑒𝑛(e) : 𝑛𝑢𝑚
+
+
+Γ |- e₁ : τ₁    Γ, x : τ₁ |- e₂ : τ₂
+--------------------------------- (4.1h)
+Γ |- let(e₁; x.e₂) : τ₂
+```
+
+>(Lemma 4.1) **Unicity of Typing**: For every typing context `Γ` and exp `e`, there exists at most one `τ` such that `Γ |- e : τ`.
+
+>(Lemma 4.3) **Weakening**. If `Γ |- e': τ'` then `Γ, x : τ |- e': τ'` for any `x ∉ dom(Γ)` and any type `τ` that `x` has.
+
+>(Lemma 4.4) **Substitution**. If `Γ,x:τ |- e':τ'` and `Γ |- e:τ`, then `Γ |- [e/x]e':τ'`
+
+>(Lemma 4.5) **Decomposition**. If `Γ |- [e/x]e' : τ'`, then for every type `τ` such that `Γ |- e : τ`, we have `Γ, x : τ |- e' : τ'`.
+
+
+The *iteration* of transition judgment `s ⟼* s'` is inductively defined:
+
+```hs
+-------------------- (5.1a)
+s ⟼* s'
+
+s ⟼ s'   s' ⟼ s''
+-------------------- (5.1b)
+s ⟼ s''
+```
+
+The *n-times iterated* transition judgment `s ⟼ⁿ s'`, where n ≥ 0, is inductively defined by the following rules:
+
+```
+---------------------- (5.2a)
+s ⟼⁰ s
+
+s ⟼ s'   s' ⟼ⁿ s''
+---------------------- (5.2b)
+s ⟼ⁿᐩ¹ s''
+```
+
+
+
+## 5.2 Structural Dynamics
+
+A *structural dynamics* for the language E is given by a transition system whose states are closed expressions. All states are initial. The final states are the *(closed) values*, which represent the completed computations. The judgment `e val`, which states that `e` is a value, is inductively defined by the following rules:
+
+```hs
+----------- (5.3a)
+num[n] val
+
+----------- (5.3b)
+str[s] val
+```
+
+The transition judgment `e ⟼ e'` between states is inductively defined by the following rules:
+
+```hs
+          n₁ + n₂ = n
+--------------------------------- (5.4a) instruction trans
+plus(num[n₁]; num[n₂]) ⟼ num[n]
+
+          e₁ ⟼ e₁'
+--------------------------------- (5.4b) search trans
+plus(e₁; e₂) ⟼ plus(e₁'; e₂)
+
+          e₂ ⟼ e₂'
+--------------------------------- (5.4c) search trans
+plus(v ; e₂) ⟼ plus(v ; e₂')
+--   ^               ^
+--      v = e₁ val
+
+
+
+        s₁ ^ s₂ = s str
+---------------------------------- (5.4d)  instruction trans
+cat(str[s₁]; str[s₂]) ⟼ str[s]
+
+         e₁ ⟼ e₁'
+---------------------------------- (5.4e) search trans
+cat(e₁; e₂) ⟼ cat(e₁'; e₂)
+
+         e₂ ⟼ e₂'
+---------------------------------- (5.4f) search trans
+cat(v ; e₂) ⟼ cat(v; e₂')
+--  ^              ^
+--     v = e₁ val
+
+
+⎡            e₁ ⟼ e₁'                                 ⎤
+⎢ -------------------------------- (5.4g) search trans ⎥
+⎣ let(e₁; x.e₂) ⟼ let(e₁'; x.e₂)                      ⎦
+
+
+⎡ e₁ val ⎤
+----------------------------- (5.4h) instruction trans
+let(e₁; x.e₂) ⟼ [x:=e₁]e₂
+```
+
+The entire rule (5.4g) and the premise on rule (5.4h) are bracketed to indicate that this rule and premise are *included in by-value* interpretation and *omitted in by-name* interpretation.

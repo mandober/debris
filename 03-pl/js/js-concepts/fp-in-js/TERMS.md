@@ -1,0 +1,155 @@
+# JS :: Concepts:: FP :: TERMS
+
+- functional programming
+- functional languages
+- pure functional language
+- purely functional language
+- function-orientated language
+- first-class functions
+- closures
+- statements
+- expressions
+- algebraic data types, ADTs
+- pattern matching
+- purity
+- laziness
+- lazy evaluation
+- thunks
+- recursion
+- call stack
+- stack frames
+- function arguments
+- function local variables
+- function return value
+- function return address/location
+- function caller
+- function callee
+- yielding control back to the caller
+- tail calls, PTC, TCE, TCO, STC
+- dealing with recursion
+- accumulators
+- continuations and CPS
+- trampolining
+- lambda lifting
+- lambda dropping
+- defunctionalization
+- pure functions
+- side-effects
+- referential transparency
+- immutability
+- expression-orientated programming
+- point-free
+- JS arrow functions
+- JS HOF, functionals
+- JS closures
+- JS ternary conditional
+- JS spread/rest
+- JS comma operator
+- direct style
+- continuation-based style
+- order of function parameters
+- combinators
+- combinators S K I
+- combinator B composition
+- combinator C flip
+- currying
+- folding
+- Foldables
+- Traversables
+- functions as data structure
+- List
+- Tree
+- type classes
+- tuples
+- polymorphism, generics
+- ad hoc polymorphism
+- parametric polymorphism
+- lambda calculus
+- type system
+- static type system, statically-typed language
+- weakly typed language
+- stronkly typed language
+- type inference
+- HM type system
+- lambda cube: extensions of λ in 3 dimensions
+- polymorphism
+- type functions
+- dependent types
+- dynamic type system, dynamically-typed language
+- compile-time execution
+- run-time execution
+- TypeScript's type system
+- functional programming (FP)
+- laziness
+- call-by-name
+- declarative programming
+- memoization
+- infinite data structure
+- immutability
+- peristant data structures
+- polymorphic data structures
+- destructuring
+- folding of data structures
+- data transformation pipeline
+- strong type system
+- type inference
+- type signatures
+- type annotations
+- polymorphic functions
+- first class functions
+- higher-order functions
+- currying
+- partial application
+- sectioning
+- operation-first data-last
+- point-free style ("never say data")
+- arity
+- composition
+- recursion
+- tail-call recursion
+- trampoline
+- pure functions
+- currying
+- composition
+- functors
+- monads
+- Either
+- Task monad
+- Mathematical Pure Functions
+- total FP
+- totality
+- determinisism
+- observable side effects
+- pure functions checklist
+- pure functions advantages: reliable, portable, reusable, testable, composable
+- currying
+- argument order
+- filter function
+- generalized currying
+- partial application
+- partial application and curried functions are duals
+- composition
+- state
+- state mutation
+- data pipeline
+- composition is dot chaining
+- logging in composition
+- parallelization
+- declarative syntax
+- Functors
+- Identity Functor
+- linear control flow
+- Functor abstracts function application
+- Either: Either is a functor and a monad, it has map, chain, fold
+- nullability, fromNullable
+- flattening either with chain
+- Writer monad
+- asynchronicity
+- monad transformers
+- monad patterns
+- type transformations
+- free monads
+- monoids
+- parsing
+- separate pure and impure code
+- Task, Task Monad, functional equivalent of promise. Similarly to promise, Task takes resolve and reject functions, but in reversed order. A Task monad only starts running once it reaches the fork method, and this way avoids race conditions.

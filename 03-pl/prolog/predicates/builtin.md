@@ -1,0 +1,175 @@
+# Built-in Predicates
+
+https://www.swi-prolog.org/pldoc/man?section=builtin
+
+## Breadcrumbs
+
+- Documentation
+  - Reference manual
+    - Built-in Predicates
+
+## Contents
+
+- Notation of Predicate Descriptions
+- Character representation
+- Loading Prolog source files
+- Editor Interface
+- Verify Type of a Term
+- Comparison and Unification of Terms
+- Control Predicates
+- Meta-Call Predicates
+- Delimited continuations
+- Exception handling
+- Printing messages
+- Handling signals
+- DCG Grammar rules
+- Database
+- Declaring predicate properties
+- Examining the program
+- Input and output
+- Status of streams
+- Primitive character I/O
++ Term reading and writing
+- Analysing and Constructing Terms
+- Analysing and Constructing Atoms
+- Localization (locale) support
+- Character properties
+- Operators
+- Character Conversion
+- Arithmetic
+- Misc arithmetic support predicates
+- Built-in list operations
+- Finding all Solutions to a Goal
+- Forall
+- Formatted Write
+- Global variables
+- Terminal Control
+- Operating System Interaction
+- File System Interaction
+- User Top-level Manipulation
+- Creating a Protocol of the User Interaction
+- Debugging and Tracing Programs
+- Debugging and declaring determinism
+- Obtaining Runtime Statistics
+- Execution profiling
+- Memory Management
+- Windows DDE interface
+- Miscellaneous
+
+
+## 4. Built-in Predicates - Section Index
+
+4. Built-in Predicates
+  - 4.1 Notation of Predicate Descriptions
+    - 4.1.1 The argument mode indicator
+    - 4.1.2 Predicate indicators
+      - 4.1.2.1 Non-terminal indicators
+    - 4.1.3 Predicate behaviour and determinism
+  - 4.2 Character representation
+  - 4.3 Loading Prolog source files
+    - 4.3.1 Conditional compilation and program transformation
+      - 4.3.1.1 Program transformation with source layout info
+      - 4.3.1.2 Conditional compilation
+    - 4.3.2 Reloading files, active code and threads
+      - 4.3.2.1 Errors and warnings during compilation
+      - 4.3.2.2 Compilation of mutually dependent code
+      - 4.3.2.3 Compilation with multiple threads
+    - 4.3.3 Quick load files
+  - 4.4 Editor Interface
+    - 4.4.1 Customizing the editor interface
+  - 4.5 Verify Type of a Term
+  - 4.6 Comparison and Unification of Terms
+    - 4.6.1 Standard Order of Terms
+    - 4.6.2 Special unification and comparison predicates
+  - 4.7 Control Predicates
+  - 4.8 Meta-Call Predicates
+  - 4.9 Delimited continuations
+  - 4.10 Exception handling
+    - 4.10.1 Urgency of exceptions
+    - 4.10.2 Debugging and exceptions
+    - 4.10.3 The exception term
+      - 4.10.3.1 General form of the ISO standard exception term
+      - 4.10.3.2 Throwing exceptions from applications and libraries
+  - 4.11 Printing messages
+    - 4.11.1 Printing from libraries
+  - 4.12 Handling signals
+    - 4.12.1 Notes on signal handling
+  - 4.13 DCG Grammar rules
+  - 4.14 Database
+    - 4.14.1 Managing (dynamic) predicates
+      - 4.14.1.1 Transactions
+      - 4.14.1.2 Impact of transactions
+    - 4.14.2 The recorded database
+    - 4.14.3 Flags
+    - 4.14.4 Tries
+    - 4.14.5 Update view
+    - 4.14.6 Indexing databases
+  - 4.15 Declaring predicate properties
+  - 4.16 Examining the program
+  - 4.17 Input and output
+    - 4.17.1 Predefined stream aliases
+    - 4.17.2 ISO Input and Output Streams
+    - 4.17.3 Edinburgh-style I/O
+    - 4.17.4 Switching between Edinburgh and ISO I/O
+    - 4.17.5 Adding IRI schemas
+    - 4.17.6 Write onto atoms, code-lists, etc.
+    - 4.17.7 Fast binary term I/O
+  - 4.18 Status of streams
+  - 4.19 Primitive character I/O
+  - 4.20 Term reading and writing
+  - 4.21 Analysing and Constructing Terms
+    - 4.21.1 Non-logical operations on terms
+  - 4.22 Analysing and Constructing Atoms
+  - 4.23 Localization (locale) support
+  - 4.24 Character properties
+    - 4.24.1 Case conversion
+    - 4.24.2 White space normalization
+    - 4.24.3 Language-specific comparison
+  - 4.25 Operators
+  - 4.26 Character Conversion
+  - 4.27 Arithmetic
+    - 4.27.1 Special purpose integer arithmetic
+    - 4.27.2 General purpose arithmetic
+      - 4.27.2.1 Arithmetic types
+      - 4.27.2.2 Rational number examples
+      - 4.27.2.3 Rational numbers or floats
+      - 4.27.2.4 IEEE 754 floating point arithmetic
+      - 4.27.2.5 Floating point arithmetic precision
+      - 4.27.2.6 Arithmetic Functions
+  - 4.28 Misc arithmetic support predicates
+  - 4.29 Built-in list operations
+  - 4.30 Finding all Solutions to a Goal
+  - 4.31 Forall
+  - 4.32 Formatted Write
+    - 4.32.1 Writef
+    - 4.32.2 Format
+    - 4.32.3 Programming Format
+  - 4.33 Global variables
+    - 4.33.1 Compatibility of SWI-Prolog Global Variables
+  - 4.34 Terminal Control
+  - 4.35 Operating System Interaction
+    - 4.35.1 Windows-specific Operating System Interaction
+    - 4.35.2 Apple specific Operating System Interaction
+    - 4.35.3 Dealing with time and date
+      - 4.35.3.1 Time and date data structures
+      - 4.35.3.2 Time and date predicates
+    - 4.35.4 Controlling the swipl-win.exe console window
+  - 4.36 File System Interaction
+  - 4.37 User Top-level Manipulation
+  - 4.38 Creating a Protocol of the User Interaction
+  - 4.39 Debugging and Tracing Programs
+  - 4.40 Debugging and declaring determinism
+  - 4.41 Obtaining Runtime Statistics
+  - 4.42 Execution profiling
+    - 4.42.1 Profiling predicates
+    - 4.42.2 Visualizing profiling data
+    - 4.42.3 Information gathering
+      - 4.42.3.1 Profiling in the Windows Implementation
+  - 4.43 Memory Management
+    - 4.43.1 Garbage collection
+    - 4.43.2 Heap memory (malloc)
+      - 4.43.2.1 TCMalloc control predicates
+  - 4.44 Windows DDE interface
+    - 4.44.1 DDE client interface
+    - 4.44.2 DDE server mode
+  - 4.45 Miscellaneous

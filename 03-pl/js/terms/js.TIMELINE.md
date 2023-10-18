@@ -1,0 +1,46 @@
+# JS :: Timeline of ES, JS and Web
+
+- 1993 Internet on the rise: WWW entered everyday use
+- 1994 NetScape browser launched
+- 1995 Microsoft's Internet Explorer browser launched
+- 1995 *JS* first appeared
+- 1996 Opera browser launched
+- 1997 ECMAScript 1 ES1 Language Spec
+- 1998 ECMAScript 2 ES2 Language Spec
+- 1998 Mozzila Firefox browser launched
+- 1999 ECMAScript 3 *ES3* Language Spec (Dec) regexp, try-catch
+- 2006 jQuery by John Resig released
+- 2008 Stack Overflow website launched
+- 2008 IEEE 754-2008 Stadard for floating-point arithemtic
+- 2008 Microsoft's Chakra JS engine released
+- 2008 Google's Chrome browser release with its V8 JS engine
+- 2009 Node.js released
+- 2009 ECMAScript 5, *ES5*, Language Spec
+- 2010 Angular.js released, reactive programming in JS
+- 2011 ECMAScript 5.1, ES5.1, with support in all modern browers
+- 2012 TypeScript released
+- 2013 React.js FRP framework released
+- 2013 Electron released
+- 2013 Selectors API, `querySelector{,All}`, inspired by jQuery
+- 2014 Babel (6to5) JS transpiler (converts ES6 to ES5 syntax)
+- 2014 Vue.js FRP framework released
+- 2015 jQuery used on 62.7% of the top 1 mil websites (acc. to BuiltWith)
+- 2015 ECMAScript 2015 *ES6*. Yearly release cycle planned
+- 2016 ECMAScript 2016, ES7 (`**`, `Array#incudes`)
+- 2016 Microsoft's Chakra JS engine open-sourced
+- 2016 Node.js v18.16.1 LTS (Long Term Support)
+- 2017 ECMAScript 2017 ES8 (async/await, shared memory)
+- 2018 ECMAScript 2018 ES9 (rest/spread, async iteration)
+- 2019 jQuery used on 80% of the top 1 mil websites (according to BuiltWith)
+- 2019 IEEE 754-2019 minor revision of IEEE 754-2008
+- 2019 ECMAScript 2019
+- 2020 ECMAScript 2020
+- 2020 Microsoft's Edge browser switches to Google's Chrome V8 JS engine
+- 2021 jQuery used by 77.8% of the top 10 million websites (acc. W3Techs)
+- 2021 V8 v9.7 released 2022-10-05
+- 2021 ECMAScript 2021
+- 2022 ECMAScript 2022
+- 2022 V8 v9.9 released 2022-01-31
+- 2023 jQuery v.3.7.0
+- 2023 ECMAScript 2023 (released in June 2023)
+- 2024 ECMAScript 2024

@@ -1,0 +1,164 @@
+# JS :: Index :: Data types :: Builtin objects
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
+
+
+
+## JS Builtins
+
+- AggregateError
+- Array
+- ArrayBuffer
+- AsyncFunction
+- AsyncGenerator
+- AsyncGeneratorFunction
+- AsyncIterator
+- Atomics
+- BigInt
+- BigInt64Array
+- BigUint64Array
+- Boolean
+- DataView
+- Date
+- decodeURI()
+- decodeURIComponent()
+- encodeURI()
+- encodeURIComponent()
+- Error
+- escape()Deprecated
+- eval()
+- EvalError
+- FinalizationRegistry
+- Float32Array
+- Float64Array
+- Function
+- Generator
+- GeneratorFunction
+- globalThis
+- Infinity
+- Int16Array
+- Int32Array
+- Int8Array
+- InternalErrorNon-standard
+- Intl
+- isFinite()
+- isNaN()
+- Iterator
+- JSON
+- Map
+- Math
+- NaN
+- Number
+- Object
+- parseFloat()
+- parseInt()
+- Promise
+- Proxy
+- RangeError
+- ReferenceError
+- Reflect
+- RegExp
+- Set
+- SharedArrayBuffer
+- String
+- Symbol
+- SyntaxError
+- TypedArray
+- TypeError
+- Uint16Array
+- Uint32Array
+- Uint8Array
+- Uint8ClampedArray
+- undefined
+- unescape()Deprecated
+- URIError
+- WeakMap
+- WeakRef
+- WeakSet
+
+## JS Builtins II
+
+* Core data types
+- boolean
+- Boolean
+- string
+- String
+- symbol
+- Symbol
+- number
+- Number
+- bigint
+- BigInt
+- undefined
+- null
+
+- Map
+- Set
+
+
+- Array
+- ArrayBuffer
+- AggregateError
+- AsyncFunction
+- AsyncGenerator
+- AsyncGeneratorFunction
+- AsyncIterator
+- Atomics
+- BigInt
+- BigInt64Array
+- BigUint64Array
+- DataView
+- Date
+- decodeURI()
+- decodeURIComponent()
+- encodeURI()
+- encodeURIComponent()
+- Error
+- escape()Deprecated
+- eval()
+- EvalError
+- FinalizationRegistry
+- Float32Array
+- Float64Array
+- Function
+- Generator
+- GeneratorFunction
+- globalThis
+- Infinity
+- Int16Array
+- Int32Array
+- Int8Array
+- InternalErrorNon-standard
+- Intl
+- isFinite()
+- isNaN()
+- Iterator
+- JSON
+- Map
+- Math
+- NaN
+- Number
+- Object
+- parseFloat()
+- parseInt()
+- Promise
+- Proxy
+- RangeError
+- ReferenceError
+- Reflect
+- RegExp
+- SharedArrayBuffer
+- SyntaxError
+- TypedArray
+- TypeError
+- Uint16Array
+- Uint32Array
+- Uint8Array
+- Uint8ClampedArray
+- undefined
+- unescape()Deprecated
+- URIError
+- WeakMap
+- WeakRef
+- WeakSet

@@ -1,0 +1,65 @@
+# JS :: HIERARCHY
+
+Web platform (web ecosystem)
+- web dev
+- web aspects
+  - Web 2.0
+    - AJAX (Web API)
+    - Mobile web
+    - websites vs webapps
+      - universal sites
+      - Progressive Websites App (PWA)
+      - Single Page App (SPA)
+      - universal JS
+        - server-side JS
+        - client-side JS
+    - OOB JS (JS engines out of browser)
+      - Node.js
+        - JS + V8 + C++
+        - language: Core JS
+        - Web API: C++
+        - JavaScript engine:
+          - Chrome's V8 (primary)
+          - IE's Chakra (option)
+      - Deno
+        - V8 + TS + Rust
+        - language: Core JS as TS
+        - Web API: Rust
+        - JavaScript engine:
+          - Chrome's V8 (primary)
+        - Deno + V8
+      - Bun
+        - JS/TS + Chakra + C++
+  - presentation aspects
+    - markup lang
+      - HTML
+      - XML
+    - styling lang
+      - CSS
+      - XSLT
+- Web Tech
+  - Web API
+- lang aspects
+  - EcmaScript, ES
+  - JavaScript, JS
+  - **JS engines**
+    - Google's V8
+      - used standalone or embeddable in C++ apps
+      - used in the browsers: Chrome, MS's Edge (since 2020)
+      - embedded with Node, Deno
+      - written in C++
+      - component: compiler, decompiler, optimizer, deoptimizer, GC
+        - `Turbofan` optimizes hot code paths (hot functions)
+    - Mozilla's Spidermonkey (Firefox, …)
+      - Spidermonkey written in C++
+      - components monkeys (optimizer, JIT, decompiler, GC)
+        - TraceMonkey (JIT)
+        - JagerMonkey
+        - IonMonkey
+    - Microsoft's Chakra
+      - powers IE 9-11, in Edge ?
+      - powers Windows Store apps
+      - has JIT
+    - Apple's WebKit (Safari, …)
+    - Carakan (Opera 11)
+    - Presto (Opera 10)

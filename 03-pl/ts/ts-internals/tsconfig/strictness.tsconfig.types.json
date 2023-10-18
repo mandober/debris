@@ -1,0 +1,77 @@
+{
+  "compilerOptions": {
+    // https://aka.ms/tsconfig
+
+    /* Type Checking */
+
+
+
+    /* any */
+
+    // error rather than infer 'any'
+    "noImplicitAny": true,
+  
+    // error when 'this' is given the type 'any'
+    "noImplicitThis": true,
+
+    // default-catch-clause variables as 'unknown' instead of 'any'
+    "useUnknownInCatchVariables": true,
+
+
+
+
+    /* Strictness */
+
+    // Enable all strict type-checking options
+    "strict": true,
+
+    // When type checking, take into account 'null' and 'undefined'
+    "strictNullChecks": true,
+
+    // ensure fn params and return values are subtype-compatible
+    "strictFunctionTypes": true,
+
+    // Check the args for 'bind', 'call', 'apply' match the original function
+    "strictBindCallApply": true,
+
+    // Check for class properties that are declared but not set in ctor
+    "strictPropertyInitialization": true,
+
+    // 'use strict' is always emitted
+    "alwaysStrict": true,
+
+    // Interpret optional prop types as written, rather than adding 'undefined'
+    "exactOptionalPropertyTypes": true,
+
+    // error when no explicit return in a function
+    "noImplicitReturns": true,
+
+    // error for fallthrough cases in switch statements
+    "noFallthroughCasesInSwitch": true,
+
+    // Add 'undefined' to a type when accessed using an index
+    "noUncheckedIndexedAccess": true,
+
+    // overriding members in derived classes are marked with 'override'
+    "noImplicitOverride": true,
+
+    // use indexed accessors for keys declared using an indexed type
+    "noPropertyAccessFromIndexSignature": true,
+
+
+    /* unused stuff */
+
+    // error when local variables unused
+    "noUnusedLocals": true,
+
+    // error when parameter unused
+    "noUnusedParameters": true,
+
+    // Disable error for unused labels
+    "allowUnusedLabels": false,
+
+    // Disable error for unreachable code
+    "allowUnreachableCode": false,
+
+  }
+}

@@ -1,0 +1,227 @@
+# math symbols
+
+https://en.wikipedia.org/wiki/Alphabetic_Presentation_Forms
+https://en.wikipedia.org/wiki/Arabic_Mathematical_Alphabetic_Symbols
+https://en.wikipedia.org/wiki/Arrows_(Unicode_block)
+https://en.wikipedia.org/wiki/Basic_Latin_(Unicode_block)
+https://en.wikipedia.org/wiki/Combining_Diacritical_Marks_for_Symbols
+https://en.wikipedia.org/wiki/General_Punctuation_(Unicode_block)
+https://en.wikipedia.org/wiki/Geometric_Shapes
+https://en.wikipedia.org/wiki/Greek_and_Coptic
+https://en.wikipedia.org/wiki/Greek_letters_used_in_mathematics,_science,_and_engineering
+https://en.wikipedia.org/wiki/Halfwidth_and_fullwidth_forms
+https://en.wikipedia.org/wiki/Latin_letters_used_in_mathematics
+https://en.wikipedia.org/wiki/Latin-1_Supplement_(Unicode_block)
+https://en.wikipedia.org/wiki/Letterlike_Symbols
+https://en.wikipedia.org/wiki/List_of_letters_used_in_mathematics_and_science
+https://en.wikipedia.org/wiki/List_of_logic_symbols
+https://en.wikipedia.org/wiki/List_of_mathematical_symbols
+https://en.wikipedia.org/wiki/Mathematical_Alphanumeric_Symbols
+https://en.wikipedia.org/wiki/Mathematical_Operators
+https://en.wikipedia.org/wiki/Mathematical_operators_and_symbols_in_Unicode
+https://en.wikipedia.org/wiki/Miscellaneous_Mathematical_Symbols-A
+https://en.wikipedia.org/wiki/Miscellaneous_Mathematical_Symbols-B
+https://en.wikipedia.org/wiki/Miscellaneous_Symbols
+https://en.wikipedia.org/wiki/Miscellaneous_Symbols_and_Arrows
+https://en.wikipedia.org/wiki/Miscellaneous_Technical
+https://en.wikipedia.org/wiki/Small_caps
+https://en.wikipedia.org/wiki/Small_Form_Variants
+https://en.wikipedia.org/wiki/Superscripts_and_Subscripts
+https://en.wikipedia.org/wiki/Supplemental_Arrows-A
+https://en.wikipedia.org/wiki/Supplemental_Arrows-B
+https://en.wikipedia.org/wiki/Supplemental_Mathematical_Operators
+https://en.wikipedia.org/wiki/Unicode_subscripts_and_superscripts
+https://en.wikipedia.org/wiki/Unicode_symbols
+https://en.wikipedia.org/wiki/International_Phonetic_Alphabet
+https://en.wikipedia.org/wiki/IPA_extensions_(Unicode_block)
+https://en.wikipedia.org/wiki/Phonetic_Extensions
+https://en.wikipedia.org/wiki/Latin_Extended-D
+https://en.wikipedia.org/wiki/Obsolete_and_nonstandard_symbols_in_the_International_Phonetic_Alphabet
+https://en.wikipedia.org/wiki/Arabic_(Unicode_block)
+https://en.wikipedia.org/wiki/Order_of_magnitude
+https://en.wikipedia.org/wiki/International_System_of_Units
+
+---
+
+<span style="font-variant-caps: small-caps;">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</span>
+
+<span style="font-feature-settings: 'smcp';">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</span>
+
+The OpenType font standard provides support for transformations from normal letters to petite caps by two feature tags, `pcap` and `c2pc`. A font may use the tag `pcap` to indicate how to *transform lower-case letters to petite caps*, and the tag `c2pc` to indicate how to *transform upper-case letters to petite caps*.
+
+<span style="font-feature-settings: 'pcap';">abcdefghijklmnopqrstuvwxyz</span>
+
+<span style="font-feature-settings: 'c2pc';">ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+
+---
+
+
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+ᴀʙᴄᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘꞯʀꜱᴛᴜᴠᴡꞯʏᴢ
+𐞄𐞒𐞖ᶦᶫᶰ𐞪ᶸ𐞲
+◌ᷛ◌ᷞ◌ᷟ◌ᷡ◌ᷢ
+
+ᴀʙᴄᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘǫʀꜱᴛᴜᴠᴡ∙ʏᴢ
+ᴜᴠᴡ x̟ x̽ x͛ x̫ x͆ x̚ x̛ x͑ x̒ x̐ ʏ ᴢ
+
+no q: ǫ
+no x: x̟×⨯
+
+## Misc
+
+⥀ ⥁
+
+Ƒ ƒ ℱ
+Ɛ Ɣ ɤ ɣ ʃ ƿ ɡ
+ʊ ɢ ʀ ɶ
+d͡z t͡s d͡ɮ t͡ɬ t͡ʃ d͡ʒ
+bʲ dʲ fʲ ɡ̟ k̟ lʲ mʲ nʲ pʲ rʲ sʲ ʃʲ tʲ vʲ x̟ zʲ
+
+
+## Superscript
+A ⁰ ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹
+A ⁽ ⁺ ⁻ ⁼ ⁾
+A ᵃ ᵇ ᶜ ᵈ ᵉ ᶠ ᵍ ʰ ⁱ ʲ ᵏ ˡ ᵐ ⁿ ᵒ ᵖ ʳ ˢ ᵗ ᵘ ᵛ ʷ ˣ ʸ ᶻ
+A ᵝ ᵞ ᵟ ᵋ ᶿ ᶥ ᶹ ᵠ ᵡ
+
+## Subscript
+A ₀ ₁ ₂ ₃ ₄ ₅ ₆ ₇ ₈ ₉ ⏨
+A ₍₊ ₋ ₌ ₎
+A ₐ ₑ ₕ ᵢ ⱼ ₖ ₗ ₘ ₙ ₒ ₚ ᵣ ₛ ₜ ᵤ ᵥ ₓ
+A ᵦ ᵧ ᵨ ᵩ ᵪ ₔ
+
+## Fractions
+½ ⅓ ⅔ ¼ ¾ ⅕ ⅒
+
+## Greek
+
+Α Β Γ ᴦ Δ Ε Ζ Η Θ Ι Κ Λ Μ Ν Ξ Ο Π Ρ Ῥ ☧ Σ Ϲ Τ Υ υ Φ Χ Ψ Ω
+
+α β ᵝ ᵦ γ ᵞ ᵧ δ ᵟ ε ϵ ϶ ζ η Ͱ ͱ θ ϑ ϴ ᶿ ι ᶥ ℩ κ ϰ λ ᴧ μ µ ν
+ξ ο π ϖ ρ ῥ ῤ ϱ ϼ ᴩ ᵨ σ ς ϲ Ͻ ͻ Ͼ ͼ Ͽ ͽ τ ϒ φ ϕ χ ᵡ ᵪ ψ ᴪ ω
+
+𝚨 𝚩 𝚪 𝚫 𝚬 𝚭 𝚮 𝚯 𝚰 𝚱 𝚲 𝚳 𝚴 𝚵 𝚶 𝚷 𝚸 𝚹 𝚺 𝚻 𝚼 𝚽 𝚾 𝚿 𝛀 𝛁
+𝛂 𝛃 𝛄 𝛅 𝛛 𝛆 𝛜 𝛇 𝛈 𝛉 𝛝 𝛊 𝛋 𝛞 𝛌 𝛍 𝛎 𝛏 𝛐 𝛑 𝛡 𝛒 𝛠 𝛓 𝛔 𝛕 𝛖 𝛗 𝛟 𝛘 𝛙 𝛚
+
+↑ ᶦ ᶫ ᶰ
+↑ ᵝ ᵞ ᵟ ᵋ ᶿ ᶥ ᶸ ᶹ ᵠ ᵡ ʶ ᶧ
+↑ ᴬ ᵃ ᴭ ᵆ ᵄ ᵅ ᶛ ᴮ ᵇ ᶜ ᶝ ᴰ ᵈ ᶞ ᴱ ᵉ ᴲ ᵊ ᵋ ᶟ ᵌ
+↑ ᶠ ᴳ ᵍ ᶢ ˠ ʰ ᴴ ʱ ᴵ ⁱ ᶦ ᶤ ᶧ ᶥ ʲ ᴶ ᶨ ᶡ ᴷ ᵏ ˡ ᴸ ᶫ ᶪ ᶩ
+↑ ᴹ ᵐ ᶬ ᴺ ⁿ ᶰ ᶮ ᶯ ᵑ ᴼ ᵒ ᵓ ᵔ ᵕ ᶱ ᴽ ᴾ ᵖ ᶲ ʳ
+↑ ᴿ ʴ ʵ ʶ ˢ ᶳ ᶴ ᵀ ᵗ ᶵ ᵁ ᵘ ᶸ ᵙ ᶶ ᶣ ᵚ ᶭ ᶷ ᵛ ⱽ ᶹ ᶺ ʷ ᵂ
+↑ ˣ ʸ ᶻ ᶼ ᶽ ᶾ ꝰ ᵜ ᵝ ᵞ ᵟ ᶿ ᵠ ᵡ ᵸ ჼ ˤ ⵯ
+
+
+## Double struck
+𝔸 𝔹 ℂ 𝔻 𝔼 𝔽 𝔾 ℍ 𝕀 𝕁 𝕂 𝕃 𝕄 ℕ 𝕆 ℙ ℚ ℝ 𝕊 𝕋 𝕌 𝕍 𝕎 𝕏 𝕐 ℤ
+
+## Script
+𝒜 𝒞 𝒟 𝒢 𝒥 𝒦 𝒩 𝒪 𝒫 𝒬 𝒮 𝒯 𝒰 𝒱 𝒲 𝒳 𝒴 𝒵
+𝒶 𝒷 𝒸 𝒹 𝒻 𝒽 𝒾 𝒿 𝓀 𝓁 𝓂 𝓃 𝓅 𝓆 𝓇 𝓈 𝓉 𝓊 𝓋 𝓌 𝓍 𝓎 𝓏
+𝓐 𝓑 𝓒 𝓓 𝓔 𝓕 𝓖 𝓗 𝓘 𝓙 𝓚 𝓛 𝓜 𝓝 𝓞 𝓟 𝓠 𝓡 𝓢 𝓣 𝓤 𝓥 𝓦 𝓧 𝓨 𝓩
+𝓪 𝓫 𝓬 𝓭 𝓮 𝓯 𝓰 𝓱 𝓲 𝓳 𝓴 𝓵 𝓶 𝓷 𝓸 𝓹 𝓺 𝓻 𝓼 𝓽 𝓾 𝓿 𝔀 𝔁 𝔂 𝔃
+
+## Fraktur
+𝔄 𝔅 ℭ 𝔇 𝔈 𝔉 𝔊 ℌ ℑ 𝔍 𝔎 𝔏 𝔐 𝔑 𝔒 𝔓 𝔔 ℜ 𝔖 𝔗 𝔘 𝔙 𝔚 𝔛 𝔜 ℨ
+𝔞 𝔟 𝔠 𝔡 𝔢 𝔣 𝔤 𝔥 𝔦 𝔧 𝔨 𝔩 𝔪 𝔫 𝔬 𝔭 𝔮 𝔯 𝔰 𝔱 𝔲 𝔳 𝔴 𝔵 𝔶 𝔷
+𝕬 𝕭 𝕮 𝕯 𝕰 𝕱 𝕲 𝕳 𝕴 𝕵 𝕶 𝕷 𝕸 𝕹 𝕺 𝕻 𝕼 𝕽 𝕾 𝕿 𝖀 𝖁 𝖂 𝖃 𝖄 𝖅
+𝖆 𝖇 𝖈 𝖉 𝖊 𝖋 𝖌 𝖍 𝖎 𝖏 𝖐 𝖑 𝖒 𝖓 𝖔 𝖕 𝖖 𝖗 𝖘 𝖙 𝖚 𝖛 𝖜 𝖝 𝖞 𝖟
+
+## Arrows
+
+Then: ⇒
+Because: ⇐
+Equivalent: ⇔
+Function domain: →
+Function: ↦
+Changes: ↗ ↘
+inv imp: ⇍ ⇎ ⇏
+
+## Logic
+
+Or: ∨
+And: ∧
+Exclusive or: ⊕ ⊻
+Not: ¬
+
+## Base hypothesis
+
+For all: ∀
+There exists: ∃
+There is only one: ∃!
+There does not exists: ∄
+Not equal: ≠
+Around: ≈
+Less than: ≤
+More than: ≥
+Way less: ≫
+Way more: ≪
+Proportional: ∝
+
+## Sets
+
+Element of : ∈ ∋
+Not element of: ∉ ∌
+Subset of: ⊂ ⊃
+Not a subset of: ⊄ ⊅
+Intersection: ∩
+Union: ∪
+Empty set: ∅
+
+
+
+## Operations
+
+Sum: ∑
+Product: ∏
+Multiplication: × ⋅
+Composition: ○
+Dot product: ∙
+Square root: √
+Plus or minus: ±
+Minus or plus: ∓
+Floor: ⌊ … ⌋
+Ceil: ⌈ … ⌉
+Nearest integer: ⌊ … ⌉
+Real and imaginary part: ℜ ℑ
+
+## Linear algebra
+
+f : ℝⁿ × ℝᵐ
+Coordinates: x = ( x₁, x₂ …, xᵢ, xⱼ, … xₘ, xₙ )
+Modified : x₀, x̄, ȳ, z̄, ̄x,
+Norm : ∥ … ∥
+Dot product: ⟨ …, … ⟩ or ⋅
+Cross product: ⨯
+Transposed : Aᵀ or ⊤
+Linear complement: ⊥
+Inverse: a⁻¹
+Conjugate transpose: A*
+Matrix multiplication: AB or A⋅B
+Hadamard product: A∘B or A⊘B
+Dyadic/Kronecker product: A⊗B
+Exterior algebra: ∧
+Direct sum: ⊕
+Tensor product: ⊗
+Lagrangian : ℒ
+
+## Differential calculus
+
+Function: ƒ
+Integral: ∫
+Partial differential: ∂
+Functional derivative: 𝛿
+Gradient: ∇ (Nabla)
+Hessian matrix: ∇²
+Laplacian: Δ
+Dalembert: □
+
+## Others:
+
+Ortogonal: ⊥
+Diameter: ⌀
+Infinite: ∞
+Pi: π
+Per 1000: ‰
+Per 10 000: ‱
+Steps: ①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳

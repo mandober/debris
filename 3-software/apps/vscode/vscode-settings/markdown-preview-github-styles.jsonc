@@ -1,9 +1,0 @@
-{
-  // Color theme for the styling of the Markdown preview.
-  //  - auto: Automatically match the editor color theme.
-  //  - system: Sync to the system/OS color theme.
-  //  - light: Always use the Github site's light theme.
-  //  - dark: Always use the Github site's dark theme.
-  "markdown-preview-github-styles.colorTheme": "auto",
-
-}

@@ -1,0 +1,65 @@
+{
+    /*
+    Place your snippets for php here.
+    Each snippet is defined under a
+    - snippet name
+    - prefix: triggers the snippet
+    - body: expanded and inserted
+    - description: snippet desc
+
+    Possible variables are:
+    - $1, $2 for tab stops
+    - $0 for the final cursor position
+    - ${1:label}, ${2:another} for placeholders
+    - Placeholders with the same ids are connected
+
+    Example:
+
+    "Print to console": {
+        "prefix": "log",
+        "body": [
+            "console.log('$1');",
+            "$2"
+        ],
+        "description": "Log output to console"
+    }
+    */
+    "PHP echo": {
+        "prefix": "ec",
+        "body": [
+            "echo ${1:\"${2}\"}, \"\\n\";",
+            "$3"
+        ],
+        "description": "PHP echo"
+    },
+
+    "PHP AF": {
+        "prefix": "fun",
+        "body": [
+            "\\$${1:clname} = function(${2:callable} \\$f) : ${3:callable}",
+            "{",
+                "\treturn (function(${4:callable} \\$f) : ${5:callable}",
+                "\t{",
+                    "\t\treturn $6;",
+                "\t});",
+            "};",
+            "$0"
+        ],
+        "description": "PHP AF"
+    },
+
+    "PHP Closure": {
+        "prefix": "fu",
+        "body": [
+            "\\$${1:clname} = function(${2:callable} \\$f) ${3:use($4)} : ${5:callable}",
+            "{",
+                "\treturn (function(${6:callable} \\$g) ${7:use(${8:\\$f})} : ${9:callable}",
+                "\t{",
+                    "\t\treturn $0;",
+                "\t});",
+            "};"
+        ],
+        "description": "PHP Closure"
+    }
+
+}

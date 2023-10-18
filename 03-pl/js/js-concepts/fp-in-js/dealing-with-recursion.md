@@ -1,0 +1,5 @@
+# Dealing with recursion
+
+FP relies on recursion like procedural programming relies on looping constructs; in fact, all kinds of loops, bounded and unbounded, are replaced by recursion.
+
+Recursion, in the most straighforward sense, involves a function that calls itself repeatedly. Each recursive call seems like a call to that very same function, but an important distinction that can go amiss is that a new "instance" of the function is called each time. This means that with each recursive call JS engine pushes a new stack frame onto the call stack, a stack frame that holds the function's arguments and its local variables. The arguments are made available (initialized) in the call itself, just like they are passed in any function call, but the local variables are re-initialized each time - they are not somehow inherited from the previous function (one stack frame below). In fact, good practice suggest that local variables should be avoided if possible (and it is pretty much always possible), 

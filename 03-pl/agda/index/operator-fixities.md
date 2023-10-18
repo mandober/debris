@@ -1,0 +1,51 @@
+# Agda :: Index :: Operator fixities
+
+- infixl 5 _+_ _-_
+- infixl 6 _*_
+- infix  4 _≤_ _<_
+- infixr 6 _∧_
+- infixr 5 _∨_ _xor_
+- infix  0 if_then_else_
+- infixr 5 _∷_
+- infix  4 _≡_ _≢_
+- infix  4 _≗_ (Pointwise equality)
+- infix  3 _∎
+- infixr 2 _≡⟨⟩_ step-≡ step-≡˘
+- infix  1 begin_
+- infix  4 _≟_
+- infix  4 _≤?_
+- infix  4 _<?_
+- infix  4 _≈_
+- infix  4 _≉_
+- infix  4 _∼_
+- infix  4 _≲_
+- infix  4 _≤_
+- infix  4 _<_
+- infixr 9 _∘_ _∘₂_
+- infixl 8 _ˢ_
+- infixl 0 _|>_
+- infix  0 case_return_of_
+- infixr -1 _$_ _$!_
+- infixr 9 _∘′_ _∘₂′_
+- infixl 0 _|>′_
+- infix  0 case_of_
+- infixr -1 _$′_ _$!′_
+- infixl 1 _⟨_⟩_
+- infixl 0 _∋_
+- infixr 0 _-⟪_⟫-_ _-⟨_⟫-_
+- infixl 0 _-⟪_⟩-_
+- infixr 1 _-⟨_⟩-_ ∣_⟫-_ ∣_⟩-_
+- infixl 1 _on_ _on₂_ _-⟪_∣ _-⟨_∣
+- infix 4 _⇒_ _⇔_ _=[_]⇒_
+- infixr 1 _⊎_
+- infixr 1 _-⊎-_
+- infix  2 Σ-syntax
+- infixr 4 _,′_
+- infixr 2 _×_
+- infix  2 ∃-syntax
+- infix  2 ∄-syntax
+- infix  4 -,_
+- infixr 2 _-×-_ _-,-_
+- infixl 2 _<*>_
+- infix  3 ¬_
+- infix  2 _because_

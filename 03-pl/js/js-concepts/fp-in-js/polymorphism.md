@@ -1,0 +1,3 @@
+# Polymorphism
+
+*Parametric polymorphism* is the qualily of language agents (functions) stating that they can work with any type whatsoever. This can be a too broad of an assumption because there are tricky, advanced types like universally or existentially quantified types which need extra support from the type system to be accepted as the arguments of parametrically polymorphic functions. However, for the usual, domesticated types, which is the case with TS types, we can indeed say that parametrically polymorphic (PP) functions work with any type at all. The examplary PP functions are `id`, `const`, as are any combinators, especially "lambda combinator birds".

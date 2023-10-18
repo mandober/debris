@@ -1,0 +1,15 @@
+# Summary
+
+Language features are defined by its
+- statics
+- dynamics
+
+Syntax
+- concrete (surface) syntax
+- abstract (structural) syntax, AST
+- binding structure of syntax, ABT
+
+Syntactic categories
+- expressions
+- statements, commands
+- declarations

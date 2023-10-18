@@ -1,0 +1,118 @@
+/*
+Tabstops:
+    $1, $2, ...
+    $0 is for final cursor position.
+    Tabstops with the same number are in sync.
+
+Placeholders:
+    are tabstops with values, ${1:label}
+    Placeholders with the same ids are connected.
+    Nested: ${1:another ${2:placeholder}}
+    Choice: ${1|one,two,three|}
+
+Variables:
+    $name or ${name:default} inserts value of variable
+    When not set, its DEFAULT or EMPTY STRING is inserted.
+    When not defined, the VAR NAME is inserted (var transformed into pholder).
+*/
+
+{
+    "Wrap in code block": {
+        "description": "Wrap in code block",
+        "prefix": ["```", "cc"],
+        "body": [
+            "```${1|hs,hs agda,bash,shell,js|}",
+            "${TM_SELECTED_TEXT}$0",
+            "```"
+        ],
+    },
+    "Wrap in region": {
+        "description": "Wrap in a region",
+        "prefix": ["region"],
+        "body": [
+          "<!-- #region -->",
+          "${TM_SELECTED_TEXT}",
+          "<!-- #endregion -->"
+        ],
+    },
+    "Wrap in details": {
+        "description": "Wrap in details tag",
+        "prefix": ["<details>", "details"],
+        "body": [
+            "<details><summary>${1:Description}</summary>",
+            "${TM_SELECTED_TEXT}",
+            "</details>",
+            "$0",
+        ],
+    },
+
+}
+
+/*
+Unused (time showed)
+==============================================================================
+    "md: file link": {
+        "description": "Make a link from filename",
+        "prefix": "ccc",
+        "body": [
+            "${TM_FILENAME/(.+).md$/[${1:/capitalize}](.\\/${1}.md)/gm}",
+            "\n$0"
+        ]
+    },
+
+    "md: kbd HTML tags": {
+        "description": "Wrap selection in KBD tag",
+        "prefix": "kbd",
+        "body": [
+            "<kbd>${TM_SELECTED_TEXT}</kbd>"
+        ],
+    },
+
+    "Insert details": {
+        "description": "Insert details tag",
+        "prefix": ["<details>", "details"],
+        "body": [
+            "<details><summary>${1:Description}</summary>",
+            "${TM_SELECTED_TEXT}",
+            "\n$0\n",
+            "</details>",
+        ],
+    },
+
+
+*/
+
+
+/*
+Info
+==============================================================================
+
+"body": [
+    "module ${TM_FILEPATH/.*?\\\\/src\\\\/(.+)\\\\/(.+).hs$/$1.$2/gm} where",
+    "\n$0",
+]
+
+
+Make a link from filename
+=========================
+FILENAME    : category-theory.md
+title       : # Category Theory \n\n
+link        : [Category Theory](./category-theory.md)
+
+[
+Category Theory
+](./
+category-theory.md
+)
+
+do-expression.md    ~~>    Do-expression  ~~>      # Do Expression
+
+"${TM_FILENAME/(.+).md$/${1:/capitalize}/gm}",
+
+"${TM_FILENAME/(.+).md$/[${1:/capitalize}](${1}.md)/gm}",
+[Do-expression](do-expression.md)
+
+"${TM_FILENAME/(.+).md$/[${1:/capitalize}](.\\/${1}.md)/gm}",
+[Do-expression](./do-expression.md)
+
+*/

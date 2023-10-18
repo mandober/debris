@@ -1,0 +1,5 @@
+
+
+[[slot]]
+%method%
+@@iterator

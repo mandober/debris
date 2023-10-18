@@ -1,0 +1,125 @@
+# Unicode tables :: Letters
+
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+ᴀʙᴄᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘꞯʀꜱᴛᴜᴠᴡꞯʏᴢ (no Q, no X)
+ᴀʙᴄᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘǫʀꜱᴛᴜᴠᴡx͛ʏᴢ (Q ⟼ ǫ LATIN SMALL LETTER O WITH OGONEK)
+
+
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+ᴀ ʙ ᴄ ᴅ ᴇ ꜰ ɢ ʜ ɪ ᴊ ᴋ ʟ ᴍ ɴ ᴏ ᴘ ꞯ ʀ ꜱ ᴛ ᴜ ᴠ ᴡ ꞯ ʏ ᴢ
+ᴀ ʙ ᴄ ᴅ ᴇ ꜰ ɢ ʜ ɪ ᴊ ᴋ ʟ ᴍ ɴ ᴏ ᴘ ǫ ʀ ꜱ ᴛ ᴜ ᴠ ᴡ x͛ ʏ ᴢ
+
+
+x̐ x⃰ x̛ x̚ x͑ x͆ x̫ x͛ x̽ x̒
+x̌ ẋ x̃ x̊ x̅ x̅
+
+- Letter set
+  - complete
+    - Ls, Sl, LSL,  `LATIN SMALL LETTER A`
+    - Lc, Cl, LCL,  `LATIN CAPITAL LETTER A`
+  - almost-complete
+    - Sc, smallCAPS, LLSC, `LATIN LETTER SMALL CAPITAL A`
+    - missing: Q X
+    - but can be replaced with
+      - Q ⟼ ǫ `LATIN SMALL LETTER O WITH OGONEK` 0x1eb
+      - x ⟼ x͛  +`COMBINING ZIGZAG ABOVE` 0x35b
+      - (or leave it as small letter x)
+      - some combining modifiers decreases `x` to the right size:
+        - (aligned with Sc) x̒ x̐ x⃰ x̛ x̚ x͑ x͆ x̫ x͛ x̽
+        - (others do not) x̌ ẋ x̃ x̊ x̅ x̅
+
+
+a: Ą ą
+q: ǫ
+b
+
+
+
+
+Aa ᴬᵃ -ₐ
+Bb ᴮᵇ --
+Cc -ᶜ --
+Dd ᴰᵈ --
+Ee ᴱᵉ -ₑ
+Ff -ᶠ --
+Gg ᴳᵍ --
+Hh ᴴʰ -ₕ
+Ii ᴵⁱ -ᵢ
+Jj ᴶʲ -ⱼ
+Kk ᴷᵏ -ₖ
+Ll ᴸˡ -ₗ
+Mm ᴹᵐ -ₘ
+Nn ᴺⁿ -ₙ
+Oo ᴼᵒ -ₒ
+Pp ᴾᵖ -ₚ
+Qq -- --
+Rr ᴿʳ -ᵣ
+Ss -ˢ -ₛ
+Tt ᵀᵗ -ₜ
+Uu ᵁᵘ -ᵤ
+Vv ⱽᵛ -ᵥ
+Ww ᵂʷ --
+Xx -ˣ -ₓ
+Yy -ʸ --
+Zz -ᶻ --
+
+
+
+
+
+
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+W
+X
+Y
+Z
+
+a
+b
+c
+d
+e
+f
+g
+h
+i
+j
+k
+l
+m
+n
+o
+p
+q
+r
+s
+t
+u
+v
+w
+x
+y
+z
+
+a b c d e f g h i j k l m n o p q r s t u v w x y z
