@@ -1,0 +1,92 @@
+# JS Ecosystem :: Table
+
+angular
+babel
+backbone
+bower
+bun
+clojurescript
+coffescript
+deno
+electron
+elm
+ember
+flow
+grunt
+gulp
+jake
+jerryscript
+jquery
+json
+jsshell
+livescript
+nest.js
+next.js
+ninja (vscode ext)
+node.js
+npm
+nuxt.js
+nw.js
+parcel
+pnpm
+polymer
+prettier
+purescript
+quokka (vscode ext)
+qwik
+react
+reasonml
+rihno
+solid
+spidermonkey
+svelte
+swc
+turbopack
+turborepo
+typescript
+V8
+vite.js
+volta
+vue
+wasm
+webassembly
+webpack
+yarn
+eslint
+jslint
+google closure linter
+jsbin
+chakra
+codemirror
+tern
+zeon
+istanbul
+emscripten
+
+
+- JS engine, JS runtime
+  - JS engine version manager
+- JS online compiler, JS IDE, JS code editing platform
+- package manager
+  - project manager
+  - package repository
+- JS dialect, JS variant lang
+- langs that compile to JS
+- static analysers
+  - type analysys tool
+  - cyclomatic complexity
+- formatting tool
+- linting tool
+- build tools
+- productivity helper tool
+- refactoring tool
+- framework
+- reactive framework
+- cross-platform app building tool
+- exchange data format
+- polyfill tool
+- testing harness
+  - coverage checker
+- debugging tools
+  - chrome dev tools
+- dead code eliminatation, tree shaking

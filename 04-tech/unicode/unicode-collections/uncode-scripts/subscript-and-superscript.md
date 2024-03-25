@@ -2,6 +2,20 @@
 
 https://en.wikipedia.org/wiki/Unicode_subscripts_and_superscripts
 
+
+ꜛꜜꜝꜞ
+
+## Superscript COMMA or PERIOD
+
+- `⋅` DOT OPERATOR, 0x22c5
+- not really superscript comma/period but good enough
+- as operator: `A ⋅ B`, `A⋅B`, `A ⋅ B` (w math spacing)
+- ordered pair as a superscipt: `⁽ˣ⋅ʸ⁾` (posing as a comma)
+- `10⁻³⋅⁴`, `𝓕¹⋅⁹` (posing as a period)
+
+
+
+
 ## Latin Capitals Superscript
 
 - AAA ᴬ ᴮ - ᴰ ᴱ - ᴳ ᴴ ᴵ ᴶ ᴷ ᴸ ᴹ ᴺ ᴼ ᴾ - ᴿ - ᵀ ᵁ ⱽ ᵂ - - - ZZZ
@@ -28,7 +42,7 @@ https://en.wikipedia.org/wiki/Unicode_subscripts_and_superscripts
 * Greek Superscript minuscule: Bᵝ Yᵞ Dᵟ E⁽ᵋ⁾ TᶿH I⁽ᶥ⁾ N⁽ᶹ⁾ Fᵠ Xᵡ X
 * ↓ ₔ ᵦ ᵧ ᵨ ᵩ ᵪ ₐ ₔ ₑ ₕ ᵢ ⱼ ₖ ₗ ₘ ₙ ₒ ₚ ᵣ ₛ ₜ ᵤ ᵥ ₓ
 * ↑ ᵃᵇᶜᵈᵉᶠᵍʰⁱᶦʲᵏᶫˡᵐᶰⁿᵒᵖᵠʶʳˢᵗᶸᵘᵛʷˣʸᶻᶧ
-* ↑ ᴬ ᴮ - ᴰ ᴱ - ᴳ ᴴ ᴵ ᴶ ᴷ ᴸ ᴹ ᴺ ᴼ ᴾ - ᴿ - ᵀ ᵁ ⱽ ᵂ - - -
+* ↑ ᴬ ᴮ ◌ ᴰ ᴱ ◌ ᴳ ᴴ ᴵ ᴶ ᴷ ᴸ ᴹ ᴺ ᴼ ᴾ ◌ ᴿ ◌ ᵀ ᵁ ⱽ ᵂ ◌ ◌ ◌
 * ↑ ᶲ ˠ ᶯ ᵑ ᶥ ᶿ ᶸ ᵝ ᵞ ᵟ ᵋ ᶹ ᵠ ᵡ
 * ↑ ᶫ ᶰ ʶ ᶧ ᶬ ᶮ ᶯ ᵑ ᵓ ᵔ ᵕ ᶱ ᴽ
 * ↑ ᴭ ᵆ ᵉ ᵅ ᶛ ᶝ ᶞ ᴲ ᵊ ᶟ ᵌ ʱ ᶤ ᶧ ᶨ ᶡ ᶪ ᶩ

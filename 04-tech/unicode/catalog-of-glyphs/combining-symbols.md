@@ -3,6 +3,16 @@
 UNICODE CHARACTER DATABASE
 http://www.unicode.org/reports/tr44/#Canonical_Combining_Class_Values
 
+recent: Σ⃰ v̅  v⃕  v⃕a  A⃕B
+-->
+->
+=<<
+a >>= b
+
+(>>=)
+α >-> β
+α >->> β
+|--->>--------->
 
 * Symbols
   * accents
@@ -174,9 +184,10 @@ COMBINING DOUBLE TILDE                           | 0x360  | v͠  | aqv͠a
 COMBINING DOUBLE INVERTED BREVE                  | 0x361  | v͡  | aqv͡a
 COMBINING CLOCKWISE ARROW ABOVE                  | 0x20d5 | v⃕  | v⃕a A⃕B
 COMBINING RIGHT ARROW ABOVE                      | 0x20d7 | v⃗  | Av⃗B
+COMBINING ASTERISK ABOVE                         | 0x20f0 | Σ⃰  |
 
 
-
+## V chars
 
 v̇
 v̉
@@ -257,4 +268,102 @@ v͛
 v͞
 v͟
 v͡
-[next-page]
+
+
+## Σ chars
+
+Σ̴̖̀
+Σ̵̗́
+Σ̶̘̂
+Σ̷̙̃
+Σ̸̜̄
+Σ̊⃝̢
+Σ̧̏
+Σ̨̐
+Σ̩̑
+Σ̪̒
+Σ̫̓
+Σ̬̔
+Σ̭̕
+Σ̮̚
+Σ̛̯
+Σ̰̽
+Σ̱̾
+Σ̲̿
+Σ̳̀
+Σ̹́
+Σ̺͂
+Σ̻̓
+Σ̼̈́
+Σ͆ͅ
+Σ͇͊
+Σ͈͋
+Σ͉͌
+Σ͍͐
+Σ͎͑
+Σ͓͒
+Σ͔͗
+Σ͕͘
+Σ͖͛
+Σ͙͝
+Σ͚͞
+Σ͜͠
+Σ͟͡
+
+Σͣ͢
+
+Σ᷂ͤ
+
+Σ᷊ͥ
+
+Σ᷿ͦ
+
+Σͨ
+Σͩ
+Σͪ
+Σͫ
+Σͬ
+Σͭ
+Σͮ
+Σͯ
+
+Σ᷀
+Σ᷁
+Σ᷃
+Σ᷄
+Σ᷅
+Σ᷆
+Σ᷇
+Σ᷈
+Σ᷉
+Σ᷾
+Σ⃰
+Σ︠
+Σ︡
+Σ︢
+Σ︣
+
+Σ⃒̝̅
+Σ⃓̞̆
+Σ⃘̟̇
+Σ⃙̠̈
+Σ⃚̡̉
+Σ̋⃞̣
+Σ̌⃟̤
+Σ⃐
+Σ⃑
+Σ⃔
+Σ⃕
+Σ⃖
+Σ⃗
+Σ⃛
+Σ⃜
+Σ⃡
+
+Σ⃥̥̍
+Σ⃦̦̎
+Σ⃨ͧ
+Σ⃩
+
+
+>add `Symbola` or `Cambria` font if some chars are not showing.

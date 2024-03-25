@@ -1,0 +1,161 @@
+# Python Frameworks
+
+- AWS CDK
+  - 1
+  - 2
+- AiiDA
+- Ansible
+- AnyIO
+- Apache Airflow
+- Provider
+- AsyncIO
+- BEAT
+- BFG
+- Bob
+- Bottle
+- Buildout
+- Extension
+- Recipe
+- CastleCMS
+- Theme
+- Celery
+- Chandler
+- CherryPy
+- CubicWeb
+- Dash
+- Datasette
+- Django
+  - 1
+  - 1.4
+  - 1.5
+  - 1.6
+  - 1.7
+  - 1.8
+  - 1.9
+  - 1.10
+  - 1.11
+  - 2
+  - 2.0
+  - 2.1
+  - 2.2
+  - 3
+  - 3.0
+  - 3.1
+  - 3.2
+  - 4
+  - 4.0
+  - 4.1
+  - 4.2
+  - 5.0
+- Django CMS
+  - 3.4
+  - 3.5
+  - 3.6
+  - 3.7
+  - 3.8
+  - 3.9
+  - 3.10
+  - 3.11
+  - 4.0
+  - 4.1
+- FastAPI
+- Flake8
+- Flask
+- Hatch
+- Hypothesis
+- IDLE
+- IPython
+- Jupyter
+- JupyterLab
+  - 1
+  - 2
+  - 3
+  - 4
+- Extensions
+- Mime Renderers
+- Prebuilt
+- Themes
+- Kedro
+- Lektor
+- Masonite
+- Matplotlib
+- MkDocs
+- Nengo
+- Odoo
+  - 8.0
+  - 9.0
+  - 10.0
+  - 11.0
+  - 12.0
+  - 13.0
+  - 14.0
+  - 15.0
+  - 16.0
+  - 17.0
+- Opps
+- Paste
+- Pelican
+- Plugins
+- Themes
+- Plone
+  - 3.2
+  - 3.3
+  - 4.0
+  - 4.1
+  - 4.2
+  - 4.3
+  - 5.0
+  - 5.1
+  - 5.2
+  - 5.3
+  - 6.0
+  - 6.1
+- Addon
+- Core
+- Distribution
+- Theme
+- PySimpleGUI
+  - 4
+  - 5
+- Pycsou
+- Pydantic
+  - 1
+  - 2
+- Pylons
+- Pyramid
+- Pytest
+- Review Board
+- Robot Framework
+- Library
+- Tool
+- Scrapy
+- Setuptools Plugin
+- Sphinx
+- Domain
+- Extension
+- Theme
+- Trac
+- Trio
+- Tryton
+- TurboGears
+- Applications
+- Widgets
+- Twisted
+- Wagtail
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+- ZODB
+- Zope
+  - 2
+  - 3
+  - 4
+  - 5
+- Zope2
+- Zope3
+- aiohttp
+- cocotb
+- napari
+- tox

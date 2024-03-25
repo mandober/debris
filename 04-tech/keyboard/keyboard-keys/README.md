@@ -1,0 +1,56 @@
+# Keyboard keys
+
+Keyboard keys
+- Dead keys
+- Compose
+- Modifier keys
+- Control
+- Shift
+- Alt
+- Option (Apple)
+- AltGr
+- Command (Apple)
+- Windows (Microsoft)
+- Super
+- Meta
+- Hyper
+- Fn
+- Gold
+- Lock keys
+  - Scroll Lock
+  - Num Lock
+  - Caps Lock
+  - F-Lock
+- Navigation keys
+  - Arrow keys
+  - Page Up
+  - Page Down
+  - Home
+  - End
+  - Esc
+  - Menu
+- Editing
+- Enter
+- Return
+-  Carriage return
+- Backspace
+- Insert
+- Delete
+- Tab
+- Space bar
+- Numeric keypad
+- Language input
+- Contextual
+- Function keys
+- Print Screen
+- System request
+- Break/Pause
+- Misc
+- Power management keys
+- Power, Sleep, Wake
+- Any key
+- Macro key
+- Keyboard technology
+- Keyboard shortcut
+- Keyboard layout
+- Keyboard mapping

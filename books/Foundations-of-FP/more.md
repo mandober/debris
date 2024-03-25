@@ -2,15 +2,6 @@ https://en.wikiversity.org/wiki/Foundations_of_Functional_Programming/UTT-%CE%A3
 https://en.wikiversity.org/wiki/Foundations_of_Functional_Programming
 
 
-* OneTab
-chrome-extension://chphlpgkkbolifaimnlloiipkdnihall/onetab.html
-
-* Bookmarks
-chrome://bookmarks/?id=84907
-
-* BFLIX | Watch Physical (2021) Online Free on bflix.to
-https://www9.bflix.to/series/physical-ol8lj/2-3
-
 * Quest 2 - Sigma Types - The HoTT Game 0.1 documentation
 https://thehottgameguide.readthedocs.io/en/latest/0-trinitarianism/quest-2.html
 

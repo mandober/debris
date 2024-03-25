@@ -1,5 +1,7 @@
 # Subscript and superscript
 
+ꜛ ꜜ ꜝ ꜞ
+
 ## 1. Markdown-custom tags
 
 - subscript with __tilde__   : P~a+x~ (unicode Pₐ﹢ₓ)

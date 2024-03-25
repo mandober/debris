@@ -1,21 +1,69 @@
 # Keyboard :: Keyboard layout :: Modifier keys
 
+Modifier keys
+- Shift, `s-`, `⇪`
+  - Left Shift, LShift
+  - Right Shift, RShift
+- Alt, `m-`, `⎇`
+
+
+key     v   left     right     sym  short
+----------------------------------------------
+Shift  +1   LShift   RShift    ⇪    s-, %-
+Alt    +2   LAlt     RAlt      ⎇    m-, @-
+Ctrl   +4   LCtrl    RCtrl     ⌥    c-, ^-
+Win    +8   LWin     RWin      ❖
+
+
+bare       1   {k}
+Shift     +1   S
+Alt       +2   M
+Control   +4   C
+Super     +8   T
+
+^[ = <ESC>
+
+^[[H        ^[ [     H
+^[[1;2H     ^[ [ 1;2 H
+
+
+Example:
+
+bare         1     Home     ^[[H
+--------------------------------------------
+Shift       +1   S-Home     ^[[1;2H
+Alt         +2   M-Home     ^[[1;3H
+Shift+Alt   +3   S-M-Home   ^[[1;4H
+Control     +4   C-Home     ^[[1;5H
+--------------------------------------------
+Shift+Ctrl  +5   C-Home     ^[[1;5H
+Alt+Ctrl    +6   C-Home     ^[[1;5H
+Shift+Alt+Ctrl  +7   C-Home     ^[[1;5H
+--------------------------------------------
+
+Super       +8   T-Home     ^[[1;9H
+
+
+AltGr
+
+
 * Modifier keys (primary)       ←       →
-  + Shift       +   ⇪   S       LShift, RShift 
-  + Alt         %       M       LAlt,   RAlt (AltGr)
-  + Control     ⌥       C       LCtrl,  RCtrl
+  + Shift       ⇪   +   S       LShift, RShift 
+  + Alt         %   @   M       LAlt,   RAlt (AltGr)
+  + Control     ⌥   ^   C       LCtrl,  RCtrl
 
 * Modifier keys (additional)
-  + Windows                     RWin,   LWin
-  + Menu
-  + CapsLock
-  + TAB
-  + ESC
-  + F1-F12
+  - Windows                     RWin,   LWin
+  - Menu
+  - CapsLock
+  - NumLock
+  - ESC
+
+  - TAB
+  - ScrollLock
+  - F1-F12
   - PrintScreen/SysRq
   - Pause/Break
-  + ScrollLock
-  + NumLock
 
 * Mid keypad
   + Insert

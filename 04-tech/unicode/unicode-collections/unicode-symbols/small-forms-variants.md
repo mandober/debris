@@ -1,7 +1,7 @@
 # Small Form Variants
 
-Name                              | Hex  | Glyph (compare)
-----------------------------------|------|-------------------
+Name                              | Hex  | Small vs Normal form
+----------------------------------|------|---------------------
 SMALL NUMBER SIGN                 |0xfe5f| ﹟      #
 SMALL AMPERSAND                   |0xfe60| ﹠      &
 SMALL ASTERISK                    |0xfe61| ﹡      *
